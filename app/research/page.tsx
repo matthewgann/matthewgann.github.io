@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Research & Thoughts — Matthew Gann, Ph.D.",
+  title: "Research & Thoughts | Matthew Gann, Ph.D.",
   description: "Writing on marketing, leadership, higher education, and purpose-driven work.",
 };
 
@@ -13,7 +13,7 @@ const posts = [
     date: "June 2025",
     category: "Leadership",
     excerpt:
-      "Purpose isn't a mission statement on a wall. It's the filter through which every decision gets made — from hiring to campaign strategy.",
+      "Purpose isn't a mission statement on a wall. It's the filter through which every decision gets made, from hiring to campaign strategy.",
   },
   {
     slug: "marketing-maturity-in-higher-ed",

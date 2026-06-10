@@ -10,12 +10,12 @@ const expertise = [
   {
     title: "Organizational Intelligence",
     description:
-      "Applying systems thinking and organizational research to understand how institutions learn, adapt, and make decisions — and how to build marketing capability that lasts.",
+      "Applying systems thinking and organizational research to understand how institutions learn, adapt, and make decisions. The goal is building marketing capability that is durable, not dependent on any one person or cycle.",
   },
   {
     title: "Marketing Operations",
     description:
-      "Elevating marketing from a production function to a core business driver — with the governance, measurement frameworks, and operating models that make it sustainable.",
+      "Elevating marketing from a production function to a core business driver, with the governance, measurement frameworks, and operating models that make it sustainable.",
   },
   {
     title: "Reputation & Crisis Management",
@@ -30,7 +30,7 @@ const expertise = [
   {
     title: "Digital Strategy & Analytics",
     description:
-      "Connecting digital investment to institutional outcomes — from SEO and paid media to analytics infrastructure, web strategy, and data-informed campaign planning.",
+      "Connecting digital investment to institutional outcomes, from SEO and paid media to analytics infrastructure, web strategy, and data-informed campaign planning.",
   },
 ];
 
@@ -40,7 +40,7 @@ const recentPosts = [
     title: "What Purpose-Driven Leadership Actually Looks Like",
     date: "2025",
     excerpt:
-      "Purpose isn't a mission statement on a wall. It's the filter through which every decision gets made — from hiring to campaign strategy.",
+      "Purpose isn't a mission statement on a wall. It's the filter through which every decision gets made, from hiring to campaign strategy.",
   },
   {
     slug: "marketing-maturity-in-higher-ed",
@@ -90,7 +90,7 @@ export default function Home() {
             style={{ color: "var(--text-muted)" }}
           >
             Marketing and communications executive dedicated to the students and
-            communities that higher education exists to serve — grounded in
+            communities that higher education exists to serve. Grounded in
             organizational intelligence and focused on elevating marketing as a
             core strategic function in higher education.
           </p>
@@ -127,21 +127,21 @@ export default function Home() {
             <div className="sm:col-span-3 space-y-4">
               <p style={{ color: "var(--foreground)" }}>
                 I&apos;ve spent more than two decades at the intersection of strategy,
-                storytelling, and leadership — helping institutions find their
+                storytelling, and leadership, helping institutions find their
                 voice, build their brand, and connect with the people who matter
                 most to them.
               </p>
               <p style={{ color: "var(--foreground)" }}>
                 My career has taken me from early-stage digital work in the early
-                2000s, through executive marketing roles in healthcare and agency,
+                2000s through executive marketing roles in healthcare and agency
                 to leading systemwide marketing for Tennessee&apos;s largest higher
-                education system — and now serving as the chief marketing officer
+                education system, and now serving as the chief marketing officer
                 for the University of Denver.
               </p>
               <p style={{ color: "var(--foreground)" }}>
-                Everything I do is anchored in a simple belief: purpose-driven
-                work — rooted in clear values, honest communication, and a
-                genuine commitment to the people you serve — produces better
+                Everything I do is anchored in a simple belief. Purpose-driven
+                work, rooted in clear values, honest communication, and a
+                genuine commitment to the people you serve, produces better
                 results and leaves the world a little better than you found it.
               </p>
             </div>
@@ -158,7 +158,7 @@ export default function Home() {
               <ul className="space-y-2 text-sm list-none p-0 m-0" style={{ color: "var(--foreground)" }}>
                 <li>Denver, Colorado</li>
                 <li>Ph.D., Leadership &amp; Organizational Intelligence</li>
-                <li>APR — Accredited in Public Relations</li>
+                <li>Accredited in Public Relations (APR)</li>
                 <li>CMO, University of Denver</li>
                 <li>20+ years in higher education marketing</li>
               </ul>

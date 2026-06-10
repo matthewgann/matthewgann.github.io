@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Marketing Maturity in Higher Education — Matthew Gann, Ph.D.",
+  title: "Marketing Maturity in Higher Education | Matthew Gann, Ph.D.",
 };
 
 export default function Post() {
@@ -42,13 +42,13 @@ export default function Post() {
           This isn&apos;t a new observation, but it&apos;s one that keeps proving true. Walk into the marketing
           department at most colleges and universities and you&apos;ll find a team organized around
           deliverables: brochures, social posts, website updates, event support. The work gets done.
-          The requests get fulfilled. But the strategic questions — Who are we trying to reach? What do
-          we want them to believe? How do we know if it&apos;s working? — often don&apos;t have clear owners.
+          The requests get fulfilled. But the strategic questions rarely have clear owners: Who are we
+          trying to reach? What do we want them to believe? How do we know if it&apos;s working?
         </p>
 
         <p className="leading-relaxed">
           Marketing maturity is about closing that gap. It&apos;s the degree to which an institution has
-          built marketing as a function that can do more than execute — one that informs strategy,
+          built marketing as a function that can do more than execute. It informs strategy,
           allocates resources intelligently, measures outcomes that matter, and earns a seat at the
           table where decisions about enrollment, reputation, and competitive positioning actually
           get made.
@@ -66,7 +66,7 @@ export default function Post() {
           The institutions that have made this shift share a few traits. Marketing has consistent
           access to institutional data. There are defined processes for how marketing work gets
           prioritized. The team has clear accountability for outcomes, not just outputs. And
-          leadership — above and beyond the CMO — understands what good marketing actually requires.
+          leadership, at every level above the CMO, understands what good marketing actually requires.
         </p>
 
         <p className="leading-relaxed">
@@ -79,7 +79,7 @@ export default function Post() {
         </p>
 
         <p className="text-sm font-medium mt-10 pt-8" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>
-          — Matthew Gann, Ph.D.
+          Matthew Gann, Ph.D.
         </p>
       </div>
     </div>

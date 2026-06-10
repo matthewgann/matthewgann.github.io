@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Resume — Matthew Gann, Ph.D.",
+  title: "Resume | Matthew Gann, Ph.D.",
   description: "Career history, expertise, and credentials of Matthew Gann, Ph.D.",
 };
 
@@ -22,7 +22,7 @@ const experience = [
     roles: [
       {
         title: "Associate Vice Chancellor for Marketing, Digital Strategy, and Public Relations",
-        highlight: "Served as systemwide CMO for Tennessee's largest higher education system — 37 colleges and approximately 165,000 students.",
+        highlight: "Served as systemwide CMO for Tennessee's largest higher education system, overseeing 37 colleges and approximately 165,000 students.",
       },
     ],
   },

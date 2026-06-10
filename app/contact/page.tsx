@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Get in Touch — Matthew Gann, Ph.D.",
+  title: "Get in Touch | Matthew Gann, Ph.D.",
   description: "Contact Matthew Gann, Ph.D.",
 };
 
@@ -15,7 +15,7 @@ export default function ContactPage() {
         Get in Touch
       </h1>
       <p className="text-lg leading-relaxed mb-12" style={{ color: "var(--text-muted)" }}>
-        Whether you want to talk about a project, a speaking opportunity, or just connect — I&apos;d love
+        Whether you want to talk about a project, a speaking opportunity, or just connect, I&apos;d love
         to hear from you.
       </p>
 

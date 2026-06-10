@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "What Purpose-Driven Leadership Actually Looks Like — Matthew Gann, Ph.D.",
+  title: "What Purpose-Driven Leadership Actually Looks Like | Matthew Gann, Ph.D.",
 };
 
 export default function Post() {
@@ -74,7 +74,7 @@ export default function Post() {
         </p>
 
         <p className="text-sm font-medium mt-10 pt-8" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>
-          — Matthew Gann, Ph.D.
+          Matthew Gann, Ph.D.
         </p>
       </div>
     </div>
