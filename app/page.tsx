@@ -39,157 +39,191 @@ const recentPosts = [
 export default function Home() {
   return (
     <>
-      {/* Hero */}
-      <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 flex flex-col items-center text-center">
-        <div className="w-72 h-72 rounded-full overflow-hidden mb-8" style={{ outline: "4px solid var(--border)" }}>
-          <Image
-            src="/headshot.jpg"
-            alt="Matthew Gann, Ph.D."
-            width={288}
-            height={288}
-            className="w-full h-full object-cover object-top"
-            priority
-          />
-        </div>
-
-        <h1 className="text-5xl sm:text-6xl mb-3" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-          Matthew Gann, Ph.D.
-        </h1>
-
-        <p className="text-2xl sm:text-3xl mb-6" style={{ color: "var(--accent)", fontFamily: "var(--font-calistoga), serif" }}>
-          Purpose-Driven.
-        </p>
-
-        <p className="text-lg max-w-2xl leading-relaxed" style={{ color: "var(--text-muted)" }}>
-          Marketing and communications executive dedicated to the students and
-          communities that higher education exists to serve. Chief Marketing
-          Officer at the University of Denver.
-        </p>
-
-        <div className="flex gap-4 mt-8">
-          <Link
-            href="/resume"
-            className="px-6 py-3 text-sm font-medium tracking-wide transition-opacity duration-200 hover:opacity-80 cursor-pointer"
-            style={{ background: "var(--foreground)", color: "var(--background)" }}
-          >
-            View Resume
-          </Link>
-          <Link
-            href="/research"
-            className="px-6 py-3 text-sm font-medium tracking-wide transition-opacity duration-200 hover:opacity-70 cursor-pointer"
-            style={{ border: "1px solid var(--border)", color: "var(--foreground)", background: "transparent" }}
-          >
-            Research &amp; Thoughts
-          </Link>
-        </div>
-      </section>
-
-      <div className="max-w-4xl mx-auto px-6">
-        <hr style={{ borderColor: "var(--border)" }} />
-      </div>
-
-      {/* About */}
-      <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="text-3xl mb-8" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-          About Me
-        </h2>
-        <div className="grid sm:grid-cols-5 gap-10 items-start">
-          <div className="sm:col-span-3 space-y-4">
-            <p style={{ color: "var(--foreground)" }}>
-              I&apos;ve spent more than two decades at the intersection of strategy,
-              storytelling, and leadership — helping institutions find their
-              voice, build their brand, and connect with the people who matter
-              most to them.
-            </p>
-            <p style={{ color: "var(--foreground)" }}>
-              My career has taken me from early-stage digital work in the early
-              2000s, through executive marketing roles in healthcare and agency,
-              to leading systemwide marketing for Tennessee&apos;s largest higher
-              education system — and now serving as the chief marketing officer
-              for the University of Denver.
-            </p>
-            <p style={{ color: "var(--foreground)" }}>
-              Everything I do is anchored in a simple belief: purpose-driven
-              work — rooted in clear values, honest communication, and a
-              genuine commitment to the people you serve — produces better
-              results and leaves the world a little better than you found it.
-            </p>
-          </div>
+      {/* ── Hero ────────────────────────────────────────────── */}
+      <section style={{ background: "#FFFEF9" }}>
+        <div className="max-w-4xl mx-auto px-6 pt-20 pb-16 flex flex-col items-center text-center">
           <div
-            className="sm:col-span-2 p-6 space-y-3"
-            style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
+            className="w-72 h-72 rounded-full overflow-hidden mb-8"
+            style={{ outline: "4px solid var(--border)" }}
           >
-            <p className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>
-              At a Glance
-            </p>
-            <ul className="space-y-2 text-sm list-none p-0 m-0" style={{ color: "var(--foreground)" }}>
-              <li>Denver, Colorado</li>
-              <li>Ph.D., Leadership &amp; Organizational Intelligence</li>
-              <li>APR — Accredited in Public Relations</li>
-              <li>CMO, University of Denver</li>
-              <li>20+ years in higher education marketing</li>
-            </ul>
+            <Image
+              src="/headshot.jpg"
+              alt="Matthew Gann, Ph.D."
+              width={288}
+              height={288}
+              className="w-full h-full object-cover object-top"
+              priority
+            />
+          </div>
+
+          <h1
+            className="text-5xl sm:text-6xl mb-3"
+            style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}
+          >
+            Matthew Gann, Ph.D.
+          </h1>
+
+          <p
+            className="text-2xl sm:text-3xl mb-6"
+            style={{ color: "var(--accent)", fontFamily: "var(--font-calistoga), serif" }}
+          >
+            Purpose-Driven.
+          </p>
+
+          <p
+            className="text-lg max-w-2xl leading-relaxed"
+            style={{ color: "var(--text-muted)" }}
+          >
+            Marketing and communications executive dedicated to the students and
+            communities that higher education exists to serve — grounded in
+            organizational intelligence and focused on elevating marketing as a
+            core strategic function in higher education.
+          </p>
+
+          <div className="flex gap-4 mt-8">
+            <Link
+              href="/resume"
+              className="px-6 py-3 text-sm font-medium tracking-wide transition-opacity duration-200 hover:opacity-80 cursor-pointer"
+              style={{ background: "var(--foreground)", color: "var(--background)" }}
+            >
+              View Resume
+            </Link>
+            <Link
+              href="/research"
+              className="px-6 py-3 text-sm font-medium tracking-wide transition-opacity duration-200 hover:opacity-70 cursor-pointer"
+              style={{ border: "1px solid var(--border)", color: "var(--foreground)", background: "transparent" }}
+            >
+              Research &amp; Thoughts
+            </Link>
           </div>
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-6">
-        <hr style={{ borderColor: "var(--border)" }} />
-      </div>
-
-      {/* Expertise */}
-      <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="text-3xl mb-10" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-          Areas of Expertise
-        </h2>
-        <div className="grid sm:grid-cols-3 gap-8">
-          {expertise.map((item) => (
-            <div key={item.title} className="space-y-3">
-              <div className="w-8 h-0.5" style={{ background: "var(--accent)" }} />
-              <h3 className="text-xl" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-                {item.title}
-              </h3>
-              <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
-                {item.description}
+      {/* ── About ───────────────────────────────────────────── */}
+      <section style={{ background: "#F2E9DC" }}>
+        <div className="max-w-4xl mx-auto px-6 py-16">
+          <h2
+            className="text-3xl mb-8"
+            style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}
+          >
+            About Me
+          </h2>
+          <div className="grid sm:grid-cols-5 gap-10 items-start">
+            <div className="sm:col-span-3 space-y-4">
+              <p style={{ color: "var(--foreground)" }}>
+                I&apos;ve spent more than two decades at the intersection of strategy,
+                storytelling, and leadership — helping institutions find their
+                voice, build their brand, and connect with the people who matter
+                most to them.
+              </p>
+              <p style={{ color: "var(--foreground)" }}>
+                My career has taken me from early-stage digital work in the early
+                2000s, through executive marketing roles in healthcare and agency,
+                to leading systemwide marketing for Tennessee&apos;s largest higher
+                education system — and now serving as the chief marketing officer
+                for the University of Denver.
+              </p>
+              <p style={{ color: "var(--foreground)" }}>
+                Everything I do is anchored in a simple belief: purpose-driven
+                work — rooted in clear values, honest communication, and a
+                genuine commitment to the people you serve — produces better
+                results and leaves the world a little better than you found it.
               </p>
             </div>
-          ))}
+            <div
+              className="sm:col-span-2 p-6 space-y-3"
+              style={{ background: "#FFFEF9", border: "1px solid #E0D5C8" }}
+            >
+              <p
+                className="text-xs font-semibold uppercase tracking-widest"
+                style={{ color: "var(--text-muted)" }}
+              >
+                At a Glance
+              </p>
+              <ul className="space-y-2 text-sm list-none p-0 m-0" style={{ color: "var(--foreground)" }}>
+                <li>Denver, Colorado</li>
+                <li>Ph.D., Leadership &amp; Organizational Intelligence</li>
+                <li>APR — Accredited in Public Relations</li>
+                <li>CMO, University of Denver</li>
+                <li>20+ years in higher education marketing</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-6">
-        <hr style={{ borderColor: "var(--border)" }} />
-      </div>
-
-      {/* Research & Thoughts */}
-      <section className="max-w-4xl mx-auto px-6 py-16">
-        <div className="flex items-baseline justify-between mb-10">
-          <h2 className="text-3xl" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-            Research &amp; Thoughts
+      {/* ── Expertise ───────────────────────────────────────── */}
+      <section style={{ background: "#FFFFFF" }}>
+        <div className="max-w-4xl mx-auto px-6 py-16">
+          <h2
+            className="text-3xl mb-10"
+            style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}
+          >
+            Areas of Expertise
           </h2>
-          <Link href="/research" className="text-sm font-medium cursor-pointer" style={{ color: "var(--accent)", textDecoration: "none" }}>
-            All posts →
-          </Link>
+          <div className="grid sm:grid-cols-3 gap-8">
+            {expertise.map((item) => (
+              <div key={item.title} className="space-y-3">
+                <div className="w-8 h-0.5" style={{ background: "var(--accent)" }} />
+                <h3
+                  className="text-xl"
+                  style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}
+                >
+                  {item.title}
+                </h3>
+                <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
+      </section>
 
-        <div className="space-y-10">
-          {recentPosts.map((post) => (
-            <article key={post.slug}>
-              <Link href={`/research/${post.slug}`} style={{ textDecoration: "none" }}>
-                <div className="flex flex-col gap-1 group cursor-pointer">
-                  <span className="text-xs font-medium tracking-widest uppercase" style={{ color: "var(--text-muted)" }}>
-                    {post.date}
-                  </span>
-                  <h3 className="text-xl transition-colors duration-150" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-                    {post.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed mt-1" style={{ color: "var(--text-muted)" }}>
-                    {post.excerpt}
-                  </p>
-                </div>
-              </Link>
-            </article>
-          ))}
+      {/* ── Research & Thoughts ─────────────────────────────── */}
+      <section style={{ background: "#1C1917" }}>
+        <div className="max-w-4xl mx-auto px-6 py-16">
+          <div className="flex items-baseline justify-between mb-10">
+            <h2
+              className="text-3xl"
+              style={{ fontFamily: "var(--font-calistoga), serif", color: "#F5F0EB" }}
+            >
+              Research &amp; Thoughts
+            </h2>
+            <Link
+              href="/research"
+              className="text-sm font-medium cursor-pointer"
+              style={{ color: "#D4853A", textDecoration: "none" }}
+            >
+              All posts →
+            </Link>
+          </div>
+
+          <div className="space-y-10">
+            {recentPosts.map((post) => (
+              <article key={post.slug}>
+                <Link href={`/research/${post.slug}`} style={{ textDecoration: "none" }}>
+                  <div className="flex flex-col gap-1 cursor-pointer">
+                    <span
+                      className="text-xs font-medium tracking-widest uppercase"
+                      style={{ color: "#8A7B6E" }}
+                    >
+                      {post.date}
+                    </span>
+                    <h3
+                      className="text-xl transition-colors duration-150 hover:text-amber-500"
+                      style={{ fontFamily: "var(--font-calistoga), serif", color: "#F5F0EB" }}
+                    >
+                      {post.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed mt-1" style={{ color: "#A8998C" }}>
+                      {post.excerpt}
+                    </p>
+                  </div>
+                </Link>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
     </>
