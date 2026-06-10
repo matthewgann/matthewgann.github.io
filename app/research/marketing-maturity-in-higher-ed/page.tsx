@@ -34,34 +34,48 @@ export default function Post() {
 
       <div className="space-y-5" style={{ color: "var(--foreground)" }}>
         <p className="text-lg leading-relaxed" style={{ color: "var(--text-muted)" }}>
-          Most universities are still treating marketing as a production function. The ones winning
-          the future are building it as a strategic capability.
+          Most universities are still treating marketing as a production function. The ones getting
+          ahead are building it as a core business capability.
         </p>
 
         <p className="leading-relaxed">
-          Higher education has a marketing maturity problem. Most institutions still think about
-          marketing as a service bureau — a team you send requests to when you need a brochure
-          or a social media post. The marketing department is cost center, not strategy partner.
+          This isn&apos;t a new observation, but it&apos;s one that keeps proving true. Walk into the marketing
+          department at most colleges and universities and you&apos;ll find a team organized around
+          deliverables: brochures, social posts, website updates, event support. The work gets done.
+          The requests get fulfilled. But the strategic questions — Who are we trying to reach? What do
+          we want them to believe? How do we know if it&apos;s working? — often don&apos;t have clear owners.
         </p>
 
         <p className="leading-relaxed">
-          The institutions that are pulling ahead are the ones that have changed this equation.
-          They&apos;ve built marketing as a capability — one that sits close to the provost, that
-          owns the brand, that has a seat at the enrollment table, and that measures its work
-          against institutional outcomes, not output volumes.
+          Marketing maturity is about closing that gap. It&apos;s the degree to which an institution has
+          built marketing as a function that can do more than execute — one that informs strategy,
+          allocates resources intelligently, measures outcomes that matter, and earns a seat at the
+          table where decisions about enrollment, reputation, and competitive positioning actually
+          get made.
         </p>
 
         <p className="leading-relaxed">
-          The shift requires two things: leadership that understands what marketing can do,
-          and marketing leaders who can prove it. Both are in short supply. But the institutions
-          that get there gain a real competitive advantage — especially now, when the demographic
-          cliff is making every prospective student more valuable.
+          One of the first things I did at the University of Denver was build a five-year marketing
+          maturity model. Not because we needed another planning document, but because we needed a
+          shared language. A way for the marketing team, senior leadership, and academic partners to
+          talk about where we are, where we&apos;re going, and what it will take to get there. Maturity
+          models make the gap visible. And visible gaps are the ones that get closed.
         </p>
 
         <p className="leading-relaxed">
-          Building a five-year marketing maturity model is one of the first things I did at
-          the University of Denver. Not because we needed a document. Because we needed a shared
-          language for what we&apos;re building — and a way to hold ourselves accountable to it.
+          The institutions that have made this shift share a few traits. Marketing has consistent
+          access to institutional data. There are defined processes for how marketing work gets
+          prioritized. The team has clear accountability for outcomes, not just outputs. And
+          leadership — above and beyond the CMO — understands what good marketing actually requires.
+        </p>
+
+        <p className="leading-relaxed">
+          That last point is often the hardest. Marketing maturity isn&apos;t primarily a marketing
+          problem. It&apos;s an organizational one. You can build the best team in higher education, but
+          if the institution doesn&apos;t understand the function, doesn&apos;t give it access to the right
+          information, and doesn&apos;t hold it accountable to real outcomes, the ceiling is low. This is
+          why organizational intelligence matters. Sustainable marketing capability is an
+          organizational design problem as much as it is a talent or technology problem.
         </p>
 
         <p className="text-sm font-medium mt-10 pt-8" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>

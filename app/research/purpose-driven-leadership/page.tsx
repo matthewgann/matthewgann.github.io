@@ -32,27 +32,45 @@ export default function Post() {
         What Purpose-Driven Leadership Actually Looks Like
       </h1>
 
-      <div className="prose-custom space-y-5" style={{ color: "var(--foreground)" }}>
+      <div className="space-y-5" style={{ color: "var(--foreground)" }}>
         <p className="text-lg leading-relaxed" style={{ color: "var(--text-muted)" }}>
           Purpose isn&apos;t a mission statement on a wall. It&apos;s the filter through which every decision
-          gets made — from hiring to campaign strategy.
+          gets made.
         </p>
 
         <p className="leading-relaxed">
-          I&apos;ve led marketing teams across some of the most complex institutions in higher education.
-          And the thing I keep coming back to — the thing that separates teams that do great work from
-          teams that just produce output — is whether the people doing the work understand <em>why</em> it matters.
+          I&apos;ve spent a lot of time in rooms where people talk about purpose. Retreats, strategy
+          sessions, brand workshops. The language is almost always right. The follow-through is where
+          things fall apart.
         </p>
 
         <p className="leading-relaxed">
-          Purpose-driven leadership isn&apos;t soft. It&apos;s one of the most practical tools you have. When your
-          team knows what they&apos;re trying to accomplish and why, they make better decisions without
-          being told. They push back when something doesn&apos;t fit. They show up differently.
+          The gap isn&apos;t a values problem. It&apos;s an operationalization problem. Saying your organization
+          is purpose-driven and actually building systems, teams, and decision frameworks around that
+          purpose are two different things. Most organizations do the first and skip the second.
         </p>
 
         <p className="leading-relaxed">
-          That shows up in the work. In the campaigns that land. In the brands that feel true.
-          In the organizations that people actually want to be part of.
+          In my experience, purpose-driven leadership shows up in the small decisions, not the big
+          ones. It&apos;s how you run a hiring process. How you prioritize competing projects. Whether
+          you&apos;re willing to say no to a campaign that would perform well but doesn&apos;t reflect what
+          you actually stand for. The big declarations are easy. The daily alignment is hard.
+        </p>
+
+        <p className="leading-relaxed">
+          Teams feel the difference. When people understand why the work matters, not just what
+          they&apos;re supposed to produce, they make better judgment calls without being told. They push
+          back when something doesn&apos;t fit. They bring ideas that go beyond their job description.
+          That kind of engagement doesn&apos;t come from a good onboarding deck. It comes from leadership
+          that actually means what it says.
+        </p>
+
+        <p className="leading-relaxed">
+          I&apos;ve seen this play out in institutional branding, enrollment marketing, and internal
+          communications work across some of the most complex higher education environments in the
+          country. The organizations that get it right aren&apos;t necessarily the ones with the biggest
+          budgets or the best talent. They&apos;re the ones where leadership and mission are genuinely
+          aligned, and where that alignment is visible in how decisions get made every day.
         </p>
 
         <p className="text-sm font-medium mt-10 pt-8" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>

@@ -9,90 +9,50 @@ const experience = [
   {
     org: "University of Denver",
     location: "Denver, Colorado",
-    period: "2025 – Present",
     roles: [
       {
         title: "Associate Vice Chancellor for Marketing and Brand Strategy",
-        highlights: [
-          "Serves as chief marketing officer for a private R1 research university with 10 schools, colleges, and 18 Division I sports programs.",
-          "Led the internal launch of the updated Denver Difference brand platform, aligning campus partners around consistent messaging.",
-          "Built a five-year marketing maturity model with correlating objectives and a measurement framework guiding operating model improvements and AI investment.",
-          "Directed integrated national brand marketing campaigns, contributing to improved aided awareness and stronger brand intent measures across primary markets.",
-        ],
+        highlight: "Serves as chief marketing officer for a private R1 research university with 10 schools, colleges, and 18 Division I sports programs.",
       },
     ],
   },
   {
     org: "Tennessee Board of Regents",
     location: "Nashville, Tennessee",
-    period: "2011 – 2025",
     roles: [
       {
         title: "Associate Vice Chancellor for Marketing, Digital Strategy, and Public Relations",
-        highlights: [
-          "Served as systemwide CMO for Tennessee's largest higher education system — 37 colleges, ~165,000 students.",
-          "Led four divisions: marketing and advertising, content and PR, web and digital strategy, and marketing operations.",
-          "Conceptualized and executed award-winning integrated marketing plans driving historic gains in dual enrollment, workforce programming, charitable giving, and reputation.",
-        ],
-      },
-      {
-        title: "Assistant Vice Chancellor for Marketing and Digital Strategy",
-        highlights: [
-          "Designed and launched the first-ever system-level integrated marketing and communications department.",
-          "Transitioned creative services from outside agencies to an in-house team, producing over $1M in annual savings.",
-          "Launched successful brand repositioning efforts for the system and its colleges, including new visual identity and message platforms.",
-        ],
-      },
-      {
-        title: "Director of Web and Digital Strategy",
-        highlights: [
-          "Led digital engagement and marketing for a system of 46 colleges and universities.",
-          "Implemented a comprehensive analytics framework using Google Analytics to enable data-driven decisions.",
-          "Established the System's first web and digital governance framework, including accessibility policies.",
-        ],
+        highlight: "Served as systemwide CMO for Tennessee's largest higher education system — 37 colleges and approximately 165,000 students.",
       },
     ],
   },
   {
     org: "Tennessee Tech University",
     location: "Cookeville, Tennessee",
-    period: "2008 – 2011",
     roles: [
       {
         title: "Director of Web and Digital Media",
-        highlights: [
-          "Led digital strategy, public-facing web properties, and digital marketing for a 10,000-student university.",
-          "Developed and implemented the university's first digital strategy plan, contributing to record enrollment growth.",
-          "Partnered with Admissions to strengthen digital recruitment strategy, including inquiry capture and lead nurturing workflows.",
-        ],
+        highlight: "Led digital strategy, public-facing web properties, and digital marketing for a 10,000-student university.",
       },
     ],
   },
   {
     org: "Wellness Healthcare",
     location: "Cookeville, Tennessee",
-    period: "2006 – 2008",
     roles: [
       {
         title: "Vice President of Marketing and Promotions",
-        highlights: [
-          "Served as CMO for one of the South's largest durable medical suppliers.",
-          "Increased revenue by 20% in year one through lead generation campaigns and new division launches.",
-        ],
+        highlight: "Served as CMO for one of the South's largest durable medical suppliers.",
       },
     ],
   },
   {
     org: "N2 The Net",
     location: "Cookeville, Tennessee",
-    period: "2003 – 2006",
     roles: [
       {
         title: "Director of Design and Development",
-        highlights: [
-          "Managed 200+ digital properties simultaneously, increasing revenues by over 300% in two years.",
-          "Built a vertical media development business focused on broadcast, real estate, and collegiate sports.",
-        ],
+        highlight: "Managed 200+ digital properties simultaneously, increasing revenues by over 300% in two years.",
       },
     ],
   },
@@ -181,26 +141,21 @@ export default function ResumePage() {
                   {job.org}
                 </h3>
                 <span className="text-sm" style={{ color: "var(--text-muted)" }}>
-                  {job.location} · {job.period}
+                  {job.location}
                 </span>
               </div>
               <div className="space-y-6 pl-0 sm:pl-4" style={{ borderLeft: "2px solid var(--border)" }}>
                 {job.roles.map((role) => (
                   <div key={role.title} className="pl-4 sm:pl-6">
                     <p
-                      className="text-base font-medium mb-3"
+                      className="text-base font-medium mb-2"
                       style={{ color: "var(--accent)", fontFamily: "var(--font-inter), sans-serif" }}
                     >
                       {role.title}
                     </p>
-                    <ul className="space-y-2 list-none p-0 m-0">
-                      {role.highlights.map((h, i) => (
-                        <li key={i} className="flex gap-3 text-sm leading-relaxed" style={{ color: "var(--foreground)" }}>
-                          <span className="mt-1.5 shrink-0 w-1 h-1 rounded-full" style={{ background: "var(--text-muted)" }} />
-                          {h}
-                        </li>
-                      ))}
-                    </ul>
+                    <p className="text-sm leading-relaxed" style={{ color: "var(--foreground)" }}>
+                      {role.highlight}
+                    </p>
                   </div>
                 ))}
               </div>
