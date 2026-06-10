@@ -18,7 +18,7 @@ const posts: Post[] = [
   {
     slug: "purpose-driven-leadership",
     title: "What Purpose-Driven Leadership Actually Looks Like",
-    date: "June 2025",
+    date: "June 2026",
     category: "Leadership",
     excerpt:
       "Purpose isn't a mission statement on a wall. It's the filter through which every decision gets made, from hiring to campaign strategy.",
@@ -26,7 +26,7 @@ const posts: Post[] = [
   {
     slug: "marketing-maturity-in-higher-ed",
     title: "Marketing Maturity in Higher Education",
-    date: "May 2025",
+    date: "May 2026",
     category: "Higher Education",
     excerpt:
       "Most universities are still treating marketing as a production function. The ones winning the future are building it as a strategic capability.",

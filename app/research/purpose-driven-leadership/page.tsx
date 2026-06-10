@@ -18,7 +18,7 @@ export default function Post() {
 
       <div className="flex flex-wrap items-center gap-3 mb-4 mt-6">
         <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>
-          June 2025
+          June 2026
         </span>
         <span
           className="text-xs px-2 py-0.5 font-medium tracking-wide"
