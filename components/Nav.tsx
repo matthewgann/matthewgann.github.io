@@ -20,8 +20,8 @@ export default function Nav() {
           <Image
             src="/mg-logo-black.png"
             alt="MG logo"
-            width={36}
-            height={36}
+            width={48}
+            height={48}
             className="opacity-90 group-hover:opacity-100 transition-opacity"
           />
         </Link>
