@@ -42,7 +42,7 @@ export default function Post() {
           The word &ldquo;differentiation&rdquo; gets used so often in higher education marketing that it has
           nearly stopped meaning anything. Every institution claims to be innovative,
           student-centered, and career-focused. Most of them mean it. None of that is
-          differentiation. Differentiation is a provable advantage — something you do or deliver
+          differentiation. Differentiation is a provable advantage: something you do or deliver
           that is uniquely true for you and demonstrably valued by the students you&apos;re trying to
           reach.
         </p>
@@ -63,19 +63,19 @@ export default function Post() {
         </p>
 
         <p className="leading-relaxed">
-          The Listen phase is about building a habit of signal collection — not one-time research,
-          but ongoing attention. That means brand tracking surveys, social listening, yield trend
+          The Listen phase is about building a habit of signal collection, not one-time research.
+          It requires ongoing attention. That means brand tracking surveys, social listening, yield trend
           analysis, CRM behavior, admit surveys, and outcomes data. At the University of Denver, we
           track what students and families say in our surveys, what non-applicants list as the reason
           they chose another institution, and what our graduating students say transformed them. Each
           data stream tells a different part of the story. Together, they show you where reality and
-          perception diverge — and where your real advantages are hiding.
+          perception diverge and where your real advantages are hiding.
         </p>
 
         <p className="leading-relaxed">
           The Analyze phase uses a framework I call the Proof&ndash;Pride&ndash;Promise map. Proof is your
           measurable, demonstrable advantage: graduation outcomes, ROI, employment rates, geographic
-          access, merit aid. Pride is the emotional layer — belonging, mentorship, identity, place,
+          access, merit aid. Pride is the emotional layer: belonging, mentorship, identity, place,
           the experience of becoming. Promise is the transformation your institution delivers and the
           future your students can actually picture. When you map student value drivers against
           institutional strengths and look for the intersections that are both emotionally resonant
@@ -85,7 +85,7 @@ export default function Post() {
 
         <p className="leading-relaxed">
           The Activate phase is where institutions most often either underinvest or overcorrect. The
-          output isn&apos;t a tagline — it&apos;s a platform. At DU, we developed The Denver Difference as a
+          output isn&apos;t a tagline. It&apos;s a platform. At DU, we developed The Denver Difference as a
           flexible system rather than a rigid statement. It unifies storytelling across audiences
           while staying grounded in real data: our location at the intersection of the Rockies and a
           major business hub, 93% of graduates employed or in graduate school within six months,
@@ -98,8 +98,8 @@ export default function Post() {
           The framework is iterative by design. Markets shift, student priorities evolve, and what
           was a differentiator last year may be table stakes next year. Doing this once and
           enshrining the result is a snapshot, not a strategy. The institutions that will sustain
-          their competitive positions are the ones that treat differentiation as a practice —
-          something they return to systematically, not a branding project they complete. And the
+          their competitive positions are the ones that treat differentiation as a practice,
+          returning to it systematically rather than completing it as a one-time project. And the
           standard isn&apos;t uniqueness. It&apos;s provability. Different doesn&apos;t mean no one else does it.
           It means it&apos;s uniquely true and demonstrable for you.
         </p>
