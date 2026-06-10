@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import posts from "@/lib/posts";
 
 const expertise = [
   {
@@ -34,22 +35,6 @@ const expertise = [
   },
 ];
 
-const recentPosts = [
-  {
-    slug: "purpose-driven-leadership",
-    title: "What Purpose-Driven Leadership Actually Looks Like",
-    date: "2025",
-    excerpt:
-      "Purpose isn't a mission statement on a wall. It's the filter through which every decision gets made, from hiring to campaign strategy.",
-  },
-  {
-    slug: "marketing-maturity-in-higher-ed",
-    title: "Marketing Maturity in Higher Education",
-    date: "2025",
-    excerpt:
-      "Most universities are still treating marketing as a production function. The ones winning the future are building it as a strategic capability.",
-  },
-];
 
 export default function Home() {
   return (
@@ -215,7 +200,7 @@ export default function Home() {
           </div>
 
           <div className="space-y-10">
-            {recentPosts.map((post) => (
+            {posts.slice(0, 2).map((post) => (
               <article key={post.slug}>
                 <Link href={`/research/${post.slug}`} style={{ textDecoration: "none" }}>
                   <div className="flex flex-col gap-1 cursor-pointer">
