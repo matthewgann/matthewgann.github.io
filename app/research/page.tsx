@@ -16,8 +16,7 @@ export default function ResearchPage() {
           Research &amp; Thoughts
         </h1>
         <p className="text-lg max-w-2xl leading-relaxed" style={{ color: "var(--text-muted)" }}>
-          Writing on marketing strategy, leadership, higher education, and what it means to do
-          purpose-driven work in complex institutions.
+          Musings on marketing strategy, leadership, higher education, and what it means to do purpose-driven.
         </p>
       </div>
 
