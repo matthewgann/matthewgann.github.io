@@ -6,32 +6,32 @@ const expertise = [
   {
     title: "Brand Strategy",
     description:
-      "Building brand platforms that give institutions a clear identity, a consistent voice, and the strategic foundation to compete for students, talent, and reputation.",
+      "Developing integrated brand platforms and comprehensive marketing strategies that give institutions a clear identity, a consistent voice, and the positioning to compete for students, talent, and reputation.",
   },
   {
-    title: "Organizational Intelligence",
+    title: "Business & Organizational Intelligence",
     description:
-      "Applying systems thinking and organizational research to understand how institutions learn, adapt, and make decisions. The goal is building marketing capability that is durable, not dependent on any one person or cycle.",
+      "Applying research and systems thinking to understand how institutions learn, adapt, and make decisions. Building marketing capability that is structural and durable, not dependent on any one leader or budget cycle.",
   },
   {
     title: "Marketing Operations",
     description:
-      "Elevating marketing from a production function to a core business driver, with the governance, measurement frameworks, and operating models that make it sustainable.",
+      "Elevating marketing from a production function to a strategic business driver, with governance structures, measurement frameworks, and operating models that scale and sustain results.",
   },
   {
     title: "Reputation & Crisis Management",
     description:
-      "Developing proactive reputation strategies and crisis communications frameworks that protect institutional trust when it matters most.",
+      "Developing proactive reputation strategies, issues management frameworks, and crisis communications plans that protect institutional trust when it matters most.",
   },
   {
     title: "Leadership & Organizational Development",
     description:
-      "Building and developing high-performing teams, designing organizational structures that scale, and leading change in complex, matrixed institutions.",
+      "Building and leading high-performing teams, fostering cross-functional partnerships, and driving organizational change in complex, matrixed higher education institutions.",
   },
   {
     title: "Digital Strategy & Analytics",
     description:
-      "Connecting digital investment to institutional outcomes, from SEO and paid media to analytics infrastructure, web strategy, and data-informed campaign planning.",
+      "Connecting digital investment to institutional outcomes, from SEO and paid media to analytics infrastructure, web governance, and data-informed campaign planning.",
   },
 ];
 

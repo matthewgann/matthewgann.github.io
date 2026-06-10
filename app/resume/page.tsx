@@ -68,7 +68,11 @@ const education = [
   },
   {
     institution: "Tennessee Tech University",
-    credentials: ["Bachelor of Science, Business Administration / Management Information Systems"],
+    credentials: ["Bachelor of Science, Business Administration / Business Management, Management Information Systems"],
+  },
+  {
+    institution: "University of Tennessee",
+    credentials: ["Tennessee Certified Economic Developer"],
   },
   {
     institution: "Public Relations Society of America",
@@ -87,6 +91,41 @@ const skills = [
   "Marketing Automation & AI",
   "Enrollment Marketing",
   "Executive Communications",
+];
+
+const researchAreas = [
+  "Marketing Operations in Higher Education",
+  "Business and Organizational Intelligence",
+  "Leadership Effectiveness",
+];
+
+const awards = [
+  "Otis Floyd Jr. Award for Excellence in Higher Education Administration",
+  "Charles Holmes Award",
+];
+
+const memberships = [
+  "American Advertising Federation",
+  "American Marketing Association",
+  "International Leadership Association",
+  "National Association of Student Personnel Administrators",
+  "National Council for Marketing and Public Relations",
+  "Project Management Institute",
+  "Public Relations Society of America",
+  "Tennessee College Public Relations Association",
+  "University and College Designers Association",
+];
+
+const community = [
+  { org: "PRSA – Counselors to Higher Education", role: "National Executive Committee Member" },
+  { org: "CASE", role: "Faculty Member, National Conference on Marketing and Brand" },
+  { org: "Public Relations Society of America", role: "APR Panelist" },
+  { org: "National Association of Student Personnel Administrators", role: "National Conference Program Reviewer" },
+  { org: "TN ACHIEVES, UT ACHIEVES", role: "Mentor, Ambassador" },
+  { org: "University of Tennessee CIS", role: "Capstone Mentor" },
+  { org: "Youth Villages", role: "Advisory Board Member" },
+  { org: "Tennessee College Public Relations Association", role: "Previous President, Secretary" },
+  { org: "Open Nashville", role: "Previous President, Financial Officer, and Executive Board Member" },
 ];
 
 export default function ResumePage() {
@@ -207,6 +246,61 @@ export default function ResumePage() {
           </div>
         </section>
       </div>
+
+      <hr className="mt-12 mb-12" style={{ borderColor: "var(--border)" }} />
+
+      {/* Research Areas, Awards, Memberships */}
+      <div className="grid sm:grid-cols-3 gap-12 mb-14">
+        <section>
+          <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
+            Research Areas
+          </h2>
+          <ul className="space-y-2 list-none p-0 m-0">
+            {researchAreas.map((area) => (
+              <li key={area} className="text-sm" style={{ color: "var(--foreground)" }}>{area}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
+            Personal Awards
+          </h2>
+          <ul className="space-y-2 list-none p-0 m-0">
+            {awards.map((award) => (
+              <li key={award} className="text-sm" style={{ color: "var(--foreground)" }}>{award}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
+            Memberships
+          </h2>
+          <ul className="space-y-2 list-none p-0 m-0">
+            {memberships.map((m) => (
+              <li key={m} className="text-sm" style={{ color: "var(--foreground)" }}>{m}</li>
+            ))}
+          </ul>
+        </section>
+      </div>
+
+      <hr className="mb-12" style={{ borderColor: "var(--border)" }} />
+
+      {/* Community */}
+      <section className="mb-14">
+        <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
+          Community
+        </h2>
+        <div className="grid sm:grid-cols-2 gap-6">
+          {community.map((item) => (
+            <div key={item.org}>
+              <p className="text-sm font-semibold mb-0.5" style={{ color: "var(--foreground)" }}>{item.org}</p>
+              <p className="text-sm" style={{ color: "var(--text-muted)" }}>{item.role}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
