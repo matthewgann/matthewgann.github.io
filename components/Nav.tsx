@@ -8,6 +8,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/resume", label: "Resume" },
   { href: "/research", label: "Research & Thoughts" },
+  { href: "/contact", label: "Get in Touch" },
 ];
 
 export default function Nav() {

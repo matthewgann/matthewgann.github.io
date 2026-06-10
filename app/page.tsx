@@ -5,17 +5,32 @@ const expertise = [
   {
     title: "Brand Strategy",
     description:
-      "Translating organizational vision into compelling brand platforms that build trust, drive engagement, and strengthen institutional reputation.",
+      "Building brand platforms that give institutions a clear identity, a consistent voice, and the strategic foundation to compete for students, talent, and reputation.",
   },
   {
-    title: "Marketing & Communications",
+    title: "Organizational Intelligence",
     description:
-      "Designing integrated, data-driven campaigns across digital and traditional channels — from national awareness to enrollment and community engagement.",
+      "Applying systems thinking and organizational research to understand how institutions learn, adapt, and make decisions — and how to build marketing capability that lasts.",
   },
   {
-    title: "Leadership & Team Building",
+    title: "Marketing Operations",
     description:
-      "Building and leading high-performing marketing organizations, managing multi-million-dollar budgets, and fostering cultures of creativity and accountability.",
+      "Elevating marketing from a production function to a core business driver — with the governance, measurement frameworks, and operating models that make it sustainable.",
+  },
+  {
+    title: "Reputation & Crisis Management",
+    description:
+      "Developing proactive reputation strategies and crisis communications frameworks that protect institutional trust when it matters most.",
+  },
+  {
+    title: "Leadership & Organizational Development",
+    description:
+      "Building and developing high-performing teams, designing organizational structures that scale, and leading change in complex, matrixed institutions.",
+  },
+  {
+    title: "Digital Strategy & Analytics",
+    description:
+      "Connecting digital investment to institutional outcomes — from SEO and paid media to analytics infrastructure, web strategy, and data-informed campaign planning.",
   },
 ];
 
