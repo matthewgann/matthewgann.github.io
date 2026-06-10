@@ -74,28 +74,10 @@ export default function Home() {
             className="text-lg max-w-2xl leading-relaxed"
             style={{ color: "var(--text-muted)" }}
           >
-            Marketing and communications executive dedicated to the students and
-            communities that higher education exists to serve. Grounded in
-            organizational intelligence and focused on elevating marketing as a
-            core strategic function in higher education.
+            Building intelligent marketing operations that help higher education
+            institutions connect strategy, story, and service to students and
+            their communities.
           </p>
-
-          <div className="flex gap-4 mt-8">
-            <Link
-              href="/resume"
-              className="px-6 py-3 text-sm font-medium tracking-wide transition-opacity duration-200 hover:opacity-80 cursor-pointer"
-              style={{ background: "var(--foreground)", color: "var(--background)" }}
-            >
-              View Resume
-            </Link>
-            <Link
-              href="/research"
-              className="px-6 py-3 text-sm font-medium tracking-wide transition-opacity duration-200 hover:opacity-70 cursor-pointer"
-              style={{ border: "1px solid var(--border)", color: "var(--foreground)", background: "transparent" }}
-            >
-              Research &amp; Thoughts
-            </Link>
-          </div>
         </div>
       </section>
 
