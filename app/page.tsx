@@ -41,12 +41,12 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 flex flex-col items-center text-center">
-        <div className="w-40 h-40 rounded-full overflow-hidden mb-8 ring-4 ring-offset-2" style={{ outline: "4px solid var(--border)" }}>
+        <div className="w-72 h-72 rounded-full overflow-hidden mb-8" style={{ outline: "4px solid var(--border)" }}>
           <Image
             src="/headshot.jpg"
             alt="Matthew Gann, Ph.D."
-            width={160}
-            height={160}
+            width={288}
+            height={288}
             className="w-full h-full object-cover object-top"
             priority
           />
@@ -61,9 +61,9 @@ export default function Home() {
         </p>
 
         <p className="text-lg max-w-2xl leading-relaxed" style={{ color: "var(--text-muted)" }}>
-          Marketing and communications executive building brands that move
-          higher education forward. Chief Marketing Officer at the University
-          of Denver.
+          Marketing and communications executive dedicated to the students and
+          communities that higher education exists to serve. Chief Marketing
+          Officer at the University of Denver.
         </p>
 
         <div className="flex gap-4 mt-8">
@@ -79,7 +79,7 @@ export default function Home() {
             className="px-6 py-3 text-sm font-medium tracking-wide transition-opacity duration-200 hover:opacity-70 cursor-pointer"
             style={{ border: "1px solid var(--border)", color: "var(--foreground)", background: "transparent" }}
           >
-            Read My Writing
+            Research &amp; Thoughts
           </Link>
         </div>
       </section>
@@ -161,11 +161,11 @@ export default function Home() {
         <hr style={{ borderColor: "var(--border)" }} />
       </div>
 
-      {/* Recent Writing */}
+      {/* Research & Thoughts */}
       <section className="max-w-4xl mx-auto px-6 py-16">
         <div className="flex items-baseline justify-between mb-10">
           <h2 className="text-3xl" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-            Recent Writing
+            Research &amp; Thoughts
           </h2>
           <Link href="/research" className="text-sm font-medium cursor-pointer" style={{ color: "var(--accent)", textDecoration: "none" }}>
             All posts →
