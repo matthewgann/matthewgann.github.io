@@ -8,6 +8,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "data-driven-differentiation",
+    title: "Data-Driven Differentiation in Higher Education",
+    date: "June 2026",
+    category: "Higher Education",
+    excerpt:
+      "Most institutions know they need to stand out. Few have a repeatable system for figuring out what they actually stand out for.",
+  },
+  {
     slug: "purpose-driven-leadership",
     title: "What Purpose-Driven Leadership Actually Looks Like",
     date: "June 2025",
