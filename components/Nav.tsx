@@ -15,19 +15,19 @@ export default function Nav() {
 
   return (
     <header className="w-full border-b" style={{ borderColor: "var(--border)", background: "var(--background)" }}>
-      <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group" aria-label="Matthew Gann home">
+      <div className="max-w-4xl mx-auto px-6 pt-8 pb-6 flex flex-col items-center gap-5">
+        <Link href="/" aria-label="Matthew Gann home">
           <Image
             src="/mg-logo-black.png"
             alt="MG logo"
-            width={48}
-            height={48}
-            className="opacity-90 group-hover:opacity-100 transition-opacity"
+            width={80}
+            height={80}
+            className="opacity-90 hover:opacity-100 transition-opacity"
           />
         </Link>
 
         <nav aria-label="Main navigation">
-          <ul className="flex items-center gap-6 sm:gap-8 list-none m-0 p-0">
+          <ul className="flex items-center gap-6 sm:gap-10 list-none m-0 p-0">
             {links.map(({ href, label }) => {
               const active = pathname === href;
               return (

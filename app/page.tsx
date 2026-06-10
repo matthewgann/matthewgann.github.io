@@ -102,21 +102,12 @@ export default function Home() {
       {/* ── About ───────────────────────────────────────────── */}
       <section style={{ background: "#F2E9DC" }}>
         <div className="max-w-4xl mx-auto px-6 py-16">
-          <div className="flex flex-col items-center mb-10">
-            <Image
-              src="/mg-logo-black.png"
-              alt="MG monogram"
-              width={96}
-              height={96}
-              className="mb-6 opacity-90"
-            />
-            <h2
-              className="text-3xl"
-              style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}
-            >
-              About Me
-            </h2>
-          </div>
+          <h2
+            className="text-3xl mb-8"
+            style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}
+          >
+            About Me
+          </h2>
           <div className="grid sm:grid-cols-5 gap-10 items-start">
             <div className="sm:col-span-3 space-y-4">
               <p style={{ color: "var(--foreground)" }}>
