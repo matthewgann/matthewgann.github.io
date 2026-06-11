@@ -48,8 +48,8 @@ export default function Post() {
         </p>
 
         <p className="leading-relaxed">
-          The problem isn&apos;t that institutions lack distinguishing characteristics. The problem is
-          that most haven&apos;t built a practice for discovering and proving them. They rely on
+          Most institutions have plenty of distinguishing characteristics. What they lack is a
+          practice for discovering and proving them. They rely on
           tradition, on what leadership believes, or on what sounds good in a board presentation.
           Data-driven differentiation is a different approach. It starts with listening to the
           market, synthesizes what you find against what you can actually deliver, and activates the
@@ -100,8 +100,8 @@ export default function Post() {
           enshrining the result is a snapshot, not a strategy. The institutions that will sustain
           their competitive positions are the ones that treat differentiation as a practice,
           returning to it systematically rather than completing it as a one-time project. And the
-          standard isn&apos;t uniqueness. It&apos;s provability. Different doesn&apos;t mean no one else does it.
-          It means it&apos;s uniquely true and demonstrable for you.
+          standard is provability, not uniqueness. Different means uniquely true and demonstrable
+          for you, not that no one else does it.
         </p>
 
         <p className="text-sm font-medium mt-10 pt-8" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>

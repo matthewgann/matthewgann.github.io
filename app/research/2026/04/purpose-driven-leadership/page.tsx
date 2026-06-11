@@ -34,8 +34,8 @@ export default function Post() {
 
       <div className="space-y-5" style={{ color: "var(--foreground)" }}>
         <p className="text-lg leading-relaxed" style={{ color: "var(--text-muted)" }}>
-          Purpose isn&apos;t a mission statement on a wall. It&apos;s the filter through which every decision
-          gets made.
+          A mission statement on a wall is decoration. Purpose is the filter through which every
+          decision gets made.
         </p>
 
         <p className="leading-relaxed">
@@ -45,7 +45,7 @@ export default function Post() {
         </p>
 
         <p className="leading-relaxed">
-          The gap isn&apos;t a values problem. It&apos;s an operationalization problem. Saying your organization
+          The gap is an operationalization problem. Saying your organization
           is purpose-driven and actually building systems, teams, and decision frameworks around that
           purpose are two different things. Most organizations do the first and skip the second.
         </p>

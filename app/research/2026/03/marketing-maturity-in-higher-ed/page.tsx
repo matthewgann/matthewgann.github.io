@@ -70,8 +70,8 @@ export default function Post() {
         </p>
 
         <p className="leading-relaxed">
-          That last point is often the hardest. Marketing maturity isn&apos;t primarily a marketing
-          problem. It&apos;s an organizational one. You can build the best team in higher education, but
+          That last point is often the hardest. Marketing maturity is primarily an organizational
+          problem. You can build the best team in higher education, but
           if the institution doesn&apos;t understand the function, doesn&apos;t give it access to the right
           information, and doesn&apos;t hold it accountable to real outcomes, the ceiling is low. This is
           why organizational intelligence matters. Sustainable marketing capability is an
