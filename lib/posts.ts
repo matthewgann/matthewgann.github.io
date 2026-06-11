@@ -10,7 +10,7 @@ export type Post = {
 const posts: Post[] = [
   {
     slug: "future-of-higher-ed-websites",
-    path: "/research/future-of-higher-ed-websites",
+    path: "/research/2026/06/future-of-higher-ed-websites",
     title: "The Higher Ed Website Is Dead. We Just Haven't Buried It Yet.",
     date: "June 2026",
     category: "Higher Education",
