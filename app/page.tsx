@@ -34,7 +34,7 @@ const expertise = [
   {
     title: "Digital Strategy & Analytics",
     description:
-      "Connecting digital investment to institutional outcomes, from SEO and paid media to analytics infrastructure, web governance, and data-informed campaign planning.",
+      "Connecting digital investment to institutional outcomes, from SEO, AEO, and GEO to paid media, analytics infrastructure, web governance, and data-informed campaign planning.",
   },
 ];
 
