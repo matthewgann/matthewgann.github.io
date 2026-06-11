@@ -3,6 +3,7 @@ import Link from "next/link";
 import posts from "@/lib/posts";
 import ScrollReveal from "@/components/ScrollReveal";
 import HeroVideo from "@/components/HeroVideo";
+import ImageBand from "@/components/ImageBand";
 
 const expertise = [
   {
@@ -158,6 +159,8 @@ export default function Home() {
         </ScrollReveal>
       </section>
 
+      <ImageBand src="/band-colorado.jpg" alt="Matthew Gann walking near Chapel on the Rock, Colorado" position="left 55%" />
+
       {/* ── Expertise ───────────────────────────────────────── */}
       <section style={{ background: "#FFFFFF" }}>
         <ScrollReveal>
@@ -187,6 +190,8 @@ export default function Home() {
         </div>
         </ScrollReveal>
       </section>
+
+      <ImageBand src="/band-ama.jpg" alt="Matthew Gann presenting at AMA 2025 Workshop" position="center 30%" />
 
       {/* ── Research & Thoughts ─────────────────────────────── */}
       <section style={{ background: "#1C1917" }}>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ScrollReveal from "@/components/ScrollReveal";
+import ImageBand from "@/components/ImageBand";
 
 export const metadata: Metadata = {
   title: "Resume | Matthew Gann, Ph.D.",
@@ -200,6 +201,8 @@ export default function ResumePage() {
           </div>
         </ScrollReveal>
       </section>
+
+      <ImageBand src="/band-conference.jpg" alt="Matthew Gann at a professional conference" position="center 25%" />
 
       {/* Skills & Education */}
       <section style={{ background: "#F2E9DC" }}>

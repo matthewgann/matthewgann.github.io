@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import posts from "@/lib/posts";
 import ScrollReveal from "@/components/ScrollReveal";
+import ImageBand from "@/components/ImageBand";
 
 export const metadata: Metadata = {
   title: "Research & Thoughts | Matthew Gann, Ph.D.",
@@ -22,6 +23,8 @@ export default function ResearchPage() {
           </p>
         </div>
       </section>
+
+      <ImageBand src="/band-car.jpg" alt="Matthew Gann at an automotive show" position="35% center" />
 
       {/* Post list */}
       <section style={{ background: "#FFFFFF" }}>
