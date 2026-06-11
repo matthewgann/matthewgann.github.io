@@ -43,11 +43,12 @@ export default function Post() {
 
         <p className="leading-relaxed">
           There is a structural tension at the heart of higher education marketing that rarely gets
-          named directly. Marketers in this sector own the enrollment number. They&apos;re accountable
-          for yield rates, pipeline volume, brand awareness, and demand. What they rarely own is
-          the product. Program decisions, naming conventions, curricular design, pricing,
-          positioning: these belong to academic governance, to deans, to provosts, to faculty
-          senates. Marketing gets handed the output and asked to find the audience.
+          named directly. Brand marketing supports the work of admissions and admissions marketing.
+          It supports enrollment, including yield, and it owns brand awareness, reputation, and
+          demand. What it rarely owns is the product. Program decisions, naming conventions,
+          curricular design, pricing, positioning: these belong to academic governance, to deans,
+          to provosts, to faculty senates. Marketing gets handed the output and asked to find the
+          audience.
         </p>
 
         <p className="leading-relaxed">
