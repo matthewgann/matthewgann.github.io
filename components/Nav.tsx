@@ -36,44 +36,14 @@ export default function Nav() {
                   {label === "Get in Touch" ? (
                     <Link
                       href={href}
-                      className="text-sm font-medium tracking-wide transition-colors duration-150 cursor-pointer px-4 py-1.5"
-                      style={{
-                        color: active ? "var(--background)" : "var(--foreground)",
-                        textDecoration: "none",
-                        border: `1.5px solid ${active ? "var(--accent)" : "var(--foreground)"}`,
-                        background: active ? "var(--accent)" : "transparent",
-                      }}
-                      onMouseEnter={(e) => {
-                        const el = e.currentTarget as HTMLElement;
-                        if (!active) {
-                          el.style.color = "var(--background)";
-                          el.style.background = "var(--foreground)";
-                        }
-                      }}
-                      onMouseLeave={(e) => {
-                        const el = e.currentTarget as HTMLElement;
-                        if (!active) {
-                          el.style.color = "var(--foreground)";
-                          el.style.background = "transparent";
-                        }
-                      }}
+                      className={`text-sm font-medium tracking-wide cursor-pointer px-4 py-1.5 nav-cta${active ? " nav-cta-active" : ""}`}
                     >
                       {label}
                     </Link>
                   ) : (
                     <Link
                       href={href}
-                      className="text-sm font-medium tracking-wide transition-colors duration-150 cursor-pointer"
-                      style={{
-                        color: active ? "var(--accent)" : "var(--foreground)",
-                        textDecoration: "none",
-                      }}
-                      onMouseEnter={(e) => {
-                        if (!active) (e.target as HTMLElement).style.color = "var(--accent)";
-                      }}
-                      onMouseLeave={(e) => {
-                        if (!active) (e.target as HTMLElement).style.color = "var(--foreground)";
-                      }}
+                      className={`text-sm font-medium tracking-wide cursor-pointer nav-link${active ? " nav-link-active" : ""}`}
                     >
                       {label}
                     </Link>
