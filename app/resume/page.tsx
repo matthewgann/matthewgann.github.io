@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const experience = [
   {
     org: "Independent Marketing Consultant",
-    location: "Nashville, Tennessee &amp; Denver, Colorado",
+    location: "Nashville, Tennessee & Denver, Colorado",
     roles: [
       {
         title: "Marketing Strategy Consultant",
