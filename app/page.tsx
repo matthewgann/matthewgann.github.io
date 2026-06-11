@@ -145,7 +145,7 @@ export default function Home() {
               </p>
               {[
                 { label: "Current Role", value: "Associate Vice Chancellor & CMO, University of Denver" },
-                { label: "Based In", value: "Denver, Colorado" },
+                { label: "Based In", value: "Denver, CO & Nashville, TN" },
                 { label: "Experience", value: "Two decades spanning higher education, healthcare, agency, and consulting" },
                 { label: "Education", value: "Ph.D., Leadership & Organizational Intelligence" },
                 { label: "Credentials", value: "Accredited in Public Relations (APR) · Tennessee Certified Economic Developer" },

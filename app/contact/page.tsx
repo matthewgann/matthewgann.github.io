@@ -66,7 +66,7 @@ export default function ContactPage() {
                   Location
                 </p>
                 <p className="text-lg font-medium" style={{ color: "var(--foreground)" }}>
-                  Denver, Colorado
+                  Denver, Colorado &amp; Nashville, Tennessee
                 </p>
               </div>
             </div>
