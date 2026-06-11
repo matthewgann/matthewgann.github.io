@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import posts from "@/lib/posts";
 import ScrollReveal from "@/components/ScrollReveal";
+import HeroVideo from "@/components/HeroVideo";
 
 const expertise = [
   {
@@ -42,16 +43,7 @@ export default function Home() {
     <>
       {/* ── Hero ────────────────────────────────────────────── */}
       <section className="hero-bg relative overflow-hidden">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ opacity: 0.65 }}
-        >
-          <source src="/hero-bg.mp4" type="video/mp4" />
-        </video>
+        <HeroVideo />
         {/* Warm parchment overlay — keeps dark text readable, ties to brand palette */}
         <div className="absolute inset-0" style={{ background: "rgba(248, 240, 222, 0.72)" }} />
         <div className="relative z-10 max-w-4xl mx-auto px-6 pt-20 pb-16 flex flex-col items-center text-center">
