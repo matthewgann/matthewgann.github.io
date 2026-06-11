@@ -34,8 +34,11 @@ export default function Post() {
 
       <div className="space-y-5" style={{ color: "var(--foreground)" }}>
         <p className="text-lg leading-relaxed" style={{ color: "var(--text-muted)" }}>
-          Higher education marketers are held accountable for enrollment outcomes they don&apos;t
-          control. That&apos;s a structural problem. In some states, it has gotten much worse.
+          My partner, a therapist, mentioned the other day that a client, a mid-level marketer,
+          described their situation as &ldquo;lots of responsibility with little authority.&rdquo; Marketers
+          across every industry are held accountable for outcomes they don&apos;t directly control.
+          That&apos;s a structural problem. It&apos;s worse in higher education. And in some states,
+          it&apos;s at a breaking point.
         </p>
 
         <p className="leading-relaxed">
