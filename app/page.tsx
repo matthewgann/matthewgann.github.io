@@ -48,17 +48,19 @@ export default function Home() {
         <div className="absolute inset-0" style={{ background: "rgba(248, 240, 222, 0.72)" }} />
         <div className="relative z-10 max-w-4xl mx-auto px-6 pt-20 pb-16 flex flex-col items-center text-center">
           <div
-            className="w-72 h-72 rounded-full overflow-hidden mb-8"
-            style={{ outline: "4px solid var(--border)" }}
+            className="rounded-full mb-8 shrink-0"
+            style={{ padding: "20px", border: "2px solid var(--accent)" }}
           >
-            <Image
-              src="/headshot.jpg"
-              alt="Matthew Gann, Ph.D."
-              width={288}
-              height={288}
-              className="w-full h-full object-cover object-top"
-              priority
-            />
+            <div className="w-72 h-72 rounded-full overflow-hidden">
+              <Image
+                src="/headshot.jpg"
+                alt="Matthew Gann, Ph.D."
+                width={288}
+                height={288}
+                className="w-full h-full object-cover object-top"
+                priority
+              />
+            </div>
           </div>
 
           <h1

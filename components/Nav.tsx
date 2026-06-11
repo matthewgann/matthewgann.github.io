@@ -36,7 +36,7 @@ export default function Nav() {
                   {label === "Get in Touch" ? (
                     <Link
                       href={href}
-                      className={`text-sm font-medium tracking-wide cursor-pointer px-4 py-1.5 nav-cta${active ? " nav-cta-active" : ""}`}
+                      className={`text-sm font-medium tracking-wide cursor-pointer px-4 py-1.5 sm:px-0 sm:py-0 nav-cta${active ? " nav-cta-active" : ""}`}
                     >
                       {label}
                     </Link>

@@ -63,8 +63,9 @@
   transform: scaleX(1);
 }
 
-/* Get in Touch button */
+/* Get in Touch — box on mobile, underline on desktop */
 .nav-cta {
+  position: relative;
   color: var(--foreground);
   border: 1.5px solid var(--foreground);
   background: transparent;
@@ -75,13 +76,48 @@
 .nav-cta:hover {
   color: var(--background);
   background: var(--foreground);
-  border-color: var(--foreground);
 }
 
 .nav-cta-active {
   color: var(--background) !important;
   background: var(--accent) !important;
   border-color: var(--accent) !important;
+}
+
+@media (min-width: 640px) {
+  .nav-cta {
+    border: none;
+    transition: color 0.2s ease;
+  }
+
+  .nav-cta:hover {
+    color: var(--accent);
+    background: transparent;
+  }
+
+  .nav-cta::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .nav-cta:hover::after,
+  .nav-cta-active::after {
+    transform: scaleX(1);
+  }
+
+  .nav-cta-active {
+    color: var(--accent) !important;
+    background: transparent !important;
+    border-color: transparent !important;
+  }
 }
 
 html {
