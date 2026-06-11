@@ -39,8 +39,8 @@ export default function Post() {
         </p>
 
         <p className="leading-relaxed">
-          The higher education website as we know it was not built by committee. It was built by
-          colleges and departments that wanted to own their piece of the pie. Every school, every
+          The higher education website as we know it was built by colleges and departments that
+          wanted to own their piece of the pie. Every school, every
           office, every program needed a home, a voice, and a place to put their content. The
           result is what most institutions still have today: a five-hundred-page information
           repository organized around internal structure rather than student intent, that asks
@@ -52,10 +52,9 @@ export default function Post() {
         </p>
 
         <p className="leading-relaxed">
-          What replaces it is not a better sitemap. It is a personalized, context-aware experience
-          that knows something about you before you arrive and delivers relevance on first contact.
-          This is not a vision statement. The data infrastructure to make it real already exists
-          at most institutions. CRM systems hold behavioral signals, campaign history, and
+          What replaces it is a personalized, context-aware experience that knows something about
+          you before you arrive and delivers relevance on first contact. The data infrastructure
+          to make it real already exists at most institutions. CRM systems hold behavioral signals, campaign history, and
           demographic context. Intent data tells us what someone searched before they clicked.
           Application and inquiry data tells us where someone is in their journey. The pieces are
           there. What most institutions have not done is connect them to the front door.
@@ -67,8 +66,8 @@ export default function Post() {
           an Instagram ad about clinical rotations. You have been to the financial aid page twice.
           The website that greets you does not show you what everyone sees. It shows you what you
           came to find, framed around how a nursing degree fits your life, with financial aid
-          information front and center because that is clearly where your head is. That is not
-          personalization as a gimmick. That is basic respect for the user&apos;s time and intent.
+          information front and center because that is clearly where your head is. Personalization
+          done right is just basic respect for a person&apos;s time.
         </p>
 
         <p className="leading-relaxed">
@@ -88,8 +87,8 @@ export default function Post() {
           love about it. The channel that worked three years ago is table stakes today. The website
           that won awards in 2019 is an anchor in 2026. The schools still proud of what they
           launched during COVID are competing against schools rebuilding for a world where the
-          website is not a brochure, not a directory, and not a self-guided tour. It is the first
-          intelligent conversation a student has with your institution. You either show up ready
+          website is the first intelligent conversation a student has with your institution, not a
+          brochure or a directory or a tour guide. You either show up ready
           to have that conversation or you do not show up at all.
         </p>
 
@@ -97,8 +96,8 @@ export default function Post() {
           The institutions that get there first will not just convert better. They will build trust
           faster, answer objections earlier, and show prospective students something most schools
           never manage: that they actually understand what students are going through when they are
-          trying to choose a college. That is not a technology problem. It is a will problem. The
-          technology is ready. The question is whether the institution is.
+          trying to choose a college. Will is the actual constraint. The technology is ready.
+          The question is whether the institution is.
         </p>
 
         <p className="text-sm font-medium mt-10 pt-8" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>

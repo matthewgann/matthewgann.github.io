@@ -48,8 +48,8 @@ export default function Post() {
         </p>
 
         <p className="leading-relaxed">
-          This is not an argument against academic governance. Faculty should shape curriculum.
-          Deans should steward their schools. The problem is that the chain from &ldquo;what should we
+          Faculty should shape curriculum. Deans should steward their schools. The problem is
+          that the chain from &ldquo;what should we
           offer&rdquo; to &ldquo;who wants it and why&rdquo; almost never runs in both directions. Marketing gets
           called in after the decision. The program has been named, designed, approved through
           shared governance, and slotted into the catalog. Now fill it.
@@ -59,9 +59,8 @@ export default function Post() {
           The consequences are predictable. Programs named with disciplinary precision that no
           prospective student would ever search for. Degrees built to satisfy internal stakeholders
           rather than employer or student demand. Institutional positioning that reflects
-          self-perception rather than competitive differentiation. These aren&apos;t failures of
-          marketing execution. They&apos;re failures of sequencing. The market question was asked too
-          late, if it was asked at all.
+          self-perception rather than competitive differentiation. The problem, in every case, is
+          sequencing. The market question was asked too late, if it was asked at all.
         </p>
 
         <p className="leading-relaxed">
@@ -76,8 +75,8 @@ export default function Post() {
         </p>
 
         <p className="leading-relaxed">
-          These are not the same discipline. Enrollment marketing is direct response. It is
-          funnel-driven, audience-targeted, and optimized for conversion. Brand marketing builds
+          Enrollment marketing is direct response: funnel-driven, audience-targeted, and
+          optimized for conversion. Brand marketing builds
           the conditions under which enrollment marketing works. It shapes how an institution is
           perceived before a student ever enters the funnel, before a family schedules a campus
           visit, before a counselor makes a recommendation. The brand is the foundation.
@@ -114,9 +113,8 @@ export default function Post() {
 
         <p className="leading-relaxed">
           My own doctoral research bears this out directly. When I examined what senior
-          institutional leaders actually want from their marketing function, the answer wasn&apos;t
-          executional capacity. It wasn&apos;t creative output. Leaders want strategic counsel on
-          market position. They want someone who can translate student demand, competitive
+          institutional leaders actually want from their marketing function, the answer was
+          strategic counsel on market position. They want someone who can translate student demand, competitive
           landscape, and brand health into decisions about where to invest and where to pull back.
           They want a thought partner, not someone to make it pretty.
         </p>
