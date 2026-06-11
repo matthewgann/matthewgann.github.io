@@ -115,9 +115,8 @@ export default function Post() {
         </p>
 
         <p className="leading-relaxed">
-          My own doctoral research bears this out directly. When I examined what senior
-          institutional leaders actually want from their marketing function, the answer was
-          strategic counsel on market position. They want someone who can translate student demand, competitive
+          My own doctoral research uncovered this. When I examined what presidents actually
+          want from their marketing function, the answer was strategic counsel on market position. They want someone who can translate student demand, competitive
           landscape, and brand health into decisions about where to invest and where to pull back.
           They want a thought partner, not someone to make it pretty.
         </p>
