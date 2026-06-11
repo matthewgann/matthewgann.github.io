@@ -8,6 +8,14 @@ export type Post = {
 
 const posts: Post[] = [
   {
+    slug: "responsibility-without-authority",
+    title: "Responsible for the Sale, Not the Product",
+    date: "June 2026",
+    category: "Higher Education",
+    excerpt:
+      "Higher education marketers are held accountable for enrollment outcomes they don't control. That's a structural problem. In some states, it has gotten much worse.",
+  },
+  {
     slug: "data-driven-differentiation",
     title: "Data-Driven Differentiation in Higher Education",
     date: "June 2026",
