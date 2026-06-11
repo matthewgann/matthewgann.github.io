@@ -57,14 +57,14 @@ export default function Home() {
           </div>
 
           <h1
-            className="text-5xl sm:text-6xl mb-3"
+            className="text-[clamp(1.6rem,8.5vw,3.75rem)] mb-3"
             style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}
           >
             Matthew Gann, Ph.D.
           </h1>
 
           <p
-            className="text-2xl sm:text-3xl mb-6"
+            className="text-[clamp(1.25rem,5.5vw,1.875rem)] mb-6"
             style={{ color: "var(--accent)", fontFamily: "var(--font-calistoga), serif" }}
           >
             Purpose-Driven.
