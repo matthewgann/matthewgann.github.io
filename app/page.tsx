@@ -167,7 +167,7 @@ export default function Home() {
         </ScrollReveal>
       </section>
 
-      <ImageBand src="/band-colorado.jpg" alt="Matthew Gann walking near Chapel on the Rock, Colorado" position="left 30%" />
+      <ImageBand src="/band-colorado.jpg" alt="Matthew Gann walking near Chapel on the Rock, Colorado" position="15% 65%" />
 
       {/* ── Expertise ───────────────────────────────────────── */}
       <section style={{ background: "#FFFFFF" }}>
