@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 
 const experience = [
   {
-    org: "Independent Marketing Consultant",
+    org: "Consultant",
     location: "Nashville, Tennessee & Denver, Colorado",
     roles: [
       {
-        title: "Marketing Strategy Consultant",
+        title: "",
         highlight: "I've kept an active consulting practice going my entire career, working with organizations across healthcare, legal, business services, retirement planning, real estate, medical aesthetics, and a lot more in between.",
         overview: "My engagements have covered brand development, digital strategy, web presence, marketing operations, crisis communications, and organizational positioning. I've worked with everyone from solo practitioners to multi-location enterprises trying to grow, reposition, or just figure out why their marketing isn't working. That cross-sector experience has made me a sharper strategist in every leadership role I've held.",
       },
@@ -215,9 +215,11 @@ export default function ResumePage() {
                   <div className="space-y-6 pl-0 sm:pl-4" style={{ borderLeft: "2px solid var(--border)" }}>
                     {job.roles.map((role) => (
                       <div key={role.title} className="pl-4 sm:pl-6">
-                        <p className="text-base font-medium mb-2" style={{ color: "var(--accent)", fontFamily: "var(--font-inter), sans-serif" }}>
-                          {role.title}
-                        </p>
+                        {role.title && (
+                          <p className="text-base font-medium mb-2" style={{ color: "var(--accent)", fontFamily: "var(--font-inter), sans-serif" }}>
+                            {role.title}
+                          </p>
+                        )}
                         <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--foreground)" }}>
                           {role.highlight}
                         </p>
