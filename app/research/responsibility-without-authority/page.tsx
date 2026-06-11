@@ -65,6 +65,28 @@ export default function Post() {
         </p>
 
         <p className="leading-relaxed">
+          There is a related failure hiding inside the same structural problem. Higher education
+          institutions spent decades not needing to invest in brand marketing. Reputation traveled
+          by word of mouth, through rankings, through proximity, through the sheer stability of
+          demand. That world is gone. The demographic cliff is real, public trust in higher
+          education has eroded, and prospective students have more options than any prior
+          generation. Institutions now want the results of sustained brand investment without
+          having made that investment. They want awareness, preference, and differentiation
+          delivered on what is functionally an enrollment marketing budget.
+        </p>
+
+        <p className="leading-relaxed">
+          These are not the same discipline. Enrollment marketing is direct response. It is
+          funnel-driven, audience-targeted, and optimized for conversion. Brand marketing builds
+          the conditions under which enrollment marketing works. It shapes how an institution is
+          perceived before a student ever enters the funnel, before a family schedules a campus
+          visit, before a counselor makes a recommendation. The brand is the foundation.
+          Enrollment runs on top of it. What I do is brand marketing. I build that foundation.
+          When institutions conflate the two, or treat brand as something that gets funded after
+          enrollment targets are met, they are spending against a floor that does not exist yet.
+        </p>
+
+        <p className="leading-relaxed">
           And then there&apos;s Florida. And Texas. Whatever structural friction higher education
           marketers face when their own institutions treat programs as internally-governed
           decisions, it at least operates in a world where market signals can, in principle,
