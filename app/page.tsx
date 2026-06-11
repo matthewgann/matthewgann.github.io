@@ -115,9 +115,19 @@ export default function Home() {
               <p style={{ color: "var(--foreground)" }}>
                 My career has taken me from early-stage digital work in the early
                 2000s through executive marketing roles in healthcare and agency
-                to leading systemwide marketing for Tennessee&apos;s largest higher
-                education system, and now serving as the chief marketing officer
-                for the University of Denver.
+                work, to leading systemwide marketing for Tennessee&apos;s largest
+                higher education system, and now serving as associate vice
+                chancellor and chief marketing officer at the University of Denver.
+                Along the way, I&apos;ve also consulted for organizations across the
+                legal, healthcare, nonprofit, and retirement sectors.
+              </p>
+              <p style={{ color: "var(--foreground)" }}>
+                Beyond the professional work, I&apos;ve spent two decades mentoring
+                students toward college access through tnAchieves and UT Achieves,
+                coached capstone teams at the University of Tennessee, and served
+                on the national executive committee for PRSA&apos;s Counselors to
+                Higher Education. That connection to community matters as much to
+                me as anything I do professionally.
               </p>
               <p style={{ color: "var(--foreground)" }}>
                 Everything I do is anchored in a simple belief. Purpose-driven
