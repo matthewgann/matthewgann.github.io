@@ -30,12 +30,12 @@ export default function ResearchPage() {
       <section style={{ background: "#FFFFFF" }}>
         <ScrollReveal>
           <div className="max-w-4xl mx-auto px-6 py-14">
-            <div className="space-y-12">
-              {posts.map((post) => (
-                <article key={post.slug}>
-                  <Link href={`/research/${post.slug}`} style={{ textDecoration: "none" }}>
+            <div className="space-y-0">
+              {posts.map((post, i) => (
+                <article key={post.slug} className={i > 0 ? "pt-12 border-t" : ""} style={i > 0 ? { borderColor: "var(--border)" } : {}}>
+                  <Link href={post.path} style={{ textDecoration: "none" }}>
                     <div className="group cursor-pointer">
-                      <div className="flex flex-wrap items-center gap-3 mb-2">
+                      <div className="flex flex-wrap items-center gap-3 mb-3">
                         <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>
                           {post.date}
                         </span>
@@ -44,14 +44,14 @@ export default function ResearchPage() {
                           {post.category}
                         </span>
                       </div>
-                      <h2 className="text-2xl mb-2 transition-colors duration-150"
+                      <h2 className="text-2xl mb-3 transition-colors duration-150"
                         style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
                         {post.title}
                       </h2>
-                      <p className="text-base leading-relaxed" style={{ color: "var(--text-muted)" }}>
+                      <p className="text-base leading-relaxed mb-4" style={{ color: "var(--text-muted)" }}>
                         {post.excerpt}
                       </p>
-                      <span className="inline-block mt-3 text-sm font-medium" style={{ color: "var(--accent)" }}>
+                      <span className="inline-block text-sm font-medium" style={{ color: "var(--accent)" }}>
                         Read more →
                       </span>
                     </div>
