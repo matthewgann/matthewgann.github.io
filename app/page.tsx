@@ -125,9 +125,11 @@ export default function Home() {
                 Beyond the professional work, I&apos;ve spent two decades mentoring
                 students toward college access through tnAchieves and UT Achieves,
                 coached capstone teams at the University of Tennessee, and served
-                on the national executive committee for PRSA&apos;s Counselors to
-                Higher Education. That connection to community matters as much to
-                me as anything I do professionally.
+                as president of both the Tennessee College Public Relations
+                Association and Open Nashville. I currently serve on the national
+                executive committee for PRSA&apos;s Counselors to Higher Education.
+                That connection to community matters as much to me as anything I
+                do professionally.
               </p>
               <p style={{ color: "var(--foreground)" }}>
                 Everything I do is anchored in a simple belief. Purpose-driven
