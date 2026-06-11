@@ -28,7 +28,7 @@ export default function Nav() {
         </Link>
 
         <nav aria-label="Main navigation">
-          <ul className="flex items-center gap-6 sm:gap-10 list-none m-0 p-0">
+          <ul className="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 sm:gap-x-10 sm:flex-nowrap list-none m-0 p-0">
             {links.map(({ href, label }) => {
               const active = pathname === href;
               return (
