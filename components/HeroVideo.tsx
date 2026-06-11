@@ -18,6 +18,7 @@ export default function HeroVideo() {
       className="absolute inset-0 w-full h-full object-cover"
       style={{ opacity: 0.65 }}
     >
+      <source src="/hero-bg.webm" type="video/webm" />
       <source src="/hero-bg.mp4" type="video/mp4" />
     </video>
   );
