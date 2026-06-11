@@ -74,16 +74,6 @@ export default function ContactPage() {
         </ScrollReveal>
       </section>
 
-      {/* Closing note */}
-      <section style={{ background: "#F2E9DC" }}>
-        <ScrollReveal>
-          <div className="max-w-4xl mx-auto px-6 py-14 text-center">
-            <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-              I try to respond to every message. If you don&apos;t hear back within a few days, feel free to follow up.
-            </p>
-          </div>
-        </ScrollReveal>
-      </section>
     </>
   );
 }
