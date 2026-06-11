@@ -137,22 +137,30 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="sm:col-span-2 p-6 space-y-3"
-              style={{ background: "#FFFEF9", border: "1px solid #E0D5C8" }}
+              className="sm:col-span-2 p-6 space-y-5"
+              style={{ background: "#1C1917" }}
             >
-              <p
-                className="text-xs font-semibold uppercase tracking-widest"
-                style={{ color: "var(--text-muted)" }}
-              >
+              <p className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#8A7B6E" }}>
                 At a Glance
               </p>
-              <ul className="space-y-2 text-sm list-none p-0 m-0" style={{ color: "var(--foreground)" }}>
-                <li>Denver, Colorado</li>
-                <li>Ph.D., Leadership &amp; Organizational Intelligence</li>
-                <li>Accredited in Public Relations (APR)</li>
-                <li>CMO, University of Denver</li>
-                <li>20+ years in higher education marketing</li>
-              </ul>
+              {[
+                { label: "Current Role", value: "Associate Vice Chancellor & CMO, University of Denver" },
+                { label: "Based In", value: "Denver, Colorado" },
+                { label: "Experience", value: "20+ years in higher education marketing" },
+                { label: "Education", value: "Ph.D., Leadership & Organizational Intelligence, Trevecca Nazarene University" },
+                { label: "Credentials", value: "Accredited in Public Relations (APR) · Tennessee Certified Economic Developer" },
+                { label: "Research", value: "Marketing Operations · Organizational Intelligence · Leadership Effectiveness" },
+                { label: "Recognition", value: "Otis Floyd Jr. Award for Excellence in Higher Education Administration · Charles Holmes Award" },
+              ].map(({ label, value }) => (
+                <div key={label}>
+                  <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: "#D4853A" }}>
+                    {label}
+                  </p>
+                  <p className="text-sm leading-snug" style={{ color: "#F5F0EB" }}>
+                    {value}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
