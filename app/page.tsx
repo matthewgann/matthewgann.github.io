@@ -167,7 +167,7 @@ export default function Home() {
         </ScrollReveal>
       </section>
 
-      <ImageBand src="/band-colorado.jpg" alt="Matthew Gann walking near Chapel on the Rock, Colorado" position="left 55%" />
+      <ImageBand src="/band-colorado.jpg" alt="Matthew Gann walking near Chapel on the Rock, Colorado" position="left 30%" />
 
       {/* ── Expertise ───────────────────────────────────────── */}
       <section style={{ background: "#FFFFFF" }}>
@@ -199,7 +199,7 @@ export default function Home() {
         </ScrollReveal>
       </section>
 
-      <ImageBand src="/band-ama.jpg" alt="Matthew Gann presenting at AMA 2025 Workshop" position="center 30%" />
+      <ImageBand src="/band-ama.jpg" alt="Matthew Gann presenting at AMA 2025 Workshop" position="center 20%" />
 
       {/* ── Research & Thoughts ─────────────────────────────── */}
       <section style={{ background: "#1C1917" }}>

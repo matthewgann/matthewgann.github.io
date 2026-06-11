@@ -24,7 +24,7 @@ export default function ResearchPage() {
         </div>
       </section>
 
-      <ImageBand src="/band-car.jpg" alt="Matthew Gann at an automotive show" position="35% center" />
+      <ImageBand src="/band-car.jpg" alt="Matthew Gann at an automotive show" position="28% 38%" />
 
       {/* Post list */}
       <section style={{ background: "#FFFFFF" }}>

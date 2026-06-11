@@ -167,6 +167,8 @@ export default function ResumePage() {
         </div>
       </section>
 
+      <ImageBand src="/band-conference.jpg" alt="Matthew Gann at a professional conference" position="center 15%" />
+
       {/* Experience */}
       <section style={{ background: "#FFFFFF" }}>
         <ScrollReveal>
@@ -201,8 +203,6 @@ export default function ResumePage() {
           </div>
         </ScrollReveal>
       </section>
-
-      <ImageBand src="/band-conference.jpg" alt="Matthew Gann at a professional conference" position="center 25%" />
 
       {/* Skills & Education */}
       <section style={{ background: "#F2E9DC" }}>
