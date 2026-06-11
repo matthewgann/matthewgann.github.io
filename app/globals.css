@@ -20,6 +20,18 @@
   --font-body: var(--font-inter), sans-serif;
 }
 
+@keyframes heroGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-bg {
+  background: linear-gradient(-45deg, #FFFEF9, #F2E9DC, #FFFEF9, #EEE5D4, #FFFEF9);
+  background-size: 400% 400%;
+  animation: heroGradient 18s ease infinite;
+}
+
 html {
   scroll-behavior: smooth;
 }
