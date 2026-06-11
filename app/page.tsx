@@ -48,11 +48,12 @@ export default function Home() {
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ opacity: 0.55 }}
+          style={{ opacity: 0.65 }}
         >
           <source src="/hero-bg.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0" style={{ background: "rgba(255, 254, 249, 0.55)" }} />
+        {/* Warm parchment overlay — keeps dark text readable, ties to brand palette */}
+        <div className="absolute inset-0" style={{ background: "rgba(248, 240, 222, 0.72)" }} />
         <div className="relative z-10 max-w-4xl mx-auto px-6 pt-20 pb-16 flex flex-col items-center text-center">
           <div
             className="w-72 h-72 rounded-full overflow-hidden mb-8"
