@@ -33,22 +33,51 @@ export default function Nav() {
               const active = pathname === href;
               return (
                 <li key={href}>
-                  <Link
-                    href={href}
-                    className="text-sm font-medium tracking-wide transition-colors duration-150 cursor-pointer"
-                    style={{
-                      color: active ? "var(--accent)" : "var(--foreground)",
-                      textDecoration: "none",
-                    }}
-                    onMouseEnter={(e) => {
-                      if (!active) (e.target as HTMLElement).style.color = "var(--accent)";
-                    }}
-                    onMouseLeave={(e) => {
-                      if (!active) (e.target as HTMLElement).style.color = "var(--foreground)";
-                    }}
-                  >
-                    {label}
-                  </Link>
+                  {label === "Get in Touch" ? (
+                    <Link
+                      href={href}
+                      className="text-sm font-medium tracking-wide transition-colors duration-150 cursor-pointer px-4 py-1.5"
+                      style={{
+                        color: active ? "var(--background)" : "var(--foreground)",
+                        textDecoration: "none",
+                        border: `1.5px solid ${active ? "var(--accent)" : "var(--foreground)"}`,
+                        background: active ? "var(--accent)" : "transparent",
+                      }}
+                      onMouseEnter={(e) => {
+                        const el = e.currentTarget as HTMLElement;
+                        if (!active) {
+                          el.style.color = "var(--background)";
+                          el.style.background = "var(--foreground)";
+                        }
+                      }}
+                      onMouseLeave={(e) => {
+                        const el = e.currentTarget as HTMLElement;
+                        if (!active) {
+                          el.style.color = "var(--foreground)";
+                          el.style.background = "transparent";
+                        }
+                      }}
+                    >
+                      {label}
+                    </Link>
+                  ) : (
+                    <Link
+                      href={href}
+                      className="text-sm font-medium tracking-wide transition-colors duration-150 cursor-pointer"
+                      style={{
+                        color: active ? "var(--accent)" : "var(--foreground)",
+                        textDecoration: "none",
+                      }}
+                      onMouseEnter={(e) => {
+                        if (!active) (e.target as HTMLElement).style.color = "var(--accent)";
+                      }}
+                      onMouseLeave={(e) => {
+                        if (!active) (e.target as HTMLElement).style.color = "var(--foreground)";
+                      }}
+                    >
+                      {label}
+                    </Link>
+                  )}
                 </li>
               );
             })}
