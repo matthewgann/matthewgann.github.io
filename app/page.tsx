@@ -127,9 +127,12 @@ export default function Home() {
                 coached capstone teams at the University of Tennessee, and served
                 as president of both the Tennessee College Public Relations
                 Association and Open Nashville. I currently serve on the national
-                executive committee for PRSA&apos;s Counselors to Higher Education.
-                That connection to community matters as much to me as anything I
-                do professionally.
+                executive committee for PRSA&apos;s Counselors to Higher Education,
+                and previously served on the Middle Tennessee Advisory Board of
+                Youth Villages, a national nonprofit helping children and families
+                facing serious emotional and behavioral challenges build
+                successful lives. That connection to community matters as much to
+                me as anything I do professionally.
               </p>
               <p style={{ color: "var(--foreground)" }}>
                 Everything I do is anchored in a simple belief. Purpose-driven
