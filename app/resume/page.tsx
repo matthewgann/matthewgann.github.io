@@ -14,8 +14,8 @@ const experience = [
     roles: [
       {
         title: "Marketing Strategy Consultant",
-        highlight: "I&apos;ve kept an active consulting practice going my entire career, working with organizations across healthcare, legal, business services, retirement planning, real estate, medical aesthetics, and a lot more in between.",
-        overview: "My engagements have covered brand development, digital strategy, web presence, marketing operations, crisis communications, and organizational positioning. I&apos;ve worked with everyone from solo practitioners to multi-location enterprises trying to grow, reposition, or just figure out why their marketing isn&apos;t working. That cross-sector experience has made me a sharper strategist in every leadership role I&apos;ve held.",
+        highlight: "I've kept an active consulting practice going my entire career, working with organizations across healthcare, legal, business services, retirement planning, real estate, medical aesthetics, and a lot more in between.",
+        overview: "My engagements have covered brand development, digital strategy, web presence, marketing operations, crisis communications, and organizational positioning. I've worked with everyone from solo practitioners to multi-location enterprises trying to grow, reposition, or just figure out why their marketing isn't working. That cross-sector experience has made me a sharper strategist in every leadership role I've held.",
       },
     ],
   },
@@ -25,8 +25,8 @@ const experience = [
     roles: [
       {
         title: "Associate Vice Chancellor for Marketing and Brand Strategy",
-        highlight: "I&apos;m the CMO for a private R1 research university with 10 schools and colleges, 18 Division I sports programs, and 35 NCAA national championships.",
-        overview: "I lead the university&apos;s full marketing and communications enterprise: brand strategy, enrollment marketing, digital properties, public relations, creative services, and internal communications. I developed a data-driven brand differentiation framework, led the creation of The Denver Difference brand platform, and built a five-year marketing maturity model to guide where we&apos;re going long-term.",
+        highlight: "I'm the CMO for a private R1 research university with 10 schools and colleges, 18 Division I sports programs, and 35 NCAA national championships.",
+        overview: "I lead the university's full marketing and communications enterprise: brand strategy, enrollment marketing, digital properties, public relations, creative services, and internal communications. I developed a data-driven brand differentiation framework, led the creation of The Denver Difference brand platform, and built a five-year marketing maturity model to guide where we're going long-term.",
       },
     ],
   },
@@ -36,7 +36,7 @@ const experience = [
     roles: [
       {
         title: "Associate Vice Chancellor for Marketing, Digital Strategy, and Public Relations",
-        highlight: "I was the systemwide CMO for Tennessee&apos;s largest higher education system — 37 colleges and about 165,000 students.",
+        highlight: "I was the systemwide CMO for Tennessee's largest higher education system. 37 colleges. About 165,000 students.",
         overview: "I led marketing, digital strategy, and public relations across a highly decentralized system of community colleges and universities covering every corner of the state. I built shared frameworks, technology platforms, and campaign infrastructure that moved the needle on visibility and enrollment. Managing brand and communications across dozens of institutions with different identities and missions keeps you sharp.",
       },
     ],
@@ -48,7 +48,7 @@ const experience = [
       {
         title: "Director of Web and Digital Media",
         highlight: "I led digital strategy and all public-facing web properties for a 10,000-student university.",
-        overview: "I modernized the university&apos;s web infrastructure and built the digital marketing capability that connected prospective students to programs and resources. I established analytics practices and CRM integrations that gave the institution real visibility into what was working across the enrollment funnel.",
+        overview: "I modernized the university's web infrastructure and built the digital marketing capability that connected prospective students to programs and resources. I established analytics practices and CRM integrations that gave the institution real visibility into what was working across the enrollment funnel.",
       },
     ],
   },
@@ -58,8 +58,8 @@ const experience = [
     roles: [
       {
         title: "Vice President of Marketing and Promotions",
-        highlight: "I was the CMO for one of the South&apos;s largest durable medical equipment suppliers.",
-        overview: "I oversaw brand, advertising, promotions, and market development across multiple service lines and geographic markets. I led campaigns spanning patient acquisition, physician referral development, and community health education, and built the organization&apos;s first integrated marketing strategy from scratch.",
+        highlight: "I was the CMO for one of the South's largest durable medical equipment suppliers.",
+        overview: "I oversaw brand, advertising, promotions, and market development across multiple service lines and geographic markets. I led campaigns spanning patient acquisition, physician referral development, and community health education, and built the organization's first integrated marketing strategy from scratch.",
       },
     ],
   },
@@ -69,7 +69,7 @@ const experience = [
     roles: [
       {
         title: "Director of Internet Operations",
-        highlight: "I was the lead web developer, digital designer, and PR strategist for a premier extreme sports company — before &ldquo;digital&rdquo; was what it is today.",
+        highlight: "I was the lead web developer, digital designer, and PR strategist for a premier extreme sports company. Before \"digital\" was what it is today.",
         overview: "I built information management platforms for extreme sports tournaments, including one of the first digital scoring systems and a video streaming platform that was genuinely ahead of its time. I handled crisis communications and media relations for high-profile international events and built integrated marketing systems that drove tournament registration and community engagement.",
       },
     ],
