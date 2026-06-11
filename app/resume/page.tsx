@@ -9,12 +9,24 @@ export const metadata: Metadata = {
 
 const experience = [
   {
+    org: "Independent Marketing Consultant",
+    location: "Nashville, Tennessee · Denver, Colorado",
+    roles: [
+      {
+        title: "Marketing Strategy Consultant",
+        highlight: "Has maintained an active consulting practice throughout his career, working with organizations across healthcare, legal, business services, retirement planning, real estate, medical aesthetics, and more.",
+        overview: "Consulting engagements have spanned brand development, digital strategy, web presence, marketing operations, crisis communications, and organizational positioning. Clients have ranged from independent practitioners and regional businesses to multi-location enterprises navigating growth, repositioning, or competitive pressure. This cross-sector work has built fluency across markets and organizational types that sharpens the perspective brought to every leadership role.",
+      },
+    ],
+  },
+  {
     org: "University of Denver",
     location: "Denver, Colorado",
     roles: [
       {
         title: "Associate Vice Chancellor for Marketing and Brand Strategy",
-        highlight: "Serves as chief marketing officer for a private R1 research university with 10 schools, colleges, and 18 Division I sports programs.",
+        highlight: "Serves as chief marketing officer for a private R1 research university with 10 schools and colleges and 18 Division I sports programs.",
+        overview: "Leads the university's full marketing and communications enterprise, including brand strategy, enrollment marketing, digital properties, public relations, creative services, and internal communications. Responsible for building the institution's competitive position across a complex landscape of graduate, professional, and undergraduate programs. Developed a data-driven brand differentiation framework, led the creation of The Denver Difference brand platform, and built a five-year marketing maturity model to guide the function's long-term development.",
       },
     ],
   },
@@ -25,6 +37,7 @@ const experience = [
       {
         title: "Associate Vice Chancellor for Marketing, Digital Strategy, and Public Relations",
         highlight: "Served as systemwide CMO for Tennessee's largest higher education system, overseeing 37 colleges and approximately 165,000 students.",
+        overview: "Led marketing, digital strategy, and public relations across a highly decentralized system of community colleges and universities serving every region of the state. Built shared marketing frameworks, technology platforms, and campaign infrastructure that elevated the visibility and enrollment performance of member institutions. Responsible for system-wide brand standards, digital infrastructure, communications strategy, and media relations in an environment with diverse institutional identities and missions.",
       },
     ],
   },
@@ -35,6 +48,7 @@ const experience = [
       {
         title: "Director of Web and Digital Media",
         highlight: "Led digital strategy, public-facing web properties, and digital marketing for a 10,000-student university.",
+        overview: "Directed a significant modernization of the university's web infrastructure and built the digital marketing capability connecting prospective students to programs and resources. Established analytics practices and CRM integrations that improved the institution's ability to measure and optimize digital performance across the enrollment funnel.",
       },
     ],
   },
@@ -44,7 +58,8 @@ const experience = [
     roles: [
       {
         title: "Vice President of Marketing and Promotions",
-        highlight: "Served as CMO for one of the South's largest durable medical suppliers.",
+        highlight: "Served as CMO for one of the South's largest durable medical equipment suppliers.",
+        overview: "Oversaw brand, advertising, promotions, and market development across multiple service lines and geographic markets. Led campaigns spanning patient acquisition, physician referral development, and community health education. Developed the organization's first integrated marketing strategy and built an internal marketing team from the ground up.",
       },
     ],
   },
@@ -55,6 +70,7 @@ const experience = [
       {
         title: "Director of Design and Development",
         highlight: "Managed 200+ digital properties simultaneously, increasing revenues by over 300% in two years.",
+        overview: "Led design and development for a regional digital agency serving clients across healthcare, legal, retail, and professional services. Drove revenue growth through expanded service offerings, streamlined production processes, and a client retention strategy built on proactive communication and measurable results. Built and managed a design and development team while maintaining hands-on production across a high-volume portfolio.",
       },
     ],
   },
@@ -191,9 +207,14 @@ export default function ResumePage() {
                         <p className="text-base font-medium mb-2" style={{ color: "var(--accent)", fontFamily: "var(--font-inter), sans-serif" }}>
                           {role.title}
                         </p>
-                        <p className="text-sm leading-relaxed" style={{ color: "var(--foreground)" }}>
+                        <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--foreground)" }}>
                           {role.highlight}
                         </p>
+                        {role.overview && (
+                          <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
+                            {role.overview}
+                          </p>
+                        )}
                       </div>
                     ))}
                   </div>
