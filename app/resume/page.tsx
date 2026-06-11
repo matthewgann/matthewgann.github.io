@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const experience = [
   {
     org: "Independent Marketing Consultant",
-    location: "Nashville, Tennessee · Denver, Colorado",
+    location: "Nashville, Tennessee &amp; Denver, Colorado",
     roles: [
       {
         title: "Marketing Strategy Consultant",
@@ -157,7 +157,7 @@ export default function ResumePage() {
               Matthew Gann, Ph.D.
             </h1>
             <p className="text-lg mb-1" style={{ color: "var(--text-muted)" }}>
-              Marketing &amp; Communications Executive · Denver, Colorado
+              Marketing &amp; Communications Executive · Nashville, Tennessee &amp; Denver, Colorado
             </p>
             <div className="flex flex-wrap gap-4 mt-4 text-sm">
               <a href="mailto:matthew@matthewgann.com" style={{ color: "var(--accent)", textDecoration: "none" }}>
