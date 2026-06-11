@@ -64,6 +64,17 @@ const experience = [
     ],
   },
   {
+    org: "WPF Management",
+    location: "Gallatin, Tennessee",
+    roles: [
+      {
+        title: "Director of Internet Operations",
+        highlight: "Served as lead web developer, digital designer, and public relations strategist for a premier extreme sports company, directing comprehensive digital operations and managing brand communications across multiple platforms.",
+        overview: "Built and managed information management platforms for extreme sports tournaments covering player management, tournament operations, media relations, and a first-of-its-kind digital scoring system. Spearheaded development of a proprietary content management system and one of the first video streaming platforms of its kind. Created integrated digital marketing systems driving tournament registration and community engagement, and managed crisis communications and media relations for high-profile international events.",
+      },
+    ],
+  },
+  {
     org: "N2 The Net",
     location: "Cookeville, Tennessee",
     roles: [
