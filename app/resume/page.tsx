@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Resume | Matthew Gann, Ph.D.",
@@ -130,177 +131,174 @@ const community = [
 
 export default function ResumePage() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
-      {/* Header */}
-      <div className="mb-12">
-        <h1 className="text-4xl sm:text-5xl mb-2" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-          Matthew Gann, Ph.D.
-        </h1>
-        <p className="text-lg mb-1" style={{ color: "var(--text-muted)" }}>
-          Marketing &amp; Communications Executive · Denver, Colorado
-        </p>
-        <div className="flex flex-wrap gap-4 mt-4 text-sm" style={{ color: "var(--text-muted)" }}>
-          <a href="mailto:matthew@matthewgann.com" style={{ color: "var(--accent)", textDecoration: "none" }}>
-            matthew@matthewgann.com
-          </a>
-          <a href="https://linkedin.com/in/matthewgann" target="_blank" rel="noopener noreferrer" style={{ color: "var(--accent)", textDecoration: "none" }}>
-            linkedin.com/in/matthewgann
-          </a>
+    <>
+      {/* Header + Summary */}
+      <section style={{ background: "#FFFEF9" }}>
+        <div className="max-w-4xl mx-auto px-6 pt-16 pb-14">
+          <div className="mb-10">
+            <h1 className="text-4xl sm:text-5xl mb-2" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
+              Matthew Gann, Ph.D.
+            </h1>
+            <p className="text-lg mb-1" style={{ color: "var(--text-muted)" }}>
+              Marketing &amp; Communications Executive · Denver, Colorado
+            </p>
+            <div className="flex flex-wrap gap-4 mt-4 text-sm">
+              <a href="mailto:matthew@matthewgann.com" style={{ color: "var(--accent)", textDecoration: "none" }}>
+                matthew@matthewgann.com
+              </a>
+              <a href="https://linkedin.com/in/matthewgann" target="_blank" rel="noopener noreferrer" style={{ color: "var(--accent)", textDecoration: "none" }}>
+                linkedin.com/in/matthewgann
+              </a>
+            </div>
+          </div>
+          <div>
+            <h2 className="text-2xl mb-4" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
+              Summary
+            </h2>
+            <p className="leading-relaxed text-base" style={{ color: "var(--foreground)" }}>
+              Purpose-driven, collaborative, and tech-savvy marketing and communications leader with more than
+              two decades of experience developing high-performing teams and crafting compelling brands across
+              higher education, healthcare, and agency sectors. Proven expertise in forging strategic relationships,
+              translating organizational vision into data-driven campaigns, and measurably strengthening trust,
+              engagement, and reputation.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <hr className="mb-12" style={{ borderColor: "var(--border)" }} />
-
-      {/* Summary */}
-      <section className="mb-14">
-        <h2 className="text-2xl mb-4" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-          Summary
-        </h2>
-        <p className="leading-relaxed text-base" style={{ color: "var(--foreground)" }}>
-          Purpose-driven, collaborative, and tech-savvy marketing and communications leader with more than
-          two decades of experience developing high-performing teams and crafting compelling brands across
-          higher education, healthcare, and agency sectors. Proven expertise in forging strategic relationships,
-          translating organizational vision into data-driven campaigns, and measurably strengthening trust,
-          engagement, and reputation.
-        </p>
       </section>
-
-      <hr className="mb-12" style={{ borderColor: "var(--border)" }} />
 
       {/* Experience */}
-      <section className="mb-14">
-        <h2 className="text-2xl mb-10" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-          Experience
-        </h2>
-        <div className="space-y-12">
-          {experience.map((job) => (
-            <div key={job.org}>
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-4">
-                <h3 className="text-xl font-semibold" style={{ color: "var(--foreground)", fontFamily: "var(--font-inter), sans-serif" }}>
-                  {job.org}
-                </h3>
-                <span className="text-sm" style={{ color: "var(--text-muted)" }}>
-                  {job.location}
-                </span>
-              </div>
-              <div className="space-y-6 pl-0 sm:pl-4" style={{ borderLeft: "2px solid var(--border)" }}>
-                {job.roles.map((role) => (
-                  <div key={role.title} className="pl-4 sm:pl-6">
-                    <p
-                      className="text-base font-medium mb-2"
-                      style={{ color: "var(--accent)", fontFamily: "var(--font-inter), sans-serif" }}
-                    >
-                      {role.title}
-                    </p>
-                    <p className="text-sm leading-relaxed" style={{ color: "var(--foreground)" }}>
-                      {role.highlight}
-                    </p>
+      <section style={{ background: "#FFFFFF" }}>
+        <ScrollReveal>
+          <div className="max-w-4xl mx-auto px-6 py-14">
+            <h2 className="text-2xl mb-10" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
+              Experience
+            </h2>
+            <div className="space-y-12">
+              {experience.map((job) => (
+                <div key={job.org}>
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-4">
+                    <h3 className="text-xl font-semibold" style={{ color: "var(--foreground)", fontFamily: "var(--font-inter), sans-serif" }}>
+                      {job.org}
+                    </h3>
+                    <span className="text-sm" style={{ color: "var(--text-muted)" }}>{job.location}</span>
                   </div>
-                ))}
-              </div>
+                  <div className="space-y-6 pl-0 sm:pl-4" style={{ borderLeft: "2px solid var(--border)" }}>
+                    {job.roles.map((role) => (
+                      <div key={role.title} className="pl-4 sm:pl-6">
+                        <p className="text-base font-medium mb-2" style={{ color: "var(--accent)", fontFamily: "var(--font-inter), sans-serif" }}>
+                          {role.title}
+                        </p>
+                        <p className="text-sm leading-relaxed" style={{ color: "var(--foreground)" }}>
+                          {role.highlight}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
 
-      <hr className="mb-12" style={{ borderColor: "var(--border)" }} />
-
-      {/* Skills & Education side by side */}
-      <div className="grid sm:grid-cols-2 gap-12">
-        <section>
-          <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-            Skills &amp; Expertise
-          </h2>
-          <ul className="flex flex-wrap gap-2 list-none p-0 m-0">
-            {skills.map((skill) => (
-              <li
-                key={skill}
-                className="text-xs font-medium px-3 py-1.5 tracking-wide"
-                style={{ background: "var(--surface)", border: "1px solid var(--border)", color: "var(--foreground)" }}
-              >
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-            Education &amp; Credentials
-          </h2>
-          <div className="space-y-6">
-            {education.map((edu) => (
-              <div key={edu.institution}>
-                <p className="text-sm font-semibold mb-1" style={{ color: "var(--foreground)" }}>
-                  {edu.institution}
-                </p>
-                <ul className="space-y-1 list-none p-0 m-0">
-                  {edu.credentials.map((c) => (
-                    <li key={c} className="text-sm" style={{ color: "var(--text-muted)" }}>
-                      {c}
+      {/* Skills & Education */}
+      <section style={{ background: "#F2E9DC" }}>
+        <ScrollReveal>
+          <div className="max-w-4xl mx-auto px-6 py-14">
+            <div className="grid sm:grid-cols-2 gap-12">
+              <div>
+                <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
+                  Skills &amp; Expertise
+                </h2>
+                <ul className="flex flex-wrap gap-2 list-none p-0 m-0">
+                  {skills.map((skill) => (
+                    <li key={skill} className="text-xs font-medium px-3 py-1.5 tracking-wide"
+                      style={{ background: "#FFFEF9", border: "1px solid #E0D5C8", color: "var(--foreground)" }}>
+                      {skill}
                     </li>
                   ))}
                 </ul>
               </div>
-            ))}
+              <div>
+                <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
+                  Education &amp; Credentials
+                </h2>
+                <div className="space-y-6">
+                  {education.map((edu) => (
+                    <div key={edu.institution}>
+                      <p className="text-sm font-semibold mb-1" style={{ color: "var(--foreground)" }}>{edu.institution}</p>
+                      <ul className="space-y-1 list-none p-0 m-0">
+                        {edu.credentials.map((c) => (
+                          <li key={c} className="text-sm" style={{ color: "var(--text-muted)" }}>{c}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
-      </div>
-
-      <hr className="mt-12 mb-12" style={{ borderColor: "var(--border)" }} />
+        </ScrollReveal>
+      </section>
 
       {/* Research Areas, Awards, Memberships */}
-      <div className="grid sm:grid-cols-3 gap-12 mb-14">
-        <section>
-          <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-            Research Areas
-          </h2>
-          <ul className="space-y-2 list-none p-0 m-0">
-            {researchAreas.map((area) => (
-              <li key={area} className="text-sm" style={{ color: "var(--foreground)" }}>{area}</li>
-            ))}
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-            Personal Awards
-          </h2>
-          <ul className="space-y-2 list-none p-0 m-0">
-            {awards.map((award) => (
-              <li key={award} className="text-sm" style={{ color: "var(--foreground)" }}>{award}</li>
-            ))}
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-            Memberships
-          </h2>
-          <ul className="space-y-2 list-none p-0 m-0">
-            {memberships.map((m) => (
-              <li key={m} className="text-sm" style={{ color: "var(--foreground)" }}>{m}</li>
-            ))}
-          </ul>
-        </section>
-      </div>
-
-      <hr className="mb-12" style={{ borderColor: "var(--border)" }} />
+      <section style={{ background: "#FFFFFF" }}>
+        <ScrollReveal>
+          <div className="max-w-4xl mx-auto px-6 py-14">
+            <div className="grid sm:grid-cols-3 gap-12">
+              <div>
+                <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
+                  Research Areas
+                </h2>
+                <ul className="space-y-2 list-none p-0 m-0">
+                  {researchAreas.map((area) => (
+                    <li key={area} className="text-sm" style={{ color: "var(--foreground)" }}>{area}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
+                  Personal Awards
+                </h2>
+                <ul className="space-y-2 list-none p-0 m-0">
+                  {awards.map((award) => (
+                    <li key={award} className="text-sm" style={{ color: "var(--foreground)" }}>{award}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
+                  Memberships
+                </h2>
+                <ul className="space-y-2 list-none p-0 m-0">
+                  {memberships.map((m) => (
+                    <li key={m} className="text-sm" style={{ color: "var(--foreground)" }}>{m}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
+      </section>
 
       {/* Community */}
-      <section className="mb-14">
-        <h2 className="text-2xl mb-6" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-          Community
-        </h2>
-        <div className="grid sm:grid-cols-2 gap-6">
-          {community.map((item) => (
-            <div key={item.org}>
-              <p className="text-sm font-semibold mb-0.5" style={{ color: "var(--foreground)" }}>{item.org}</p>
-              <p className="text-sm" style={{ color: "var(--text-muted)" }}>{item.role}</p>
+      <section style={{ background: "#1C1917" }}>
+        <ScrollReveal>
+          <div className="max-w-4xl mx-auto px-6 py-14">
+            <h2 className="text-2xl mb-8" style={{ fontFamily: "var(--font-calistoga), serif", color: "#F5F0EB" }}>
+              Community
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-6">
+              {community.map((item) => (
+                <div key={item.org}>
+                  <p className="text-sm font-semibold mb-0.5" style={{ color: "#F5F0EB" }}>{item.org}</p>
+                  <p className="text-sm" style={{ color: "#A8998C" }}>{item.role}</p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
-    </div>
+    </>
   );
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import posts from "@/lib/posts";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const expertise = [
   {
@@ -83,6 +84,7 @@ export default function Home() {
 
       {/* ── About ───────────────────────────────────────────── */}
       <section style={{ background: "#F2E9DC" }}>
+        <ScrollReveal>
         <div className="max-w-4xl mx-auto px-6 py-16">
           <h2
             className="text-3xl mb-8"
@@ -132,10 +134,12 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </ScrollReveal>
       </section>
 
       {/* ── Expertise ───────────────────────────────────────── */}
       <section style={{ background: "#FFFFFF" }}>
+        <ScrollReveal>
         <div className="max-w-4xl mx-auto px-6 py-16">
           <h2
             className="text-3xl mb-10"
@@ -160,10 +164,12 @@ export default function Home() {
             ))}
           </div>
         </div>
+        </ScrollReveal>
       </section>
 
       {/* ── Research & Thoughts ─────────────────────────────── */}
       <section style={{ background: "#1C1917" }}>
+        <ScrollReveal>
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="flex items-baseline justify-between mb-10">
             <h2
@@ -207,6 +213,7 @@ export default function Home() {
             ))}
           </div>
         </div>
+        </ScrollReveal>
       </section>
     </>
   );
