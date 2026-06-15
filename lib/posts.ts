@@ -9,6 +9,15 @@ export type Post = {
 
 const posts: Post[] = [
   {
+    slug: "one-year-in",
+    path: "/research/2026/06/one-year-in",
+    title: "One Year In",
+    date: "June 2026",
+    category: "Leadership",
+    excerpt:
+      "One year at the University of Denver. On making hard decisions on purpose, why brand marketing is an investment the sector keeps getting wrong, and what commencement makes undeniably clear.",
+  },
+  {
     slug: "future-of-higher-ed-websites",
     path: "/research/2026/06/future-of-higher-ed-websites",
     title: "The Higher Ed Website Is Dead. We Just Haven't Buried It Yet.",
