@@ -9,6 +9,15 @@ export type Post = {
 
 const posts: Post[] = [
   {
+    slug: "return-on-objectives",
+    path: "/research/2026/07/return-on-objectives",
+    title: "Return on Objectives",
+    date: "July 2026",
+    category: "Higher Education",
+    excerpt:
+      "ROI tells you the money came back. ROO asks whether you did what you set out to do. In higher education, the gap between those two questions is where most strategy breaks down.",
+  },
+  {
     slug: "one-year-in",
     path: "/research/2026/06/one-year-in",
     title: "One Year In",
