@@ -11,7 +11,7 @@ const posts: Post[] = [
   {
     slug: "return-on-objectives",
     path: "/research/2026/07/return-on-objectives",
-    title: "Return on Objectives",
+    title: "The Real ROO",
     date: "July 2026",
     category: "Higher Education",
     excerpt:

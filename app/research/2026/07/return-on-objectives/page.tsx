@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Return on Objectives | Matthew Gann, Ph.D.",
+  title: "The Real ROO | Matthew Gann, Ph.D.",
 };
 
 export default function Post() {
@@ -29,7 +29,7 @@ export default function Post() {
       </div>
 
       <h1 className="text-4xl sm:text-5xl mb-8" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-        Return on Objectives
+        The Real ROO
       </h1>
 
       <div className="space-y-5" style={{ color: "var(--foreground)" }}>
@@ -37,7 +37,8 @@ export default function Post() {
           A few weeks ago I moderated a conversation at the CASE Annual Conference for Marketing and
           Branding with two leaders from the Denver Broncos: Hailey Sullivan, their CMO, and Sandy
           Young, their VP of Partnership Marketing. I walked off the stage with a page full of
-          takeaways. One keeps coming back to me: return on objectives.
+          takeaways. One keeps coming back to me: return on objectives. ROO. As a native Tennessean,
+          my brain went straight to Bonnaroo, but stay with me.
         </p>
 
         <p className="leading-relaxed">
