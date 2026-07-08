@@ -131,8 +131,8 @@ export default function Post() {
         <p className="leading-relaxed">
           ROI will always be part of the conversation. It should be. But ROI without ROO is a report
           on efficiency, not effectiveness. In a sector facing the pressures higher education is
-          facing right now, efficiency in service of the wrong objective is not a strategy. It is a
-          delay.
+          facing right now, efficiency in service of the wrong objective is not a strategy. Know what
+          you are trying to do. Then measure that.
         </p>
 
         <p className="text-sm font-medium mt-10 pt-8" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>
