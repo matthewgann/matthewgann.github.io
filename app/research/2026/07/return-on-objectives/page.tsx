@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "The Real ROO | Matthew Gann, Ph.D.",
@@ -7,6 +8,20 @@ export const metadata: Metadata = {
 
 export default function Post() {
   return (
+    <>
+      <div className="w-full relative overflow-hidden" style={{ height: "420px" }}>
+        <Image
+          src="/broncos-panel.jpg"
+          alt="Matthew Gann moderating a conversation with Hailey Sullivan and Sandy Young of the Denver Broncos at CASE 2026"
+          fill
+          className="object-cover"
+          style={{ objectPosition: "center 30%" }}
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0" style={{ background: "rgba(28, 25, 23, 0.2)" }} />
+      </div>
+
     <div className="max-w-2xl mx-auto px-6 py-16">
       <Link
         href="/research"
@@ -141,5 +156,6 @@ export default function Post() {
         </p>
       </div>
     </div>
+    </>
   );
 }
