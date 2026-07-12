@@ -63,15 +63,15 @@ export default function ResearchPage() {
         </ScrollReveal>
       </section>
 
-      {/* Coming soon */}
+      {/* AI note */}
       <section style={{ background: "#F2E9DC" }}>
         <ScrollReveal>
-          <div className="max-w-4xl mx-auto px-6 py-14 text-center">
-            <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-              More writing coming soon. Have a topic you&apos;d like to see covered?{" "}
-              <a href="mailto:matthew@matthewgann.com" style={{ color: "var(--accent)", textDecoration: "none" }}>
-                Get in touch.
-              </a>
+          <div className="max-w-4xl mx-auto px-6 py-14">
+            <h2 className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>
+              A note on AI
+            </h2>
+            <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
+              The writing and ideas on this site are my own. I use AI tools to support the process: brainstorming concepts, surfacing relevant literature to substantiate my points, and proofreading for grammar, spelling, and punctuation. All suggestions are reviewed before publishing to ensure the final text reflects my own thinking and voice.
             </p>
           </div>
         </ScrollReveal>
