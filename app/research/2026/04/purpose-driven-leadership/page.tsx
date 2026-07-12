@@ -1,13 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "What Purpose-Driven Leadership Actually Looks Like | Matthew Gann, Ph.D.",
+  description:
+    "Purpose isn't a mission statement on a wall. It's the filter through which every decision gets made, from hiring to campaign strategy.",
+  openGraph: {
+    title: "What Purpose-Driven Leadership Actually Looks Like | Matthew Gann, Ph.D.",
+    description:
+      "Purpose isn't a mission statement on a wall. It's the filter through which every decision gets made, from hiring to campaign strategy.",
+    url: "https://matthewgann.com/research/2026/04/purpose-driven-leadership",
+    type: "article",
+  },
 };
 
 export default function Post() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-16">
+      <ArticleSchema
+        title="What Purpose-Driven Leadership Actually Looks Like"
+        description="Purpose isn't a mission statement on a wall. It's the filter through which every decision gets made, from hiring to campaign strategy."
+        datePublished="2026-04-01"
+        url="https://matthewgann.com/research/2026/04/purpose-driven-leadership"
+      />
       <Link
         href="/research"
         className="text-sm font-medium mb-10 inline-block transition-colors duration-150"

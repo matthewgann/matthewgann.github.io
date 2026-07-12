@@ -1,13 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "One Year In | Matthew Gann, Ph.D.",
+  description:
+    "One year at the University of Denver. On making hard decisions on purpose, why brand marketing is an investment the sector keeps getting wrong, and what commencement makes undeniably clear.",
+  openGraph: {
+    title: "One Year In | Matthew Gann, Ph.D.",
+    description:
+      "One year at the University of Denver. On making hard decisions on purpose, why brand marketing is an investment the sector keeps getting wrong, and what commencement makes undeniably clear.",
+    url: "https://matthewgann.com/research/2026/06/one-year-in",
+    type: "article",
+  },
 };
 
 export default function Post() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-16">
+      <ArticleSchema
+        title="One Year In"
+        description="One year at the University of Denver. On making hard decisions on purpose, why brand marketing is an investment the sector keeps getting wrong, and what commencement makes undeniably clear."
+        datePublished="2026-06-15"
+        url="https://matthewgann.com/research/2026/06/one-year-in"
+      />
       <Link
         href="/research"
         className="text-sm font-medium mb-10 inline-block transition-colors duration-150"

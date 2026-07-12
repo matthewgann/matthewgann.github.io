@@ -1,13 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Responsible for the Sale, Not the Product | Matthew Gann, Ph.D.",
+  description:
+    "Higher education marketers are held accountable for enrollment outcomes they don't control. That's a structural problem. In some states, it has gotten much worse.",
+  openGraph: {
+    title: "Responsible for the Sale, Not the Product | Matthew Gann, Ph.D.",
+    description:
+      "Higher education marketers are held accountable for enrollment outcomes they don't control. That's a structural problem. In some states, it has gotten much worse.",
+    url: "https://matthewgann.com/research/2026/06/responsibility-without-authority",
+    type: "article",
+  },
 };
 
 export default function Post() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-16">
+      <ArticleSchema
+        title="Responsible for the Sale, Not the Product"
+        description="Higher education marketers are held accountable for enrollment outcomes they don't control. That's a structural problem. In some states, it has gotten much worse."
+        datePublished="2026-06-10"
+        url="https://matthewgann.com/research/2026/06/responsibility-without-authority"
+      />
       <Link
         href="/research"
         className="text-sm font-medium mb-10 inline-block transition-colors duration-150"

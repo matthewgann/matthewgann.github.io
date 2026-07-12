@@ -1,13 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "The Higher Ed Website Is Dead. We Just Haven't Buried It Yet. | Matthew Gann, Ph.D.",
+  description:
+    "Higher education websites are still built like org charts with a search bar. What comes next looks nothing like that.",
+  openGraph: {
+    title: "The Higher Ed Website Is Dead. We Just Haven't Buried It Yet. | Matthew Gann, Ph.D.",
+    description:
+      "Higher education websites are still built like org charts with a search bar. What comes next looks nothing like that.",
+    url: "https://matthewgann.com/research/2026/06/future-of-higher-ed-websites",
+    type: "article",
+  },
 };
 
 export default function Post() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-16">
+      <ArticleSchema
+        title="The Higher Ed Website Is Dead. We Just Haven't Buried It Yet."
+        description="Higher education websites are still built like org charts with a search bar. What comes next looks nothing like that."
+        datePublished="2026-06-10"
+        url="https://matthewgann.com/research/2026/06/future-of-higher-ed-websites"
+      />
       <Link
         href="/research"
         className="text-sm font-medium mb-10 inline-block transition-colors duration-150"

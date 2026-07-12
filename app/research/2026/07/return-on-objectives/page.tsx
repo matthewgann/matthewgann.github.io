@@ -1,14 +1,30 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "The Real ROO | Matthew Gann, Ph.D.",
+  description:
+    "ROI tells you the money came back. ROO asks whether you did what you set out to do. In higher education, the gap between those two questions is where most strategy breaks down.",
+  openGraph: {
+    title: "The Real ROO | Matthew Gann, Ph.D.",
+    description:
+      "ROI tells you the money came back. ROO asks whether you did what you set out to do. In higher education, the gap between those two questions is where most strategy breaks down.",
+    url: "https://matthewgann.com/research/2026/07/return-on-objectives",
+    type: "article",
+  },
 };
 
 export default function Post() {
   return (
     <>
+      <ArticleSchema
+        title="The Real ROO"
+        description="ROI tells you the money came back. ROO asks whether you did what you set out to do. In higher education, the gap between those two questions is where most strategy breaks down."
+        datePublished="2026-07-08"
+        url="https://matthewgann.com/research/2026/07/return-on-objectives"
+      />
       <div className="w-full relative overflow-hidden" style={{ height: "420px" }}>
         <Image
           src="/broncos-panel.jpg"

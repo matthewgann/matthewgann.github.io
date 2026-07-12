@@ -1,13 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Great Players Want the Truth | Matthew Gann, Ph.D.",
+  description:
+    "The coaches who built women's basketball didn't protect their best players from hard coaching. They gave them more of it. Most organizations do the opposite, and it's costing them.",
+  openGraph: {
+    title: "Great Players Want the Truth | Matthew Gann, Ph.D.",
+    description:
+      "The coaches who built women's basketball didn't protect their best players from hard coaching. They gave them more of it. Most organizations do the opposite, and it's costing them.",
+    url: "https://matthewgann.com/research/2026/07/great-players-want-the-truth",
+    type: "article",
+  },
 };
 
 export default function Post() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-16">
+      <ArticleSchema
+        title="Great Players Want the Truth"
+        description="The coaches who built women's basketball didn't protect their best players from hard coaching. They gave them more of it. Most organizations do the opposite, and it's costing them."
+        datePublished="2026-07-12"
+        url="https://matthewgann.com/research/2026/07/great-players-want-the-truth"
+      />
       <Link
         href="/research"
         className="text-sm font-medium mb-10 inline-block transition-colors duration-150"

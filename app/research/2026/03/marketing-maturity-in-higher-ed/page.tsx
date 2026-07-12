@@ -1,13 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Marketing Maturity in Higher Education | Matthew Gann, Ph.D.",
+  description:
+    "Most universities are still treating marketing as a production function. The ones winning the future are building it as a strategic capability.",
+  openGraph: {
+    title: "Marketing Maturity in Higher Education | Matthew Gann, Ph.D.",
+    description:
+      "Most universities are still treating marketing as a production function. The ones winning the future are building it as a strategic capability.",
+    url: "https://matthewgann.com/research/2026/03/marketing-maturity-in-higher-ed",
+    type: "article",
+  },
 };
 
 export default function Post() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-16">
+      <ArticleSchema
+        title="Marketing Maturity in Higher Education"
+        description="Most universities are still treating marketing as a production function. The ones winning the future are building it as a strategic capability."
+        datePublished="2026-03-01"
+        url="https://matthewgann.com/research/2026/03/marketing-maturity-in-higher-ed"
+      />
       <Link
         href="/research"
         className="text-sm font-medium mb-10 inline-block transition-colors duration-150"

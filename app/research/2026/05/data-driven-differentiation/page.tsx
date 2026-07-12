@@ -1,13 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Data-Driven Differentiation in Higher Education | Matthew Gann, Ph.D.",
+  description:
+    "Most institutions know they need to stand out. Few have a repeatable system for figuring out what they actually stand out for.",
+  openGraph: {
+    title: "Data-Driven Differentiation in Higher Education | Matthew Gann, Ph.D.",
+    description:
+      "Most institutions know they need to stand out. Few have a repeatable system for figuring out what they actually stand out for.",
+    url: "https://matthewgann.com/research/2026/05/data-driven-differentiation",
+    type: "article",
+  },
 };
 
 export default function Post() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-16">
+      <ArticleSchema
+        title="Data-Driven Differentiation in Higher Education"
+        description="Most institutions know they need to stand out. Few have a repeatable system for figuring out what they actually stand out for."
+        datePublished="2026-05-01"
+        url="https://matthewgann.com/research/2026/05/data-driven-differentiation"
+      />
       <Link
         href="/research"
         className="text-sm font-medium mb-10 inline-block transition-colors duration-150"
