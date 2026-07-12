@@ -71,7 +71,7 @@ export default function ResearchPage() {
               A note on AI
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
-              The writing and ideas on this site are my own. I use AI tools to support the process: brainstorming concepts, surfacing relevant literature to substantiate my points, and proofreading for grammar, spelling, and punctuation. All suggestions are reviewed before publishing to ensure the final text reflects my own thinking and voice.
+              The writing and ideas on this site are my own. I use AI tools to support the process: brainstorming concepts, surfacing relevant literature to substantiate my points, and proofreading for grammar, spelling, and punctuation, and suggesting ways to improve clarity and flow. All suggestions are reviewed before publishing to ensure the final text reflects my own thinking and voice.
             </p>
           </div>
         </ScrollReveal>
