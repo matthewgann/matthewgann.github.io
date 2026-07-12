@@ -9,6 +9,15 @@ export type Post = {
 
 const posts: Post[] = [
   {
+    slug: "great-players-want-the-truth",
+    path: "/research/2026/07/great-players-want-the-truth",
+    title: "Great Players Want the Truth",
+    date: "July 2026",
+    category: "Leadership",
+    excerpt:
+      "The coaches who built women's basketball didn't protect their best players from hard coaching. They gave them more of it. Most organizations do the opposite, and it's costing them.",
+  },
+  {
     slug: "return-on-objectives",
     path: "/research/2026/07/return-on-objectives",
     title: "The Real ROO",
