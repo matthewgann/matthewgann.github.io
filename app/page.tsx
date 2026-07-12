@@ -147,7 +147,7 @@ export default function Home() {
                 { label: "Current Role", value: "Associate Vice Chancellor & CMO, University of Denver" },
                 { label: "Based In", value: "Denver, CO & Nashville, TN" },
                 { label: "Experience", value: "Two decades spanning higher education, healthcare, agency, and consulting" },
-                { label: "Education", value: "Ph.D., Leadership & Organizational Intelligence" },
+                { label: "Education", value: "Ph.D., Leadership & Organizational Intelligence · B.S., Business Administration / Management Information Systems" },
                 { label: "Credentials", value: "Accredited in Public Relations (APR) · Tennessee Certified Economic Developer" },
                 { label: "Research", value: "Marketing Operations · Organizational Intelligence · Leadership Effectiveness" },
                 { label: "Recognition", value: "Otis Floyd Jr. Award for Excellence in Higher Education Administration · Charles Holmes Award" },
