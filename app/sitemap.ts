@@ -14,13 +14,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: "https://matthewgann.com",
-      lastModified: new Date("2026-07-08"),
+      lastModified: new Date("2026-10-07"),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: "https://matthewgann.com/research",
-      lastModified: new Date("2026-07-12"),
+      lastModified: new Date("2026-10-07"),
       changeFrequency: "weekly",
       priority: 0.9,
     },

@@ -10,6 +10,16 @@ export type Post = {
 
 const posts: Post[] = [
   {
+    slug: "when-marketing-is-invited-too-late",
+    path: "/research/2026/10/when-marketing-is-invited-too-late",
+    title: "When Marketing Is Invited Too Late",
+    date: "October 2026",
+    dateISO: "2026-10-07",
+    category: "Higher Education",
+    excerpt:
+      "The best marketing strategy in the world can't always rescue a poorly conceived organizational strategy. And yet we keep asking it to try.",
+  },
+  {
     slug: "great-players-want-the-truth",
     path: "/research/2026/07/great-players-want-the-truth",
     title: "Great Players Want the Truth",
