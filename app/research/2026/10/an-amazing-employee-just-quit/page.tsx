@@ -230,10 +230,11 @@ export default function Post() {
         </p>
 
         <p className="leading-relaxed">
-          We talk about empowering employees, then require multiple approvals for minor
-          decisions. We encourage professional development, then make it nearly impossible for
-          people to step away from their daily responsibilities to learn something new.
-          Sometimes we don&apos;t even fund those opportunities in our budgets.
+          Organizations talk about empowering employees, then require multiple approvals for
+          minor decisions. Organizations encourage professional development, then make it nearly
+          impossible for people to step away from their daily responsibilities to learn
+          something new. Sometimes organizations don&apos;t even fund those opportunities in
+          their budgets.
         </p>
 
         <p className="leading-relaxed">
