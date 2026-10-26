@@ -96,9 +96,8 @@ export default function Post() {
         </p>
 
         <p className="leading-relaxed">
-          As someone who has spent much of his career building and leading teams, I understand
-          the frustration of losing someone you&apos;ve invested in. Just when everything is
-          running smoothly, someone decides to go find themselves.
+          I understand the frustration of losing someone you&apos;ve invested in. Just when
+          everything is running smoothly, someone decides to go find themselves.
         </p>
 
         <p className="leading-relaxed">The nerve.</p>
