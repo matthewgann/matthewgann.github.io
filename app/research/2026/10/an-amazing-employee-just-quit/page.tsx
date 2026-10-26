@@ -27,13 +27,22 @@ export default function Post() {
         datePublished="2026-10-26"
         url="https://matthewgann.com/research/2026/10/an-amazing-employee-just-quit"
       />
-      <div className="w-full max-w-5xl mx-auto relative overflow-hidden" style={{ aspectRatio: "16 / 9" }}>
+      <div className="w-full relative overflow-hidden h-[56.25vw] md:h-[420px]">
+        <Image
+          src="/campus-run.jpg"
+          alt=""
+          aria-hidden
+          fill
+          className="object-cover"
+          style={{ filter: "blur(28px)", transform: "scale(1.2)" }}
+          sizes="100vw"
+        />
         <Image
           src="/campus-run.jpg"
           alt="Matthew Gann with a group of colleagues on the lawn at the University of Denver before a campus run"
           fill
-          className="object-cover"
-          sizes="(max-width: 1024px) 100vw, 1024px"
+          className="object-contain"
+          sizes="(max-width: 768px) 100vw, 747px"
           priority
         />
         <div className="absolute inset-0" style={{ background: "rgba(28, 25, 23, 0.2)" }} />
