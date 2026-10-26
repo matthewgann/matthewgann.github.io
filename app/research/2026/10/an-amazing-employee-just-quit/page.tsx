@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
@@ -19,13 +20,26 @@ const h2Style = { fontFamily: "var(--font-calistoga), serif", color: "var(--fore
 
 export default function Post() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-16">
+    <>
       <ArticleSchema
         title="An Amazing Employee Just Quit. I Couldn't Be Prouder."
         description="A few thoughts on developing people, supporting their ambitions, and remembering that we work to live."
         datePublished="2026-10-26"
         url="https://matthewgann.com/research/2026/10/an-amazing-employee-just-quit"
       />
+      <div className="w-full max-w-5xl mx-auto relative overflow-hidden" style={{ aspectRatio: "16 / 9" }}>
+        <Image
+          src="/campus-run.jpg"
+          alt="Matthew Gann with a group of colleagues on the lawn at the University of Denver before a campus run"
+          fill
+          className="object-cover"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          priority
+        />
+        <div className="absolute inset-0" style={{ background: "rgba(28, 25, 23, 0.2)" }} />
+      </div>
+
+    <div className="max-w-2xl mx-auto px-6 py-16">
       <Link
         href="/research"
         className="text-sm font-medium mb-10 inline-block transition-colors duration-150"
@@ -387,5 +401,6 @@ export default function Post() {
         </p>
       </div>
     </div>
+    </>
   );
 }
