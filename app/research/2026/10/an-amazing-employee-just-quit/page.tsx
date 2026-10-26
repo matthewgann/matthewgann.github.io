@@ -171,7 +171,7 @@ export default function Post() {
         <p className="leading-relaxed">
           I once had a boss (not a leader) who thought it was perfectly reasonable to replace a
           social media manager with an administrative assistant because the assistant could
-          manage their calendar.
+          manage a calendar.
         </p>
 
         <p className="leading-relaxed">Not kidding.</p>
