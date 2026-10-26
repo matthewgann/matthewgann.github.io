@@ -5,11 +5,11 @@ import ArticleSchema from "@/components/ArticleSchema";
 export const metadata: Metadata = {
   title: "An Amazing Employee Just Quit. I Couldn't Be Prouder. | Matthew Gann, Ph.D.",
   description:
-    "One of my employees recently resigned, and I couldn't be happier for her. We've become a little too comfortable treating every resignation as an organizational failure.",
+    "A few thoughts on developing people, supporting their ambitions, and remembering that we work to live.",
   openGraph: {
     title: "An Amazing Employee Just Quit. I Couldn't Be Prouder. | Matthew Gann, Ph.D.",
     description:
-      "One of my employees recently resigned, and I couldn't be happier for her. We've become a little too comfortable treating every resignation as an organizational failure.",
+      "A few thoughts on developing people, supporting their ambitions, and remembering that we work to live.",
     url: "https://matthewgann.com/research/2026/10/an-amazing-employee-just-quit",
     type: "article",
   },
@@ -22,7 +22,7 @@ export default function Post() {
     <div className="max-w-2xl mx-auto px-6 py-16">
       <ArticleSchema
         title="An Amazing Employee Just Quit. I Couldn't Be Prouder."
-        description="One of my employees recently resigned, and I couldn't be happier for her. We've become a little too comfortable treating every resignation as an organizational failure."
+        description="A few thoughts on developing people, supporting their ambitions, and remembering that we work to live."
         datePublished="2026-10-26"
         url="https://matthewgann.com/research/2026/10/an-amazing-employee-just-quit"
       />
@@ -52,6 +52,11 @@ export default function Post() {
 
       <div className="space-y-5" style={{ color: "var(--foreground)" }}>
         <p className="text-lg leading-relaxed" style={{ color: "var(--text-muted)" }}>
+          A few thoughts on developing people, supporting their ambitions, and remembering that we
+          work to live.
+        </p>
+
+        <p className="leading-relaxed">
           One of my employees recently resigned, and I couldn&apos;t be happier for her.
         </p>
 

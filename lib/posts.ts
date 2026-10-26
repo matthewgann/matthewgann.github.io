@@ -17,7 +17,7 @@ const posts: Post[] = [
     dateISO: "2026-10-26",
     category: "Leadership",
     excerpt:
-      "One of my employees recently resigned, and I couldn't be happier for her. We've become a little too comfortable treating every resignation as an organizational failure.",
+      "A few thoughts on developing people, supporting their ambitions, and remembering that we work to live.",
   },
   {
     slug: "when-marketing-is-invited-too-late",
