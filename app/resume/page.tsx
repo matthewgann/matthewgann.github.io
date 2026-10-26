@@ -24,7 +24,7 @@ const experience = [
     location: "Denver, Colorado",
     roles: [
       {
-        title: "Associate Vice Chancellor for Marketing and Brand Strategy",
+        title: "Associate Vice Chancellor, Chief Marketing Officer",
         highlight: "I'm the CMO for a private R1 research university with 10 schools and colleges, 18 Division I sports programs, and 35 NCAA national championships.",
         overview: "I lead the university's full marketing and communications enterprise: brand strategy, enrollment marketing, digital properties, public relations, creative services, and internal communications. I developed a data-driven brand differentiation framework, led the creation of The Denver Difference brand platform, and built a five-year marketing maturity model to guide where we're going long-term.",
       },
