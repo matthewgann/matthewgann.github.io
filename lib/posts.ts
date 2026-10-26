@@ -10,6 +10,16 @@ export type Post = {
 
 const posts: Post[] = [
   {
+    slug: "an-amazing-employee-just-quit",
+    path: "/research/2026/10/an-amazing-employee-just-quit",
+    title: "An Amazing Employee Just Quit. I Couldn't Be Prouder.",
+    date: "October 2026",
+    dateISO: "2026-10-26",
+    category: "Leadership",
+    excerpt:
+      "One of my employees recently resigned, and I couldn't be happier for her. We've become a little too comfortable treating every resignation as an organizational failure.",
+  },
+  {
     slug: "when-marketing-is-invited-too-late",
     path: "/research/2026/10/when-marketing-is-invited-too-late",
     title: "When Marketing Is Invited Too Late",
