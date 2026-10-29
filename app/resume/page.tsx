@@ -64,7 +64,7 @@ const experience = [
     roles: [
       {
         title: "Director of Internet Operations",
-        highlight: "I was the lead web developer, digital designer, and PR strategist for a premier extreme sports company. Before \"digital\" was what it is today.",
+        highlight: "I was the lead web developer, digital designer, and PR strategist for a premier extreme sports company.",
       },
     ],
   },
@@ -74,7 +74,7 @@ const experience = [
     roles: [
       {
         title: "Director of Design and Development",
-        highlight: "I managed 200+ digital properties at the same time and grew revenues by over 300% in two years.",
+        highlight: "I managed 200+ digital properties.",
       },
     ],
   },
