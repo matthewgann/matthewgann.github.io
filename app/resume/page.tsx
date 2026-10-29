@@ -15,7 +15,6 @@ const experience = [
       {
         title: "",
         highlight: "I've kept an active consulting practice going my entire career, working with organizations across healthcare, legal, business services, retirement planning, real estate, medical aesthetics, and a lot more in between.",
-        overview: "My engagements have covered brand development, digital strategy, web presence, marketing operations, crisis communications, and organizational positioning. I've worked with everyone from solo practitioners to multi-location enterprises trying to grow, reposition, or just figure out why their marketing isn't working. That cross-sector experience has made me a sharper strategist in every leadership role I've held.",
       },
     ],
   },
@@ -26,7 +25,6 @@ const experience = [
       {
         title: "Associate Vice Chancellor, Chief Marketing Officer",
         highlight: "I'm the CMO for a private R1 research university with 10 schools and colleges, 18 Division I sports programs, and 35 NCAA national championships.",
-        overview: "I lead the university's full marketing and communications enterprise: brand strategy, enrollment marketing, digital properties, public relations, creative services, and internal communications. I developed a data-driven brand differentiation framework, led the creation of The Denver Difference brand platform, and built a five-year marketing maturity model to guide where we're going long-term.",
       },
     ],
   },
@@ -37,7 +35,6 @@ const experience = [
       {
         title: "Associate Vice Chancellor for Marketing, Digital Strategy, and Public Relations",
         highlight: "I was the systemwide CMO for Tennessee's largest higher education system. 37 colleges. About 165,000 students.",
-        overview: "I led marketing, digital strategy, and public relations across a highly decentralized system of community colleges and universities covering every corner of the state. I built shared frameworks, technology platforms, and campaign infrastructure that moved the needle on visibility and enrollment. Managing brand and communications across dozens of institutions with different identities and missions keeps you sharp.",
       },
     ],
   },
@@ -48,7 +45,6 @@ const experience = [
       {
         title: "Director of Web and Digital Media",
         highlight: "I led digital strategy and all public-facing web properties for a 10,000-student university.",
-        overview: "I modernized the university's web infrastructure and built the digital marketing capability that connected prospective students to programs and resources. I established analytics practices and CRM integrations that gave the institution real visibility into what was working across the enrollment funnel.",
       },
     ],
   },
@@ -59,7 +55,6 @@ const experience = [
       {
         title: "Vice President of Marketing and Promotions",
         highlight: "I was the CMO for one of the South's largest durable medical equipment suppliers.",
-        overview: "I oversaw brand, advertising, promotions, and market development across multiple service lines and geographic markets. I led campaigns spanning patient acquisition, physician referral development, and community health education, and built the organization's first integrated marketing strategy from scratch.",
       },
     ],
   },
@@ -70,7 +65,6 @@ const experience = [
       {
         title: "Director of Internet Operations",
         highlight: "I was the lead web developer, digital designer, and PR strategist for a premier extreme sports company. Before \"digital\" was what it is today.",
-        overview: "I built information management platforms for extreme sports tournaments, including one of the first digital scoring systems and a video streaming platform that was genuinely ahead of its time. I handled crisis communications and media relations for high-profile international events and built integrated marketing systems that drove tournament registration and community engagement.",
       },
     ],
   },
@@ -81,7 +75,6 @@ const experience = [
       {
         title: "Director of Design and Development",
         highlight: "I managed 200+ digital properties at the same time and grew revenues by over 300% in two years.",
-        overview: "I led design and development for a regional digital agency serving clients across healthcare, legal, retail, and professional services. I grew the business by expanding services, tightening production, and building a client retention approach rooted in real communication and measurable results.",
       },
     ],
   },
@@ -220,14 +213,9 @@ export default function ResumePage() {
                             {role.title}
                           </p>
                         )}
-                        <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--foreground)" }}>
+                        <p className="text-sm leading-relaxed" style={{ color: "var(--foreground)" }}>
                           {role.highlight}
                         </p>
-                        {role.overview && (
-                          <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
-                            {role.overview}
-                          </p>
-                        )}
                       </div>
                     ))}
                   </div>
