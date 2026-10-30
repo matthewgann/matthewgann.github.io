@@ -489,7 +489,7 @@ a { color: inherit; }
     border-left: 1px solid var(--line);
   }
   .hero-photo img {
-    object-position: center 12%;
+    object-position: center top;
   }
   .hero-shade {
     opacity: var(--p);
