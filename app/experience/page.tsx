@@ -174,10 +174,12 @@ export default function ExperiencePage() {
             </p>
             <p className="t-lead mt-8 mb-0 max-w-[58ch]">
               I&apos;ve spent more than two decades building brands, leading teams, and figuring out how
-              to make marketing actually work inside complex organizations. My career has taken me from
-              working on some of the first streaming platforms in the early 2000s to serving as CMO of a
-              major research university. I work at the intersection of strategy, data, and storytelling,
-              and I believe the best marketing is both honest and effective.
+              to make marketing actually work inside complex organizations. I started in digital in the
+              early 2000s, moved through executive marketing roles in healthcare and agency work, led
+              systemwide marketing for Tennessee&apos;s largest higher education system, and now serve as
+              chief marketing officer at the University of Denver. I work at the intersection of
+              strategy, data, and storytelling, and I believe the best marketing is both honest and
+              effective.
             </p>
           </div>
           <div className="md:col-span-4 lg:col-span-5 flex flex-col gap-2 items-start md:items-end md:justify-end t-small">

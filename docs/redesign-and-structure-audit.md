@@ -148,8 +148,9 @@ Everything else is verbatim. These are the only edits to supplied text:
 1. Home `h1`: "Purpose-driven." became "Purpose-driven marketing and storytelling." The
    name and the role line were removed from the hero.
 2. Experience summary: the em dash in "storytelling — and I believe" became a comma, per the
-   no-em-dash rule. "building some of the first streaming platforms" became "working on some of
-   the first streaming platforms" at Matthew's request.
+   no-em-dash rule. The "first streaming platforms" sentence was replaced at Matthew's request with a
+   career arc sentence assembled from the home page About copy (digital in the early 2000s,
+   healthcare and agency, Tennessee's largest higher education system, CMO at Denver).
 3. "Areas of Expertise" heading replaced (see Naming).
 4. "Research & Thoughts" renamed "Research and Musings" (see Naming). The listing now opens with
    a new first-person paragraph describing what the posts cover. Every claim in it traces to an
