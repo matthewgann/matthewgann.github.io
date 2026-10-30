@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ArticleSchema from "@/components/ArticleSchema";
-import { getNeighbors, getPost } from "@/lib/posts";
+import { getNeighbors, getPost, shortDate } from "@/lib/posts";
 import { SITE_URL, WRITING_LABEL, WRITING_PATH } from "@/lib/site";
 
 function Arrow() {
@@ -43,16 +43,9 @@ export default function PostShell({ slug, children }: { slug: string; children: 
           </nav>
           <div className="md:col-span-9">
             <h1 className="t-headline mb-6 max-w-[20ch]">{post.title}</h1>
-            <p className="t-small flex flex-wrap items-center gap-x-3 gap-y-1 m-0" style={{ color: "var(--ink-soft)" }}>
-              <span>
-                By{" "}
-                <Link href="/" rel="author" className="font-medium no-underline" style={{ color: "var(--ink)" }}>
-                  Matthew Gann, Ph.D.
-                </Link>
-              </span>
-              <span aria-hidden>·</span>
-              <time dateTime={post.dateISO}>{post.date}</time>
-            </p>
+            <time dateTime={post.dateISO} className="date-mark block">
+              {shortDate(post.dateISO)}
+            </time>
           </div>
         </div>
       </header>
@@ -93,13 +86,21 @@ export default function PostShell({ slug, children }: { slug: string; children: 
       {/* Author card */}
       <section aria-label="About the author" className="hairline-t">
         <div className="page-x py-10 grid md:grid-cols-12 gap-6 items-start">
-          <div className="md:[grid-column:4/11] lg:[grid-column:4/10] flex gap-4 items-center">
-            <div className="img-frame shrink-0 w-14 h-14 rounded-full overflow-hidden">
-              <Image src="/headshot.jpg" alt="Matthew Gann, Ph.D." width={56} height={56} className="object-cover object-top w-full h-full" />
+          <div className="md:[grid-column:4/11] lg:[grid-column:4/10] flex gap-5 items-start">
+            <div className="img-frame shrink-0 w-16 h-16 rounded-full overflow-hidden">
+              <Image src="/headshot.jpg" alt="Matthew Gann, Ph.D." width={64} height={64} className="object-cover object-top w-full h-full" />
             </div>
             <div>
-              <p className="font-semibold m-0 mb-1">Matthew Gann, Ph.D.</p>
-              <p className="t-small mt-2 mb-0">
+              <p className="font-semibold m-0 mb-1">
+                <Link href="/" rel="author" className="no-underline">
+                  Matthew Gann, Ph.D.
+                </Link>
+              </p>
+              <p className="t-small m-0" style={{ color: "var(--ink-soft)" }}>
+                I help higher education institutions connect strategy, story, and service to the
+                people they serve. Here, I write about marketing, leadership, and higher ed.
+              </p>
+              <p className="t-small mt-3 mb-0">
                 <Link href="/experience" className="arrow-link" style={{ fontSize: "0.875rem" }}>
                   <Arrow />
                   Experience

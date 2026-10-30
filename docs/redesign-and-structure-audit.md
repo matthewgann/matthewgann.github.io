@@ -158,8 +158,9 @@ Everything else is verbatim. These are the only edits to supplied text:
    investment (One Year In), accountability without control (Responsible for the Sale), measuring
    objectives (The Real ROO), developing people and candor (Employee Quit, Great Players), CMO
    roles in higher education and healthcare and the research areas (Experience).
-5. Post sign-off is the signature image, followed by a small author card: photo, name, and
-   a link to Experience. No bio, by request.
+5. Post sign-off is the signature image, followed by an author card: photo, name, a two-line
+   first-person bio built from the hero statement, and a link to Experience. The "By" byline
+   was removed from the header; the date there is the short form.
 6. Meta descriptions describe the role as "associate vice chancellor and chief marketing
    officer at the University of Denver", which is the home page wording.
 
