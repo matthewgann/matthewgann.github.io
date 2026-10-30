@@ -11,7 +11,7 @@ export const EMAIL = "matthew@matthewgann.com";
 export const LINKEDIN = "https://www.linkedin.com/in/matthewgann/";
 
 export const DEFAULT_DESCRIPTION =
-  "Purpose-driven marketing and communications executive. CMO at the University of Denver.";
+  "Purpose-driven marketing executive for higher education and nonprofit organizations. Chief marketing officer at the University of Denver.";
 
 export const HEADSHOT = `${SITE_URL}/headshot.jpg`;
 
@@ -49,7 +49,7 @@ export const personSchema = {
     { "@type": "PostalAddress", addressLocality: "Nashville", addressRegion: "TN", addressCountry: "US" },
   ],
   description:
-    "Purpose-driven marketing and communications executive with more than two decades of experience in higher education, healthcare, and agency leadership.",
+    "Purpose-driven marketing executive with more than two decades of experience in higher education, healthcare, and agency leadership, helping higher education and nonprofit organizations connect strategy, story, and service to the people they serve.",
   sameAs: [
     LINKEDIN,
     "https://www.du.edu/about/directory/matthew-gann",

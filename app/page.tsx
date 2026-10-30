@@ -121,7 +121,7 @@ export default function Home() {
         <div className="page-x pt-24 pb-20 md:pt-32 md:pb-28">
           <h2 className="t-statement text-center max-w-[34ch] mx-auto mb-16 md:mb-24 font-semibold">
             I&apos;ve spent more than two decades at the intersection of strategy, storytelling, and
-            leadership, helping institutions find their voice, build their brand, and connect with the
+            leadership, helping organizations find their voice, build their brand, and connect with the
             people who matter most to them.
           </h2>
 

@@ -7,7 +7,7 @@ import AiNote from "@/components/AiNote";
 import { BLOG_ID, PERSON_ID, SITE_URL, WEBSITE_ID, WRITING_LABEL, WRITING_PATH, jsonLd } from "@/lib/site";
 
 const DESCRIPTION =
-  "Essays on higher education marketing, brand strategy, and leadership by Matthew Gann, Ph.D., chief marketing officer at the University of Denver: marketing maturity, brand as investment, return on objectives, and developing people.";
+  "Essays on marketing, brand strategy, and leadership in purpose-driven organizations by Matthew Gann, Ph.D., chief marketing officer at the University of Denver: marketing maturity, brand as investment, return on objectives, and developing people.";
 const URL = `${SITE_URL}${WRITING_PATH}`;
 
 export const metadata: Metadata = {
@@ -90,12 +90,12 @@ export default function ResearchPage() {
           <div className="md:col-span-8 lg:col-span-7">
             <h1 className="t-display">{WRITING_LABEL}</h1>
             <p className="kicker mt-6 mb-0" style={{ color: "var(--ink-soft)" }}>
-              Marketing · Leadership · Higher Education
+              Marketing · Leadership · Purpose-driven work
             </p>
             <p className="t-lead mt-8 mb-0 max-w-[58ch]">
-              These posts are about the work of marketing inside higher education and about leading
-              the people who do it. Most of them come out of the day job: how universities decide
-              what they stand for, why brand is an investment rather than an expense, and how to
+              These posts are about the work of marketing inside purpose-driven organizations and
+              about leading the people who do it. Most of them come out of the day job: how
+              organizations decide what they stand for, why brand is an investment rather than an expense, and how to
               measure whether a strategy did what it set out to do. Some are about leadership more
               broadly, including developing people and telling them the truth.
             </p>

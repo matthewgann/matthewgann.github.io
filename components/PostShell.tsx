@@ -99,9 +99,9 @@ export default function PostShell({ slug, children }: { slug: string; children: 
                 </Link>
               </p>
               <p className="t-small m-0" style={{ color: "var(--ink-soft)" }}>
-                I help higher education institutions and nonprofits connect strategy, story, and
+                I help higher education and nonprofit organizations connect strategy, story, and
                 service to the people they serve. Here, I write about marketing, leadership, and
-                higher ed.
+                purpose-driven work.
               </p>
               <p className="t-small mt-3 mb-0">
                 <Link href="/experience" className="arrow-link" style={{ fontSize: "0.875rem" }}>
