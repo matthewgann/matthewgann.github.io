@@ -78,6 +78,18 @@ export default function PostShell({ slug, children }: { slug: string; children: 
       <div className="page-x grid md:grid-cols-12 gap-6 pt-10 md:pt-14 pb-16">
         <div className="md:[grid-column:4/11] lg:[grid-column:4/10]">
           <div className="prose-mg">{children}</div>
+          <div className="mt-12 flex flex-col items-start gap-2" aria-label="Signed">
+            <Image
+              src="/signature.png"
+              alt="Signature of Matthew Gann"
+              width={160}
+              height={431}
+              style={{ height: "8.5rem", width: "auto" }}
+            />
+            <span className="t-small" style={{ color: "var(--ink-soft)" }}>
+              Matthew Gann, Ph.D.
+            </span>
+          </div>
         </div>
       </div>
 
