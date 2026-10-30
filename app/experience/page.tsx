@@ -57,18 +57,18 @@ const experience = [
     highlight: "I was the CMO for one of the South's largest durable medical equipment suppliers.",
   },
   {
-    org: "WPF Management",
-    location: "Gallatin, Tennessee",
-    title: "Director of Internet Operations",
-    highlight:
-      "I was the lead web developer, digital designer, and PR strategist for a premier extreme sports company.",
-  },
-  {
     org: "N2 The Net",
     location: "Cookeville, Tennessee",
     title: "Director of Design and Development",
     highlight:
       "I designed and built websites for college athletics, real estate, radio and broadcasting, and healthcare clients.",
+  },
+  {
+    org: "WPF Management",
+    location: "Gallatin, Tennessee",
+    title: "Director of Internet Operations",
+    highlight:
+      "I was the lead web developer, digital designer, and PR strategist for a premier extreme sports company.",
   },
 ];
 
