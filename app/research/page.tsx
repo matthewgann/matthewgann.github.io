@@ -93,12 +93,11 @@ export default function ResearchPage() {
             <p className="t-lead mt-8 mb-0 max-w-[58ch]">
               I write here about the work of marketing inside higher education and about leading the
               people who do it. Most of these posts come out of the day job: how universities decide
-              what they stand for, why brand is an investment rather than an expense, what it means to
-              be accountable for enrollment outcomes you don&apos;t control, and how to measure whether a
-              strategy did what it set out to do. Some are about leadership more broadly, including
-              developing people and telling them the truth. The ideas are my own, shaped by more than
-              two decades in marketing, including CMO roles in higher education and healthcare, and by
-              research in marketing operations and organizational intelligence.
+              what they stand for, why brand is an investment rather than an expense, and how to
+              measure whether a strategy did what it set out to do. Some are about leadership more
+              broadly, including developing people and telling them the truth. The ideas are my own,
+              shaped by more than two decades in marketing and by research in marketing operations and
+              organizational intelligence.
             </p>
           </div>
           <div className="md:col-span-4 lg:col-span-5 flex flex-col gap-2 items-start md:items-end md:justify-end t-small">
