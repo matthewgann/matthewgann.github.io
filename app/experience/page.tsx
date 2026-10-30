@@ -148,17 +148,13 @@ const schema = [
   },
 ];
 
-function Column({ title, items }: { title: string; items: string[] }) {
+function Row({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div>
-      <h2 className="t-card mb-6">{title}</h2>
-      <ul className="list-none m-0 p-0 hairline-t">
-        {items.map((item) => (
-          <li key={item} className="py-3 hairline-b t-small font-medium">
-            {item}
-          </li>
-        ))}
-      </ul>
+    <div className="hairline-b">
+      <div className="page-x py-10 md:py-12 grid md:grid-cols-12 gap-4 md:gap-6">
+        <h3 className="md:col-span-3 t-card m-0">{title}</h3>
+        <div className="md:col-span-8 lg:col-span-7">{children}</div>
+      </div>
     </div>
   );
 }
@@ -235,25 +231,30 @@ export default function ExperiencePage() {
         </ul>
       </section>
 
-      {/* Skills & Education */}
-      <section style={{ background: "var(--bg-raised)" }}>
-        <div className="page-x py-16 md:py-24 grid md:grid-cols-2 gap-12">
-          <div>
-            <h2 className="t-card mb-6">Skills &amp; Expertise</h2>
-            <ul className="list-none p-0 m-0 hairline-t">
+      {/* Credentials, affiliations, service: one continuous ledger */}
+      <section aria-labelledby="ledger-heading">
+        <div className="page-x pt-20 pb-8 md:pt-28 md:pb-12">
+          <h2 id="ledger-heading" className="t-headline">
+            Credentials, affiliations, and service.
+          </h2>
+        </div>
+
+        <div className="hairline-t">
+          <Row title="Skills & Expertise">
+            <ul className="list-none m-0 p-0 grid sm:grid-cols-2 gap-x-10 gap-y-2">
               {skills.map((skill) => (
-                <li key={skill} className="py-3 hairline-b t-small font-medium">
+                <li key={skill} className="t-body font-medium">
                   {skill}
                 </li>
               ))}
             </ul>
-          </div>
-          <div>
-            <h2 className="t-card mb-6">Education &amp; Credentials</h2>
-            <dl className="m-0 hairline-t">
+          </Row>
+
+          <Row title="Education & Credentials">
+            <dl className="m-0 grid sm:grid-cols-2 gap-x-10 gap-y-6">
               {education.map((edu) => (
-                <div key={edu.institution} className="py-4 hairline-b">
-                  <dt className="font-semibold t-small">{edu.institution}</dt>
+                <div key={edu.institution}>
+                  <dt className="t-body font-semibold">{edu.institution}</dt>
                   {edu.credentials.map((c) => (
                     <dd key={c} className="m-0 t-small" style={{ color: "var(--ink-soft)" }}>
                       {c}
@@ -262,35 +263,50 @@ export default function ExperiencePage() {
                 </div>
               ))}
             </dl>
-          </div>
-        </div>
-      </section>
+          </Row>
 
-      {/* Research Areas, Awards, Memberships */}
-      <section className="hairline-t">
-        <div className="page-x py-16 md:py-24 grid md:grid-cols-3 gap-12">
-          <Column title="Research Areas" items={researchAreas} />
-          <Column title="Personal Awards" items={awards} />
-          <Column title="Memberships" items={memberships} />
-        </div>
-      </section>
+          <Row title="Research Areas">
+            <ul className="list-none m-0 p-0 flex flex-col gap-2">
+              {researchAreas.map((area) => (
+                <li key={area} className="t-body font-medium">
+                  {area}
+                </li>
+              ))}
+            </ul>
+          </Row>
 
-      {/* Community */}
-      <section style={{ background: "var(--dark)", color: "var(--on-dark)" }}>
-        <div className="page-x py-16 md:py-24">
-          <h2 className="t-headline mb-12" style={{ color: "var(--on-dark)" }}>
-            Service and volunteer roles.
-          </h2>
-          <ul className="list-none m-0 p-0 grid md:grid-cols-2 gap-x-12" style={{ borderTop: "1px solid var(--on-dark-line)" }}>
-            {community.map((item) => (
-              <li key={item.org} className="py-4" style={{ borderBottom: "1px solid var(--on-dark-line)" }}>
-                <p className="font-semibold m-0 t-small">{item.org}</p>
-                <p className="t-small m-0" style={{ color: "var(--on-dark-soft)" }}>
-                  {item.role}
-                </p>
-              </li>
-            ))}
-          </ul>
+          <Row title="Awards">
+            <ul className="list-none m-0 p-0 flex flex-col gap-2">
+              {awards.map((award) => (
+                <li key={award} className="t-body font-medium">
+                  {award}
+                </li>
+              ))}
+            </ul>
+          </Row>
+
+          <Row title="Memberships">
+            <ul className="list-none m-0 p-0 grid sm:grid-cols-2 gap-x-10 gap-y-2">
+              {memberships.map((m) => (
+                <li key={m} className="t-body font-medium">
+                  {m}
+                </li>
+              ))}
+            </ul>
+          </Row>
+
+          <Row title="Community & Service">
+            <ul className="list-none m-0 p-0 grid sm:grid-cols-2 gap-x-10 gap-y-6">
+              {community.map((item) => (
+                <li key={item.org}>
+                  <p className="t-body font-semibold m-0">{item.org}</p>
+                  <p className="t-small m-0" style={{ color: "var(--ink-soft)" }}>
+                    {item.role}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </Row>
         </div>
       </section>
     </>

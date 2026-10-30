@@ -60,8 +60,9 @@ story, and service meet." Alternates: "The work.", "How I help."
 - "A note on AI" kept verbatim.
 
 **Experience**
-- `h1` is "Experience". Same content, hairline rows per role, skills and education as
-  lists, community on a dark block.
+- `h1` is "Experience". Same content. Career as hairline rows, then one continuous set of
+  rows under "Credentials, affiliations, and service." with the heading on the left and the
+  list on the right: skills, education, research areas, awards, memberships, community.
 
 **Contact**
 - Three-column details, photo band.
