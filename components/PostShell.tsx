@@ -78,7 +78,7 @@ export default function PostShell({ slug, children }: { slug: string; children: 
       <div className="page-x grid md:grid-cols-12 gap-6 pt-10 md:pt-14 pb-16">
         <div className="md:[grid-column:4/11] lg:[grid-column:4/10]">
           <div className="prose-mg">{children}</div>
-          <div className="mt-12 flex flex-col items-start gap-2" aria-label="Signed">
+          <div className="mt-12" aria-label="Signed">
             <Image
               src="/signature.png"
               alt="Signature of Matthew Gann"
@@ -86,9 +86,6 @@ export default function PostShell({ slug, children }: { slug: string; children: 
               height={431}
               style={{ height: "8.5rem", width: "auto" }}
             />
-            <span className="t-small" style={{ color: "var(--ink-soft)" }}>
-              Matthew Gann, Ph.D.
-            </span>
           </div>
         </div>
       </div>
@@ -103,8 +100,11 @@ export default function PostShell({ slug, children }: { slug: string; children: 
             <div>
               <p className="font-semibold m-0 mb-1">Matthew Gann, Ph.D.</p>
               <p className="t-small m-0" style={{ color: "var(--ink-soft)" }}>
-                Associate vice chancellor and chief marketing officer at the University of Denver.
-                More than two decades at the intersection of strategy, storytelling, and leadership.
+                Matthew builds intelligent marketing operations that help higher education
+                institutions connect strategy, story, and service to students and their communities.
+                He has spent more than two decades at the intersection of strategy, storytelling, and
+                leadership, helping institutions find their voice, build their brand, and connect with
+                the people who matter most to them.
               </p>
               <p className="t-small mt-3 mb-0">
                 <Link href="/experience" className="arrow-link" style={{ fontSize: "0.875rem" }}>
