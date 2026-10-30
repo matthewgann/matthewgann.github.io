@@ -103,9 +103,9 @@ export default function StackedCards({ items, headingLevel = "h3" }: Props) {
 
         return (
           <article key={item.id} id={item.id} className="stack-card" style={{ ["--i" as string]: i }}>
-            {item.image ? (
-              <div className="stack-card-inner grid md:grid-cols-2 min-h-[inherit]">
-                <div className="hairline-b md:border-b-0 md:hairline-r p-(--gutter)">
+            <div className="stack-card-inner grid md:grid-cols-2 min-h-[inherit]">
+              <div className={`${item.image ? "hairline-b md:border-b-0 " : "hidden md:block "}md:hairline-r p-(--gutter)`}>
+                {item.image && (
                   <div className="img-frame w-full aspect-[16/10] md:aspect-[4/3] max-h-[68vh]">
                     <Image
                       src={item.image}
@@ -116,16 +116,10 @@ export default function StackedCards({ items, headingLevel = "h3" }: Props) {
                       style={{ objectPosition: item.imagePosition ?? "center" }}
                     />
                   </div>
-                </div>
-                <div className="p-(--gutter) md:pl-[calc(var(--gutter)*1.25)] flex flex-col gap-5">{copy}</div>
+                )}
               </div>
-            ) : (
-              <div className="stack-card-inner grid md:grid-cols-12 min-h-[inherit]">
-                <div className="md:col-span-8 md:col-start-5 p-(--gutter) md:pl-[calc(var(--gutter)*1.25)] md:hairline-l flex flex-col gap-5">
-                  {copy}
-                </div>
-              </div>
-            )}
+              <div className="p-(--gutter) md:pl-[calc(var(--gutter)*1.25)] flex flex-col gap-5">{copy}</div>
+            </div>
           </article>
         );
       })}
