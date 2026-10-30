@@ -100,9 +100,9 @@ export default function PostShell({ slug, children }: { slug: string; children: 
             <div>
               <p className="font-semibold m-0 mb-1">Matthew Gann, Ph.D.</p>
               <p className="t-small m-0" style={{ color: "var(--ink-soft)" }}>
-                Matthew builds intelligent marketing operations that help higher education
-                institutions connect strategy, story, and service to students and their communities.
-                He has spent more than two decades at the intersection of strategy, storytelling, and
+                I build intelligent marketing operations that help higher education institutions
+                connect strategy, story, and service to students and their communities. I&apos;ve
+                spent more than two decades at the intersection of strategy, storytelling, and
                 leadership, helping institutions find their voice, build their brand, and connect with
                 the people who matter most to them.
               </p>

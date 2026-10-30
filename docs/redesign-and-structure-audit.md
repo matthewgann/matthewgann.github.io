@@ -153,7 +153,7 @@ Everything else is verbatim. These are the only edits to supplied text:
 4. "Research & Thoughts" renamed "Research and Musings" (see Naming). The listing dek lost its first word
    so it does not repeat the title.
 5. Post sign-off is now the signature image, followed by an author card. The card's bio is
-   two sentences assembled from the hero statement and the first About sentence, in third
+   two sentences assembled from the hero statement and the first About sentence, in first
    person, with no job title by request.
 6. Meta descriptions describe the role as "associate vice chancellor and chief marketing
    officer at the University of Denver", which is the home page wording.
