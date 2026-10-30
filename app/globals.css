@@ -486,3 +486,30 @@ a { color: inherit; }
   .hero-photo { left: 50%; }
   .hero-shade { opacity: 0; }
 }
+
+/* ── About portrait: a circle as tall as the text beside it ──── */
+.about-portrait {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-portrait-circle {
+  position: relative;
+  width: min(100%, 22rem);
+  height: min(100%, 22rem);
+  aspect-ratio: 1 / 1;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .about-portrait {
+    container-type: size;
+    min-height: 0;
+  }
+  .about-portrait-circle {
+    /* diameter = the smaller of the column's width and the text's height */
+    --d: min(100cqw, 100cqh);
+    width: var(--d);
+    height: var(--d);
+  }
+}

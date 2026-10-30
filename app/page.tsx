@@ -124,7 +124,7 @@ export default function Home() {
             people who matter most to them.
           </h2>
 
-          <div className="grid md:grid-cols-12 gap-x-10 gap-y-10 items-start">
+          <div className="grid md:grid-cols-12 gap-x-10 gap-y-10 items-stretch">
             <div className="md:col-span-7 t-body flex flex-col gap-5">
               <p>
                 My career has taken me from early-stage digital work in the early 2000s through
@@ -152,15 +152,15 @@ export default function Home() {
               </p>
             </div>
 
-            <figure className="md:col-span-4 md:col-start-9 m-0">
-              <div className="img-frame w-full aspect-[4/5]">
+            <figure className="about-portrait md:col-span-4 md:col-start-9 m-0">
+              <div className="about-portrait-circle img-frame">
                 <Image
                   src="/hero-brooklyn.jpg"
                   alt="Matthew Gann on the Brooklyn waterfront with the Manhattan skyline behind him"
                   fill
-                  sizes="(min-width: 768px) 33vw, 100vw"
+                  sizes="(min-width: 768px) 33vw, 80vw"
                   className="object-cover"
-                  style={{ objectPosition: "center 30%" }}
+                  style={{ objectPosition: "center 28%" }}
                 />
               </div>
             </figure>
@@ -171,16 +171,16 @@ export default function Home() {
         <div className="hairline-t">
           <div className="page-x py-10 md:py-12 grid md:grid-cols-12 gap-4 md:gap-6">
             <h3 className="md:col-span-3 t-card m-0">At a glance</h3>
-            <dl className="md:col-span-9 m-0 grid sm:grid-cols-2 gap-x-10 gap-y-6">
+            <ul className="md:col-span-8 lg:col-span-7 list-none m-0 p-0 hairline-t">
               {glance.map(({ label, value }) => (
-                <div key={label}>
-                  <dt className="kicker mb-1" style={{ color: "var(--accent)" }}>
+                <li key={label} className="py-4 hairline-b grid grid-cols-[9rem_1fr] gap-4 items-baseline">
+                  <span className="kicker" style={{ color: "var(--accent)" }}>
                     {label}
-                  </dt>
-                  <dd className="m-0 t-body font-medium">{value}</dd>
-                </div>
+                  </span>
+                  <span className="t-body font-medium">{value}</span>
+                </li>
               ))}
-            </dl>
+            </ul>
           </div>
         </div>
       </section>
