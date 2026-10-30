@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import posts from "@/lib/posts";
 import HomeHero from "@/components/HomeHero";
@@ -115,7 +116,7 @@ export default function Home() {
       <HomeHero />
 
       {/* ── About ─────────────────────────────────────────────── */}
-      <section id="about" className="guides hairline-b">
+      <section id="about" className="hairline-b">
         <div className="page-x pt-24 pb-20 md:pt-32 md:pb-28">
           <h2 className="t-statement text-center max-w-[34ch] mx-auto mb-16 md:mb-24 font-semibold">
             I&apos;ve spent more than two decades at the intersection of strategy, storytelling, and
@@ -124,7 +125,7 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-12 gap-x-10 gap-y-10 items-start">
-            <div className="md:col-span-7 lg:col-span-6 lg:col-start-2 t-body flex flex-col gap-5">
+            <div className="md:col-span-7 t-body flex flex-col gap-5">
               <p>
                 My career has taken me from early-stage digital work in the early 2000s through
                 executive marketing roles in healthcare and agency work, to leading systemwide
@@ -151,13 +152,32 @@ export default function Home() {
               </p>
             </div>
 
-            <dl className="md:col-span-5 lg:col-span-4 lg:col-start-9 m-0 hairline-t">
+            <figure className="md:col-span-4 md:col-start-9 m-0">
+              <div className="img-frame w-full aspect-[4/5]">
+                <Image
+                  src="/hero-brooklyn.jpg"
+                  alt="Matthew Gann on the Brooklyn waterfront with the Manhattan skyline behind him"
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover"
+                  style={{ objectPosition: "center 30%" }}
+                />
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        {/* At a glance */}
+        <div className="hairline-t">
+          <div className="page-x py-10 md:py-12 grid md:grid-cols-12 gap-4 md:gap-6">
+            <h3 className="md:col-span-3 t-card m-0">At a glance</h3>
+            <dl className="md:col-span-9 m-0 grid sm:grid-cols-2 gap-x-10 gap-y-6">
               {glance.map(({ label, value }) => (
-                <div key={label} className="py-4 hairline-b grid grid-cols-[7.5rem_1fr] gap-4">
-                  <dt className="kicker" style={{ color: "var(--accent)" }}>
+                <div key={label}>
+                  <dt className="kicker mb-1" style={{ color: "var(--accent)" }}>
                     {label}
                   </dt>
-                  <dd className="m-0 t-small font-medium">{value}</dd>
+                  <dd className="m-0 t-body font-medium">{value}</dd>
                 </div>
               ))}
             </dl>

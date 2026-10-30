@@ -163,7 +163,7 @@ Current placeholders reuse the nine photos already in `public/`. To replace:
 
 | Slot | Current | Ideal |
 | --- | --- | --- |
-| Home hero, right half | headshot.jpg (kept by request) | hero-brooklyn.jpg is in public/ if wanted elsewhere |
+| Home hero, right half | headshot.jpg (kept by request) | Done. hero-brooklyn.jpg now sits beside the About paragraphs |
 | Practice cards (6) | band-vision, band-conference, band-ama, broncos-panel, campus-run, band-colorado | One landscape per card, 1600x1200, that reads as the topic |
 | Listing hero | band-car | Any wide candid, 2400x1200 |
 | Post cards (7 of 10 have none) | text-only card | One landscape per post, 1600x1000. A strong texture or place shot works. One Year In now uses maroon-bells.jpg |
