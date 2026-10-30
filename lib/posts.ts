@@ -154,7 +154,8 @@ export function getNeighbors(slug: string): { newer?: Post; older?: Post } {
 export function postMetadata(slug: string): Metadata {
   const post = getPost(slug);
   const url = `${SITE_URL}${post.path}`;
-  const image = post.image ? `${SITE_URL}${post.image}` : undefined;
+  const image = post.image ? `${SITE_URL}${post.image}` : `${SITE_URL}/og-image.png`;
+  const imageAlt = post.image ? post.imageAlt ?? post.title : "Matthew Gann, Ph.D.";
   return {
     title: post.title,
     description: post.excerpt,
@@ -163,16 +164,19 @@ export function postMetadata(slug: string): Metadata {
       title: post.title,
       description: post.excerpt,
       url,
+      siteName: "Matthew Gann, Ph.D.",
+      locale: "en_US",
       type: "article",
       publishedTime: post.dateISO,
+      modifiedTime: post.dateISO,
       authors: [SITE_URL],
-      ...(image ? { images: [{ url: image, alt: post.imageAlt ?? post.title }] } : {}),
+      images: [{ url: image, alt: imageAlt }],
     },
     twitter: {
-      card: image ? "summary_large_image" : "summary",
+      card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      ...(image ? { images: [image] } : {}),
+      images: [image],
     },
   };
 }

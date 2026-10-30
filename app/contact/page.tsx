@@ -10,7 +10,14 @@ export const metadata: Metadata = {
   title: "Get in Touch",
   description: DESCRIPTION,
   alternates: { canonical: URL },
-  openGraph: { type: "website", title: "Get in Touch | Matthew Gann, Ph.D.", description: DESCRIPTION, url: URL },
+  openGraph: {
+    type: "website",
+    title: "Get in Touch | Matthew Gann, Ph.D.",
+    description: DESCRIPTION,
+    url: URL,
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Matthew Gann, Ph.D." }],
+  },
+  twitter: { card: "summary_large_image", title: "Get in Touch | Matthew Gann, Ph.D.", description: DESCRIPTION, images: ["/og-image.png"] },
 };
 
 const schema = [

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Inter_Tight } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -27,6 +27,12 @@ const inter = Inter({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  themeColor: "#ECE9E3",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -38,6 +44,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Matthew Gann", url: SITE_URL }],
   creator: "Matthew Gann",
   publisher: "Matthew Gann",
+  formatDetection: { telephone: false, address: false, email: false },
   alternates: {
     canonical: SITE_URL,
     types: { "application/rss+xml": `${SITE_URL}/feed.xml` },
@@ -90,16 +97,19 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col">
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-4YEV8PL99X"
-          strategy="afterInteractive"
-        />
+        {/* Analytics only on the live host, so local and preview builds stay out of the data */}
         <Script id="gtag-init" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-4YEV8PL99X');
+            if (location.hostname === 'matthewgann.com' || location.hostname === 'www.matthewgann.com') {
+              var s = document.createElement('script');
+              s.async = true;
+              s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4YEV8PL99X';
+              document.head.appendChild(s);
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-4YEV8PL99X');
+            }
           `}
         </Script>
         <a href="#main" className="sr-only sr-only-focusable">
