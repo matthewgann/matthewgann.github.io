@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 /**
  * Circular portrait with a teal ring set 10px off the image. Two scroll-driven
  * variables: --reveal (0 to 1) draws the ring and eases the photo up to size as
- * the figure enters the viewport; --drift (-1 to 1) gives the photo a slow
+ * the figure enters the viewport, then reverses as it leaves at the top; --drift (-1 to 1) gives the photo a slow
  * parallax against the text while the section passes. Reduced motion renders
  * the finished state.
  */
@@ -37,11 +37,17 @@ export default function AboutPortrait({
       raf = 0;
       const r = el.getBoundingClientRect();
       const vh = window.innerHeight;
-      // reveal: from the figure's top entering at the bottom of the viewport
+      // ease in: from the figure's top entering at the bottom of the viewport
       // to its center reaching 55% of the way up
       const start = vh;
       const end = vh * 0.55 - r.height / 2;
-      const reveal = Math.min(1, Math.max(0, (start - r.top) / (start - end)));
+      const enter = Math.min(1, Math.max(0, (start - r.top) / (start - end)));
+      // ease out: mirror of the entry. From the center passing 45% of the way
+      // up to the figure's bottom leaving the top of the viewport
+      const outStart = vh * 0.45 + r.height / 2;
+      const outEnd = 0;
+      const exit = Math.min(1, Math.max(0, (outStart - r.bottom) / (outStart - outEnd)));
+      const reveal = Math.min(enter, 1 - exit);
       // drift: -1 when the figure is just below the viewport, +1 when just above
       const mid = r.top + r.height / 2;
       const drift = Math.min(1, Math.max(-1, (vh / 2 - mid) / (vh / 2 + r.height / 2)));
