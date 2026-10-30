@@ -5,6 +5,7 @@ import AboutPortrait from "@/components/AboutPortrait";
 import HomeHero from "@/components/HomeHero";
 import StackedCards from "@/components/StackedCards";
 import ImageBand from "@/components/ImageBand";
+import ContactCta from "@/components/ContactCta";
 import { PERSON_ID, SITE_URL, WEBSITE_ID, WRITING_LABEL, WRITING_PATH, jsonLd } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -238,21 +239,7 @@ export default function Home() {
         </ul>
       </section>
 
-      {/* ── Closing CTA ───────────────────────────────────────── */}
-      <section style={{ background: "var(--bg-raised)" }} className="hairline-t">
-        <div className="page-x py-20 md:py-28 grid md:grid-cols-12 gap-8 items-end">
-          <h2 className="md:col-span-8 t-headline max-w-[18ch]">
-            Whether you want to talk about a project, a speaking opportunity, or just connect, I&apos;d
-            love to hear from you.
-          </h2>
-          <div className="md:col-span-4 flex md:justify-end">
-            <Link href="/contact" className="btn btn-accent">
-              <span>Get in Touch</span>
-              <span aria-hidden>↗</span>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <ContactCta />
     </>
   );
 }

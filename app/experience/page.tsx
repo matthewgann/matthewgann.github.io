@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ImageBand from "@/components/ImageBand";
+import ContactCta from "@/components/ContactCta";
 import CareerRail from "@/components/CareerRail";
 import { EMAIL, LINKEDIN, PERSON_ID, SITE_URL, WEBSITE_ID, jsonLd } from "@/lib/site";
 
@@ -287,6 +288,7 @@ export default function ExperiencePage() {
           </Row>
         </div>
       </section>
+      <ContactCta />
     </>
   );
 }

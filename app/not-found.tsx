@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactCta from "@/components/ContactCta";
 
 export const metadata = {
   title: "Page not found",
@@ -7,6 +8,7 @@ export const metadata = {
 
 export default function NotFound() {
   return (
+    <>
     <section className="page-x py-24 md:py-36 grid md:grid-cols-12 gap-8 items-end">
       <div className="md:col-span-8">
         <h1 className="t-display">That page isn&apos;t here.</h1>
@@ -19,5 +21,7 @@ export default function NotFound() {
         </Link>
       </div>
     </section>
+    <ContactCta />
+    </>
   );
 }

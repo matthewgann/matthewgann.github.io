@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import posts, { shortDate } from "@/lib/posts";
 import StackedCards from "@/components/StackedCards";
 import ImageBand from "@/components/ImageBand";
+import ContactCta from "@/components/ContactCta";
 import AiNote from "@/components/AiNote";
 import { BLOG_ID, PERSON_ID, SITE_URL, WEBSITE_ID, WRITING_LABEL, WRITING_PATH, jsonLd } from "@/lib/site";
 
@@ -112,6 +113,7 @@ export default function ResearchPage() {
       <StackedCards items={items} headingLevel="h2" />
 
       <AiNote />
+      <ContactCta />
     </>
   );
 }
