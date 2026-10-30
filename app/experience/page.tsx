@@ -9,19 +9,19 @@ const DESCRIPTION =
   "Career history, education, credentials, awards, and community roles of Matthew Gann, Ph.D., chief marketing officer at the University of Denver and former systemwide CMO for the Tennessee Board of Regents.";
 
 export const metadata: Metadata = {
-  title: "Experience",
+  title: "Experience and Background",
   description: DESCRIPTION,
   alternates: { canonical: URL },
   openGraph: {
     type: "profile",
-    title: "Experience | Matthew Gann, Ph.D.",
+    title: "Experience and Background | Matthew Gann, Ph.D.",
     description: DESCRIPTION,
     url: URL,
     firstName: "Matthew",
     lastName: "Gann",
     images: [{ url: "/band-conference.jpg", width: 1600, height: 1067, alt: "Matthew Gann at a professional conference" }],
   },
-  twitter: { card: "summary_large_image", title: "Experience | Matthew Gann, Ph.D.", description: DESCRIPTION, images: ["/band-conference.jpg"] },
+  twitter: { card: "summary_large_image", title: "Experience and Background | Matthew Gann, Ph.D.", description: DESCRIPTION, images: ["/band-conference.jpg"] },
 };
 
 const experience = [
@@ -145,7 +145,7 @@ const schema = [
     "@type": "ProfilePage",
     "@id": URL,
     url: URL,
-    name: "Experience | Matthew Gann, Ph.D.",
+    name: "Experience and Background | Matthew Gann, Ph.D.",
     isPartOf: { "@id": WEBSITE_ID },
     mainEntity: { "@id": PERSON_ID },
     about: { "@id": PERSON_ID },
@@ -154,7 +154,7 @@ const schema = [
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Experience", item: URL },
+      { "@type": "ListItem", position: 2, name: "Experience and Background", item: URL },
     ],
   },
 ];
@@ -179,7 +179,7 @@ export default function ExperiencePage() {
       <section className="hairline-b">
         <div className="page-x pt-14 pb-12 md:pt-20 md:pb-16 grid md:grid-cols-12 gap-8">
           <div className="md:col-span-8 lg:col-span-7">
-            <h1 className="t-display">Experience</h1>
+            <h1 className="t-display">Experience and Background</h1>
             <p className="kicker mt-6 mb-0" style={{ color: "var(--ink-soft)" }}>
               Chief Marketing Officer · Organizational Consultant · Marketing Function Builder
             </p>

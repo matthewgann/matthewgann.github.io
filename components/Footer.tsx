@@ -4,7 +4,7 @@ import { EMAIL, LINKEDIN, WRITING_LABEL, WRITING_PATH } from "@/lib/site";
 
 const nav = [
   { href: "/", label: "Home" },
-  { href: "/experience", label: "Experience" },
+  { href: "/experience", label: "Experience and Background" },
   { href: WRITING_PATH, label: WRITING_LABEL },
   { href: "/contact", label: "Get in Touch" },
 ];

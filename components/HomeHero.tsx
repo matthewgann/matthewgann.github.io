@@ -84,7 +84,7 @@ export default function HomeHero() {
               <span aria-hidden>↗</span>
             </Link>
             <Link href="/experience" className="btn">
-              <span>Experience</span>
+              <span>Experience and Background</span>
               <span aria-hidden>↗</span>
             </Link>
           </div>

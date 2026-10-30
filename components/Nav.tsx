@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { WRITING_LABEL, WRITING_PATH } from "@/lib/site";
 
 const links = [
-  { href: "/experience", label: "Experience" },
+  { href: "/experience", label: "Experience and Background" },
   { href: WRITING_PATH, label: WRITING_LABEL },
 ];
 
