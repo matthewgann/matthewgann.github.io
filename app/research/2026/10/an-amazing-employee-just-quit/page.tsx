@@ -61,12 +61,6 @@ export default function Post() {
         <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>
           October 2026
         </span>
-        <span
-          className="text-xs px-2 py-0.5 font-medium tracking-wide"
-          style={{ background: "var(--surface)", border: "1px solid var(--border)", color: "var(--text-muted)" }}
-        >
-          Leadership
-        </span>
       </div>
 
       <h1 className="text-4xl sm:text-5xl mb-8" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
@@ -197,15 +191,7 @@ export default function Post() {
         <p className="leading-relaxed">That sounds obvious, but apparently it isn&apos;t always.</p>
 
         <p className="leading-relaxed">
-          I once had a boss (not a leader) who thought it was perfectly reasonable to replace a
-          social media manager with an administrative assistant because the assistant could
-          manage a calendar.
-        </p>
-
-        <p className="leading-relaxed">Not kidding.</p>
-
-        <p className="leading-relaxed">
-          Anyhow, people aren&apos;t interchangeable. One employee may want to become a vice
+          People aren&apos;t interchangeable. One employee may want to become a vice
           president. Another may want to be an exceptional designer or strategist without ever
           managing another human being. Someone else may discover a passion that takes them into
           an entirely different field.

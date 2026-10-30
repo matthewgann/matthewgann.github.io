@@ -36,12 +36,6 @@ export default function Post() {
         <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>
           March 2026
         </span>
-        <span
-          className="text-xs px-2 py-0.5 font-medium tracking-wide"
-          style={{ background: "var(--surface)", border: "1px solid var(--border)", color: "var(--text-muted)" }}
-        >
-          Higher Education
-        </span>
       </div>
 
       <h1 className="text-4xl sm:text-5xl mb-8" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>

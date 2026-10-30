@@ -39,10 +39,6 @@ export default function ResearchPage() {
                         <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>
                           {post.date}
                         </span>
-                        <span className="text-xs px-2 py-0.5 font-medium tracking-wide"
-                          style={{ background: "var(--surface)", border: "1px solid var(--border)", color: "var(--text-muted)" }}>
-                          {post.category}
-                        </span>
                       </div>
                       <h2 className="text-2xl mb-3 transition-colors duration-150"
                         style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
