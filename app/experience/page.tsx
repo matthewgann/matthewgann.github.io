@@ -164,16 +164,23 @@ export default function ExperiencePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(schema) }} />
 
-      {/* Header */}
+      {/* Header with summary */}
       <section className="hairline-b">
-        <div className="page-x pt-14 pb-12 md:pt-20 md:pb-16 grid md:grid-cols-12 gap-8 items-end">
-          <div className="md:col-span-7">
+        <div className="page-x pt-14 pb-12 md:pt-20 md:pb-16 grid md:grid-cols-12 gap-8">
+          <div className="md:col-span-8 lg:col-span-7">
             <h1 className="t-display">Experience</h1>
-            <p className="t-lead mt-6 mb-0" style={{ color: "var(--ink-soft)" }}>
+            <p className="kicker mt-6 mb-0" style={{ color: "var(--ink-soft)" }}>
               Chief Marketing Officer · Organizational Consultant · Marketing Function Builder
             </p>
+            <p className="t-lead mt-8 mb-0 max-w-[58ch]">
+              I&apos;ve spent more than two decades building brands, leading teams, and figuring out how
+              to make marketing actually work inside complex organizations. My career has taken me from
+              building some of the first streaming platforms in the early 2000s to serving as CMO of a
+              major research university. I work at the intersection of strategy, data, and storytelling,
+              and I believe the best marketing is both honest and effective.
+            </p>
           </div>
-          <div className="md:col-span-5 flex flex-col gap-2 items-start md:items-end t-small">
+          <div className="md:col-span-4 lg:col-span-5 flex flex-col gap-2 items-start md:items-end md:justify-end t-small">
             <a href={`mailto:${EMAIL}`} className="font-medium no-underline hover:text-accent transition-colors">
               {EMAIL}
             </a>
@@ -181,22 +188,6 @@ export default function ExperiencePage() {
               linkedin.com/in/matthewgann ↗
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* Summary */}
-      <section className="grid md:grid-cols-12 hairline-b">
-        <div className="page-x py-8 md:py-12 md:col-span-3">
-          <span className="kicker" style={{ color: "var(--ink-faint)" }}>Summary</span>
-        </div>
-        <div className="page-x py-8 md:py-12 md:col-span-9 md:hairline-l">
-          <p className="t-statement m-0 max-w-[40ch]">
-            I&apos;ve spent more than two decades building brands, leading teams, and figuring out how
-            to make marketing actually work inside complex organizations. My career has taken me from
-            building some of the first streaming platforms in the early 2000s to serving as CMO of a
-            major research university. I work at the intersection of strategy, data, and storytelling,
-            and I believe the best marketing is both honest and effective.
-          </p>
         </div>
       </section>
 
