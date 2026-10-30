@@ -40,11 +40,11 @@ export default function AboutPortrait({
       // ease in: from the figure's top entering at the bottom of the viewport
       // to its center reaching 55% of the way up
       const start = vh;
-      const end = vh * 0.55 - r.height / 2;
+      const end = vh * 0.5 - r.height / 2;
       const enter = Math.min(1, Math.max(0, (start - r.top) / (start - end)));
       // ease out: mirror of the entry. From the center passing 45% of the way
       // up to the figure's bottom leaving the top of the viewport
-      const outStart = vh * 0.45 + r.height / 2;
+      const outStart = vh * 0.5 + r.height / 2;
       const outEnd = 0;
       const exit = Math.min(1, Math.max(0, (outStart - r.bottom) / (outStart - outEnd)));
       const reveal = Math.min(enter, 1 - exit);
