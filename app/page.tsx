@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import posts from "@/lib/posts";
+import posts, { shortDate } from "@/lib/posts";
 import HomeHero from "@/components/HomeHero";
 import StackedCards from "@/components/StackedCards";
 import ImageBand from "@/components/ImageBand";
@@ -223,8 +223,8 @@ export default function Home() {
                 href={post.path}
                 className="page-x py-8 md:py-10 grid md:grid-cols-12 gap-4 md:gap-6 no-underline group"
               >
-                <time dateTime={post.dateISO} className="md:col-span-2 kicker" style={{ color: "var(--ink-faint)" }}>
-                  {post.date}
+                <time dateTime={post.dateISO} className="md:col-span-2 date-mark">
+                  {shortDate(post.dateISO)}
                 </time>
                 <span className="md:col-span-6">
                   <span className="t-card block group-hover:text-accent transition-colors">{post.title}</span>

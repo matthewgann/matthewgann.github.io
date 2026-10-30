@@ -131,6 +131,13 @@ const posts: Post[] = [
 
 export default posts;
 
+/** "2026-10-26" -> "Oct '26" */
+export function shortDate(iso: string): string {
+  const [y, m] = iso.split("-").map(Number);
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  return `${months[m - 1]} ’${String(y).slice(-2)}`;
+}
+
 export function getPost(slug: string): Post {
   const post = posts.find((p) => p.slug === slug);
   if (!post) throw new Error(`Unknown post slug: ${slug}`);

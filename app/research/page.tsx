@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import posts from "@/lib/posts";
+import posts, { shortDate } from "@/lib/posts";
 import StackedCards from "@/components/StackedCards";
 import ImageBand from "@/components/ImageBand";
 import { BLOG_ID, PERSON_ID, SITE_URL, WEBSITE_ID, WRITING_LABEL, WRITING_PATH, jsonLd } from "@/lib/site";
@@ -75,7 +75,7 @@ export default function ResearchPage() {
     imagePosition: p.imagePosition,
     href: p.path,
     linkLabel: "Read the post",
-    meta: p.date,
+    meta: shortDate(p.dateISO),
   }));
 
   return (

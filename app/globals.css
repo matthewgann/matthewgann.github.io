@@ -149,6 +149,17 @@ a { color: inherit; }
   text-transform: uppercase;
 }
 
+/* ── Date mark on listing rows and cards ───────────────────── */
+.date-mark {
+  font-family: var(--font-inter-tight), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
 /* ── Hairlines & grid ───────────────────────────────────────── */
 @utility hairline-t { border-top: 1px solid var(--line); }
 @utility hairline-b { border-bottom: 1px solid var(--line); }

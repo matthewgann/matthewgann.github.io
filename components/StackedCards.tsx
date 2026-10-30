@@ -82,9 +82,7 @@ export default function StackedCards({ items, headingLevel = "h3" }: Props) {
         const copy = (
           <>
             {item.meta && (
-              <span className="kicker" style={{ color: "var(--ink-faint)" }}>
-                {item.meta}
-              </span>
+              <span className="date-mark">{item.meta}</span>
             )}
             {item.href ? (
               <Link href={item.href} className="no-underline hover:text-accent transition-colors">
