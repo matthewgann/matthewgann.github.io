@@ -202,7 +202,7 @@ export default function ExperiencePage() {
         </div>
       </section>
 
-      <ImageBand src="/band-conference.jpg" alt="Matthew Gann at a professional conference" position="center 15%" />
+      <ImageBand src="/band-conference.jpg" alt="Matthew Gann at a professional conference" position="center 15%" priority />
 
       {/* Roles */}
       <section aria-labelledby="roles-heading" className="pt-16 pb-8 md:pt-24 md:pb-16">

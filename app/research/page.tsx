@@ -107,7 +107,7 @@ export default function ResearchPage() {
         </div>
       </section>
 
-      <ImageBand src="/band-doorway.jpg" alt="Matthew Gann in a gothic archway" position="center 20%" />
+      <ImageBand src="/band-doorway.jpg" alt="Matthew Gann in a gothic archway" position="center 20%" priority />
 
       <StackedCards items={items} headingLevel="h2" />
 
