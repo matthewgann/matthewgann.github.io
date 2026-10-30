@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import posts from "@/lib/posts";
+import HomeHero from "@/components/HomeHero";
 import StackedCards from "@/components/StackedCards";
 import ImageBand from "@/components/ImageBand";
 import { PERSON_ID, SITE_URL, WEBSITE_ID, WRITING_LABEL, WRITING_PATH, jsonLd } from "@/lib/site";
@@ -112,45 +112,7 @@ export default function Home() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd([profilePage]) }} />
 
-      {/* ── Hero: split, text left / portrait right ───────────── */}
-      <section className="grid md:grid-cols-2 hairline-b" style={{ minHeight: "calc(100svh - var(--nav-h))" }}>
-        <div className="page-x flex flex-col justify-center py-14 md:py-16 order-2 md:order-1">
-          <h1 className="t-display m-0 max-w-[12ch]">
-            <span className="scrawl">
-              Purpose-driven
-              <svg viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden>
-                <path d="M4 14 C 60 4, 120 20, 190 10 S 320 6, 396 15" />
-              </svg>
-            </span>{" "}
-            marketing and storytelling.
-          </h1>
-          <p className="t-lead mt-10 max-w-[46ch]">
-            Building intelligent marketing operations that help higher education institutions
-            connect strategy, story, and service to students and their communities.
-          </p>
-          <div className="flex flex-wrap items-center gap-3 mt-12">
-            <Link href={WRITING_PATH} className="btn btn-accent">
-              <span>{WRITING_LABEL}</span>
-              <span aria-hidden>↗</span>
-            </Link>
-            <Link href="/experience" className="btn">
-              <span>Experience</span>
-              <span aria-hidden>↗</span>
-            </Link>
-          </div>
-        </div>
-
-        <div className="relative order-1 md:order-2 hairline-b md:border-b-0 md:hairline-l min-h-[62vw] md:min-h-0">
-          <Image
-            src="/headshot.jpg"
-            alt="Matthew Gann, Ph.D."
-            fill
-            priority
-            sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-cover object-top"
-          />
-        </div>
-      </section>
+      <HomeHero />
 
       {/* ── About ─────────────────────────────────────────────── */}
       <section id="about" className="guides hairline-b">
