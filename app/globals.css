@@ -561,3 +561,32 @@ a { color: inherit; }
   .about-portrait-photo { clip-path: none; opacity: 1; }
   .about-portrait-ring circle { stroke-dashoffset: 0; }
 }
+
+/* ── Career rail (experience page) ─────────────────────────── */
+.career-rail {
+  position: relative;
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--line);
+}
+.career-rail-marker {
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 2px;
+  height: calc(100% / var(--rail-n, 7));
+  background: var(--accent);
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.career-rail-item a {
+  font-weight: 500;
+  font-size: 1.0625rem;
+  color: var(--ink-faint);
+  transition: color 0.3s ease, transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
+}
+.career-rail-item.is-active a {
+  color: var(--ink);
+  transform: translateX(6px);
+}
+.career-rail-item a:hover { color: var(--accent); }
+.career-row { transition: opacity 0.3s ease; }

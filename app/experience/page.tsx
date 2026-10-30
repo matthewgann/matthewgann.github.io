@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ImageBand from "@/components/ImageBand";
+import CareerRail from "@/components/CareerRail";
 import { EMAIL, LINKEDIN, PERSON_ID, SITE_URL, WEBSITE_ID, jsonLd } from "@/lib/site";
 
 const URL = `${SITE_URL}/experience`;
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
 
 const experience = [
   {
+    id: "consultant",
     org: "Consultant",
     location: "Nashville, Tennessee & Denver, Colorado",
     title: "",
@@ -31,6 +33,7 @@ const experience = [
       "I've kept an active consulting practice going my entire career, working with organizations across healthcare, legal, business services, retirement planning, real estate, medical aesthetics, and a lot more in between.",
   },
   {
+    id: "university-of-denver",
     org: "University of Denver",
     location: "Denver, Colorado",
     title: "Associate Vice Chancellor, Chief Marketing Officer",
@@ -38,6 +41,7 @@ const experience = [
       "I'm the CMO for a private R1 research university.",
   },
   {
+    id: "tennessee-board-of-regents",
     org: "Tennessee Board of Regents",
     location: "Nashville, Tennessee",
     title: "Associate Vice Chancellor for Marketing, Digital Strategy, and Public Relations",
@@ -45,18 +49,21 @@ const experience = [
       "I was the systemwide CMO for Tennessee's largest higher education system.",
   },
   {
+    id: "tennessee-tech-university",
     org: "Tennessee Tech University",
     location: "Cookeville, Tennessee",
     title: "Director of Web and Digital Media",
     highlight: "I led digital strategy and all public-facing web properties for a 10,000-student university.",
   },
   {
+    id: "wellness-healthcare",
     org: "Wellness Healthcare",
     location: "Cookeville, Tennessee",
     title: "Vice President of Marketing and Promotions",
     highlight: "I was the CMO for one of the South's largest durable medical equipment suppliers.",
   },
   {
+    id: "n2-the-net",
     org: "N2 The Net",
     location: "Cookeville, Tennessee",
     title: "Director of Design and Development",
@@ -64,6 +71,7 @@ const experience = [
       "I designed and built websites for college athletics, real estate, radio and broadcasting, and healthcare clients.",
   },
   {
+    id: "wpf-management",
     org: "WPF Management",
     location: "Gallatin, Tennessee",
     title: "Director of Internet Operations",
@@ -197,32 +205,8 @@ export default function ExperiencePage() {
       <ImageBand src="/band-conference.jpg" alt="Matthew Gann at a professional conference" position="center 15%" />
 
       {/* Roles */}
-      <section aria-labelledby="roles-heading">
-        <div className="page-x pt-16 pb-8 md:pt-24 md:pb-12">
-          <h2 id="roles-heading" className="t-headline">
-            Where I&apos;ve worked.
-          </h2>
-        </div>
-        <ul className="list-none m-0 p-0 hairline-t">
-          {experience.map((job) => (
-            <li key={job.org} className="hairline-b">
-              <div className="page-x py-8 md:py-10 grid md:grid-cols-12 gap-3 md:gap-6">
-                <span className="md:col-span-2 kicker" style={{ color: "var(--ink-faint)" }}>
-                  {job.location}
-                </span>
-                <div className="md:col-span-5">
-                  <h3 className="t-card m-0">{job.org}</h3>
-                  {job.title && (
-                    <p className="t-small font-medium mt-2 mb-0" style={{ color: "var(--accent)" }}>
-                      {job.title}
-                    </p>
-                  )}
-                </div>
-                <p className="md:col-span-5 t-body m-0 max-w-[48ch]">{job.highlight}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+      <section aria-labelledby="roles-heading" className="pt-16 pb-8 md:pt-24 md:pb-16">
+        <CareerRail roles={experience} />
       </section>
 
       {/* Credentials, affiliations, service: one continuous ledger */}

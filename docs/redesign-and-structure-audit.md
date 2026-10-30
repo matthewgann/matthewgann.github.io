@@ -61,9 +61,12 @@ story, and service meet." Alternates: "The work.", "How I help."
   when stuck on how to convey an idea. It now also appears at the end of every post.
 
 **Experience**
-- `h1` is "Experience". Same content. Career as hairline rows, then one continuous set of
-  rows under "Credentials, affiliations, and service." with the heading on the left and the
-  list on the right: skills, education, research areas, awards, memberships, community.
+- `h1` is "Experience". Same content. Career is a scroll-spy rail: the employer list sits
+  sticky on the left and lights up as the matching role scrolls past on the right. Each
+  role has an optional `years` field; when supplied it shows as a large date mark. Below,
+  one continuous set of rows under "Credentials, affiliations, and service." with the heading
+  on the left and the list on the right. To revert the rail: `git revert` the commit titled
+  "Experience: scroll-spy career rail".
 
 **Contact**
 - Three-column details, photo band.
