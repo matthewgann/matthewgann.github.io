@@ -57,7 +57,8 @@ story, and service meet." Alternates: "The work.", "How I help."
 - Photo hero, a row with the section's own sentence, then every post as a stacked card.
   Posts without a photo render as a text-only card so nothing looks like a missing image.
   No categories or counters anywhere; the stack is the index.
-- "A note on AI" kept verbatim.
+- "A note on AI" kept, with one added sentence at Matthew's request about asking for a nudge
+  when stuck on how to convey an idea.
 
 **Experience**
 - `h1` is "Experience". Same content. Career as hairline rows, then one continuous set of
