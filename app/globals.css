@@ -498,8 +498,10 @@ a { color: inherit; }
   .hero-shade { opacity: 0; }
 }
 
-/* ── About portrait: a circle as tall as the text beside it ──── */
+/* ── About portrait: ringed circle, as tall as the text beside it ── */
 .about-portrait {
+  --reveal: 1;
+  --drift: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -510,7 +512,34 @@ a { color: inherit; }
   height: min(100%, 22rem);
   aspect-ratio: 1 / 1;
   border-radius: 9999px;
+  transform: translate3d(0, calc(var(--drift) * -14px), 0);
+  will-change: transform;
+}
+/* photo sits 10px inside the ring (ring stroke about 3px + 10px gap) */
+.about-portrait-photo {
+  position: absolute;
+  inset: 13px;
+  border-radius: 9999px;
   overflow: hidden;
+  transform: scale(calc(0.84 + var(--reveal) * 0.16));
+  transform-origin: center;
+  will-change: transform;
+}
+.about-portrait-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  overflow: visible;
+}
+.about-portrait-ring circle {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 0.7;
+  stroke-linecap: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: calc(100 - var(--reveal) * 100);
 }
 @media (min-width: 768px) {
   .about-portrait {
@@ -518,9 +547,13 @@ a { color: inherit; }
     min-height: 0;
   }
   .about-portrait-circle {
-    /* diameter = the smaller of the column's width and the text's height */
     --d: min(100cqw, 100cqh);
     width: var(--d);
     height: var(--d);
   }
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-portrait-circle,
+  .about-portrait-photo { transform: none; }
+  .about-portrait-ring circle { stroke-dashoffset: 0; }
 }

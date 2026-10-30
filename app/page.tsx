@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import posts, { shortDate } from "@/lib/posts";
+import AboutPortrait from "@/components/AboutPortrait";
 import HomeHero from "@/components/HomeHero";
 import StackedCards from "@/components/StackedCards";
 import ImageBand from "@/components/ImageBand";
@@ -152,18 +153,12 @@ export default function Home() {
               </p>
             </div>
 
-            <figure className="about-portrait md:col-span-4 md:col-start-9 m-0">
-              <div className="about-portrait-circle img-frame">
-                <Image
-                  src="/hero-brooklyn.jpg"
-                  alt="Matthew Gann on the Brooklyn waterfront with the Manhattan skyline behind him"
-                  fill
-                  sizes="(min-width: 768px) 33vw, 80vw"
-                  className="object-cover"
-                  style={{ objectPosition: "center 28%" }}
-                />
-              </div>
-            </figure>
+            <AboutPortrait
+              src="/hero-brooklyn.jpg"
+              alt="Matthew Gann on the Brooklyn waterfront with the Manhattan skyline behind him"
+              position="center 28%"
+              className="md:col-span-4 md:col-start-9"
+            />
           </div>
         </div>
 
