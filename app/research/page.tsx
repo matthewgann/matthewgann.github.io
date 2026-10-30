@@ -95,9 +95,7 @@ export default function ResearchPage() {
               people who do it. Most of these posts come out of the day job: how universities decide
               what they stand for, why brand is an investment rather than an expense, and how to
               measure whether a strategy did what it set out to do. Some are about leadership more
-              broadly, including developing people and telling them the truth. The ideas are my own,
-              shaped by more than two decades in marketing and by research in marketing operations and
-              organizational intelligence.
+              broadly, including developing people and telling them the truth.
             </p>
           </div>
           <div className="md:col-span-4 lg:col-span-5 flex flex-col gap-2 items-start md:items-end md:justify-end t-small">
