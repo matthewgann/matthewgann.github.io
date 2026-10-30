@@ -67,7 +67,8 @@ const experience = [
     org: "N2 The Net",
     location: "Cookeville, Tennessee",
     title: "Director of Design and Development",
-    highlight: "I managed 200+ digital properties.",
+    highlight:
+      "I designed and built websites for college athletics, real estate, radio and broadcasting, and healthcare clients.",
   },
 ];
 
