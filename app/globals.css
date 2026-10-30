@@ -364,9 +364,7 @@ a { color: inherit; }
 .prose-mg h2 {
   font-size: clamp(1.5rem, 2.3vw, 1.95rem);
   line-height: 1.1;
-  margin: 2.4em 0 0.8em;
-  padding-top: 0.9em;
-  border-top: 1px solid var(--line);
+  margin: 2.2em 0 0.7em;
 }
 .prose-mg h2 + p::first-letter {
   /* no drop caps; keep it plain */
@@ -436,7 +434,7 @@ a { color: inherit; }
 .hero-photo {
   position: relative;
   order: 1;
-  min-height: 62vw;
+  min-height: 78vw;
   border-bottom: 1px solid var(--line);
   overflow: hidden;
 }
@@ -480,22 +478,18 @@ a { color: inherit; }
   .hero-photo {
     order: 0;
     position: absolute;
-    inset: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    /* the panel itself widens from the right half to full bleed; the cover crop
+       recomputes as it grows, which is what produces the zoom */
+    left: calc(50% * (1 - var(--p)));
     min-height: 0;
     border-bottom: 0;
     border-left: 1px solid var(--line);
-    /* reveal from the right half to full bleed */
-    clip-path: inset(0 0 0 calc(50% * (1 - var(--p))));
-    will-change: clip-path;
   }
   .hero-photo img {
-    /* The image is as wide as the stage, so object-position cannot shift it.
-       Slide it right by a quarter of the stage at rest so the face sits in the
-       middle of the visible half, then glide it back to center as the panel opens. */
-    object-position: center top;
-    transform: translate3d(calc((1 - var(--p)) * 25%), 0, 0) scale(calc(1 + var(--p) * 0.1));
-    transform-origin: 50% 25%;
-    will-change: transform;
+    object-position: center 12%;
   }
   .hero-shade {
     opacity: var(--p);
@@ -506,7 +500,6 @@ a { color: inherit; }
   .hero-stage { height: auto; }
   .hero-pin { position: relative; top: auto; height: auto; min-height: calc(100svh - var(--nav-h)); }
   .hero-text { opacity: 1; transform: none; }
-  .hero-photo { clip-path: inset(0 0 0 50%); }
-  .hero-photo img { transform: none; }
+  .hero-photo { left: 50%; }
   .hero-shade { opacity: 0; }
 }
