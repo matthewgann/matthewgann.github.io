@@ -11,7 +11,7 @@ RSS: https://matthewgann.com/feed.xml
 
 - [Home](https://matthewgann.com/): About, at-a-glance credentials, and areas of practice (brand strategy, business and organizational intelligence, marketing operations, reputation and crisis management, leadership and organizational development, digital strategy and analytics).
 - [Experience](https://matthewgann.com/experience): Career history (University of Denver; Tennessee Board of Regents; Tennessee Tech University; Wellness Healthcare; WPF Management; N2 The Net; independent consulting), education (Ph.D. and M.O.L., Trevecca Nazarene University; B.S., Tennessee Tech University), credentials (APR; Tennessee Certified Economic Developer), awards, memberships, and community roles.
-- [Musings](https://matthewgann.com/research): Writing on marketing, leadership, higher education, and purpose-driven work.
+- [Research and Musings](https://matthewgann.com/research): Writing on marketing, leadership, higher education, and purpose-driven work.
 - [Get in Touch](https://matthewgann.com/contact): Email, LinkedIn, and location.
 
 ## Writing

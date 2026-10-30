@@ -32,10 +32,10 @@ petrol `#176B74`. One line to change.
 
 ## 2. Naming
 
-The writing section is called **Musings**. It lives in one constant, `WRITING_LABEL` in
+The writing section is called **Research and Musings**. It lives in one constant, `WRITING_LABEL` in
 `lib/site.ts`, and flows to the nav, footer, home section, listing page, breadcrumbs,
 schema, feed title, and `llms.txt`. The URL stays `/research` so nothing already indexed
-breaks. Earlier candidates: On Purpose, Office Hours, Field Notes.
+breaks. Earlier candidates: Musings, On Purpose, Office Hours, Field Notes.
 
 "Areas of Expertise" became a plain kicker, `What I do`, over the headline "Where strategy,
 story, and service meet." Alternates: "The work.", "How I help."
@@ -53,7 +53,7 @@ story, and service meet." Alternates: "The work.", "How I help."
 - Three most recent posts as rows, then a closing CTA using the contact page's own
   sentence.
 
-**Musings (/research)**
+**Research and Musings (/research)**
 - Photo hero, a row with the section's own sentence, then every post as a stacked card.
   Posts without a photo render as a text-only card so nothing looks like a missing image.
   No categories or counters anywhere; the stack is the index.
@@ -119,7 +119,7 @@ story, and service meet." Alternates: "The work.", "How I help."
 
 ### Headings
 
-- One `h1` per page. Home: "Purpose-driven marketing and storytelling." Listing: "Musings". Experience: "Experience". Contact: "Get in Touch". Posts: the title.
+- One `h1` per page. Home: "Purpose-driven marketing and storytelling." Listing: "Research and Musings". Experience: "Experience". Contact: "Get in Touch". Posts: the title.
 - Small mono kickers are not headings. The real `h2` carries the sentence.
 - Post bodies keep their original `h2` structure.
 
@@ -150,7 +150,7 @@ Everything else is verbatim. These are the only edits to supplied text:
 2. Experience summary: the em dash in "storytelling — and I believe" became a comma, per the
    no-em-dash rule.
 3. "Areas of Expertise" heading replaced (see Naming).
-4. "Research & Thoughts" renamed "Musings" (see Naming). The listing dek lost its first word
+4. "Research & Thoughts" renamed "Research and Musings" (see Naming). The listing dek lost its first word
    so it does not repeat the title.
 5. Post sign-off line replaced by the author card, whose two sentences are lifted from the
    home page About copy.
