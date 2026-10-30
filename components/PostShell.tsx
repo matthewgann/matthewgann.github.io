@@ -93,20 +93,13 @@ export default function PostShell({ slug, children }: { slug: string; children: 
       {/* Author card */}
       <section aria-label="About the author" className="hairline-t">
         <div className="page-x py-10 grid md:grid-cols-12 gap-6 items-start">
-          <div className="md:[grid-column:4/11] lg:[grid-column:4/10] flex gap-5 items-start">
-            <div className="img-frame shrink-0 w-16 h-16 rounded-full overflow-hidden">
-              <Image src="/headshot.jpg" alt="Matthew Gann, Ph.D." width={64} height={64} className="object-cover object-top w-full h-full" />
+          <div className="md:[grid-column:4/11] lg:[grid-column:4/10] flex gap-4 items-center">
+            <div className="img-frame shrink-0 w-14 h-14 rounded-full overflow-hidden">
+              <Image src="/headshot.jpg" alt="Matthew Gann, Ph.D." width={56} height={56} className="object-cover object-top w-full h-full" />
             </div>
             <div>
               <p className="font-semibold m-0 mb-1">Matthew Gann, Ph.D.</p>
-              <p className="t-small m-0" style={{ color: "var(--ink-soft)" }}>
-                I build intelligent marketing operations that help higher education institutions
-                connect strategy, story, and service to students and their communities. I&apos;ve
-                spent more than two decades at the intersection of strategy, storytelling, and
-                leadership, helping institutions find their voice, build their brand, and connect with
-                the people who matter most to them.
-              </p>
-              <p className="t-small mt-3 mb-0">
+              <p className="t-small mt-2 mb-0">
                 <Link href="/experience" className="arrow-link" style={{ fontSize: "0.875rem" }}>
                   <Arrow />
                   Experience
