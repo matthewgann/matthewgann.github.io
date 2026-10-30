@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     title: `${WRITING_LABEL} | Matthew Gann, Ph.D.`,
     description: DESCRIPTION,
     url: URL,
-    images: [{ url: "/band-car.jpg", width: 1600, height: 1200, alt: "Matthew Gann at an automotive show" }],
+    images: [{ url: "/band-doorway.jpg", width: 1920, height: 947, alt: "Matthew Gann in a gothic archway" }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${WRITING_LABEL} | Matthew Gann, Ph.D.`,
     description: DESCRIPTION,
-    images: ["/band-car.jpg"],
+    images: ["/band-doorway.jpg"],
   },
 };
 
@@ -100,7 +100,7 @@ export default function ResearchPage() {
         </div>
       </section>
 
-      <ImageBand src="/band-car.jpg" alt="Matthew Gann at an automotive show" position="28% 38%" />
+      <ImageBand src="/band-doorway.jpg" alt="Matthew Gann in a gothic archway" position="center 20%" />
 
       <StackedCards items={items} headingLevel="h2" />
 
