@@ -59,19 +59,26 @@ export default function HomeHero() {
         {/* Text panel */}
         <div className="hero-text page-x">
           <h1 className="t-display m-0 max-w-[12ch]">
-            <span className="scrawl">
-              Purpose-driven
-              <svg viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden>
-                <path d="M4 14 C 60 4, 120 20, 190 10 S 320 6, 396 15" />
-              </svg>
-            </span>{" "}
-            marketing and storytelling.
+            <span className="hero-line block" style={{ ["--i" as string]: 0 }}>
+              <span className="scrawl">
+                Purpose-driven
+                <svg viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden>
+                  <path d="M4 14 C 60 4, 120 20, 190 10 S 320 6, 396 15" />
+                </svg>
+              </span>
+            </span>
+            <span className="hero-line block" style={{ ["--i" as string]: 1 }}>
+              marketing and
+            </span>
+            <span className="hero-line block" style={{ ["--i" as string]: 2 }}>
+              storytelling.
+            </span>
           </h1>
-          <p className="t-lead mt-10 max-w-[46ch]">
+          <p className="hero-after t-lead mt-10 max-w-[46ch]">
             Building intelligent marketing operations that help higher education institutions
             connect strategy, story, and service to students and their communities.
           </p>
-          <div className="flex flex-wrap items-center gap-3 mt-12">
+          <div className="hero-after flex flex-wrap items-center gap-3 mt-12">
             <Link href={WRITING_PATH} className="btn btn-accent">
               <span>{WRITING_LABEL}</span>
               <span aria-hidden>↗</span>
