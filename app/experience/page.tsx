@@ -161,7 +161,7 @@ export default function ExperiencePage() {
               Matthew Gann, Ph.D.
             </h1>
             <p className="text-lg mb-1" style={{ color: "var(--text-muted)" }}>
-              Chief Marketing Officer · Organizational Consultant · Marketing Function Builder · Nashville, Tennessee &amp; Denver, Colorado
+              Chief Marketing Officer · Organizational Consultant · Marketing Function Builder
             </p>
             <div className="flex flex-wrap gap-4 mt-4 text-sm">
               <a href="mailto:matthew@matthewgann.com" style={{ color: "var(--accent)", textDecoration: "none" }}>
