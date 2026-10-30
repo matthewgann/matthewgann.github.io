@@ -129,8 +129,7 @@ story, and service meet." Alternates: "The work.", "How I help."
 
 ### Performance and accessibility
 
-- Hero video removed. `public/hero-bg.mp4` is still in the repo and still deploys; delete
-  it when you are sure you won't want it back.
+- Hero video and the starter-template icons were deleted from `public/`.
 - Skip link, visible focus ring, `prefers-reduced-motion` honored (no stack dimming, no
   underline animation).
 - Mobile menu is a real button with `aria-expanded` and `aria-controls`.
@@ -141,7 +140,11 @@ story, and service meet." Alternates: "The work.", "How I help."
 ### Open Graph
 
 - A static card at `/og-image.png` (1200x630) is the default share image. Posts with a
-  photo use their photo; posts without fall back to the card.
+  photo use their photo; posts without, and the contact page, use the card explicitly,
+  because page-level Open Graph replaces the site default rather than merging with it.
+- Also in `<head>`: theme color, apple touch icon, format detection off, article
+  published and modified times on posts. Analytics loads only on the live hostname, so
+  local and preview builds do not report.
 - The card was generated once with `next/og` and saved as a file, because GitHub Pages
   serves extensionless route output with the wrong content type.
 
