@@ -130,6 +130,7 @@ const memberships = [
 const community = [
   { org: "PRSA – Counselors to Higher Education", role: "National Executive Committee Member" },
   { org: "CASE", role: "Faculty Member, National Conference on Marketing and Brand" },
+  { org: "International Leadership Association (ILA) Global Conference", role: "Presenter" },
   { org: "Public Relations Society of America", role: "APR Panelist" },
   { org: "National Association of Student Personnel Administrators", role: "National Conference Program Reviewer" },
   { org: "TN ACHIEVES, UT ACHIEVES", role: "Mentor, Ambassador" },
@@ -274,7 +275,7 @@ export default function ExperiencePage() {
             </ul>
           </Row>
 
-          <Row title="Community & Service">
+          <Row title="Community, Service & Speaking">
             <ul className="list-none m-0 p-0 grid sm:grid-cols-2 gap-x-10 gap-y-6">
               {community.map((item) => (
                 <li key={item.org}>
