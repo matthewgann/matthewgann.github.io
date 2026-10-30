@@ -131,7 +131,8 @@ export default function Home() {
                 My career has taken me from early-stage digital work in the early 2000s through
                 executive marketing roles in healthcare and agency work, to leading systemwide
                 marketing for Tennessee&apos;s largest higher education system, and now serving as
-                associate vice chancellor and chief marketing officer at the University of Denver.
+                associate vice chancellor and chief marketing officer of a private R1 research
+                university.
                 Along the way, I&apos;ve also consulted for organizations across the legal,
                 healthcare, nonprofit, and retirement sectors.
               </p>
