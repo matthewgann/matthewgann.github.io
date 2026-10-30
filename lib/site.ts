@@ -1,7 +1,7 @@
 export const SITE_URL = "https://matthewgann.com";
 export const SITE_NAME = "Matthew Gann, Ph.D.";
 /** Name of the writing section. Change it here and it changes everywhere. */
-export const WRITING_LABEL = "On Purpose";
+export const WRITING_LABEL = "Musings";
 export const WRITING_PATH = "/research";
 export const PERSON_ID = `${SITE_URL}/#person`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;

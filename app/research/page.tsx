@@ -113,7 +113,7 @@ export default function ResearchPage() {
       <section className="hairline-b">
         <div className="page-x py-8 md:py-10">
           <p className="t-lead m-0 max-w-[44ch]">
-            Musings on marketing strategy, leadership, higher education, and what it means to do
+            On marketing strategy, leadership, higher education, and what it means to do
             purpose-driven.
           </p>
         </div>

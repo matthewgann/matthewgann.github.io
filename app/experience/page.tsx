@@ -191,7 +191,7 @@ export default function ExperiencePage() {
       {/* Summary */}
       <section className="grid md:grid-cols-12 hairline-b">
         <div className="page-x py-8 md:py-12 md:col-span-3">
-          <span className="mono" style={{ color: "var(--ink-faint)" }}>Summary</span>
+          <span className="kicker" style={{ color: "var(--ink-faint)" }}>Summary</span>
         </div>
         <div className="page-x py-8 md:py-12 md:col-span-9 md:hairline-l">
           <p className="t-statement m-0 max-w-[40ch]">
@@ -217,7 +217,7 @@ export default function ExperiencePage() {
           {experience.map((job) => (
             <li key={job.org} className="hairline-b">
               <div className="page-x py-8 md:py-10 grid md:grid-cols-12 gap-3 md:gap-6">
-                <span className="md:col-span-2 mono" style={{ color: "var(--ink-faint)" }}>
+                <span className="md:col-span-2 kicker" style={{ color: "var(--ink-faint)" }}>
                   {job.location}
                 </span>
                 <div className="md:col-span-5">

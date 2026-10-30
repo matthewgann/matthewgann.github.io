@@ -33,7 +33,7 @@ export default function Footer() {
 
         <div className="md:col-span-5 grid grid-cols-2 gap-8 content-start">
           <div className="flex flex-col gap-2">
-            <span className="mono" style={{ color: "var(--on-dark-soft)" }}>
+            <span className="kicker" style={{ color: "var(--on-dark-soft)" }}>
               Social
             </span>
             <a
@@ -46,7 +46,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="flex flex-col gap-2">
-            <span className="mono" style={{ color: "var(--on-dark-soft)" }}>
+            <span className="kicker" style={{ color: "var(--on-dark-soft)" }}>
               Get in touch
             </span>
             <a
@@ -57,7 +57,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="flex flex-col gap-2">
-            <span className="mono" style={{ color: "var(--on-dark-soft)" }}>
+            <span className="kicker" style={{ color: "var(--on-dark-soft)" }}>
               Writing
             </span>
             <a
@@ -68,7 +68,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="flex flex-col gap-2">
-            <span className="mono" style={{ color: "var(--on-dark-soft)" }}>
+            <span className="kicker" style={{ color: "var(--on-dark-soft)" }}>
               Based in
             </span>
             <span className="font-medium">Denver, CO &amp; Nashville, TN</span>
@@ -88,11 +88,11 @@ export default function Footer() {
             height={22}
             style={{ filter: "invert(1)", opacity: 0.9 }}
           />
-          <span className="mono" style={{ color: "var(--on-dark-soft)" }}>
+          <span className="kicker" style={{ color: "var(--on-dark-soft)" }}>
             Matthew Gann, Ph.D.
           </span>
         </div>
-        <span className="mono" style={{ color: "var(--on-dark-soft)" }}>
+        <span className="kicker" style={{ color: "var(--on-dark-soft)" }}>
           © {new Date().getFullYear()}
         </span>
       </div>

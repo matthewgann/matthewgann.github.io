@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Inter_Tight, DM_Mono } from "next/font/google";
+import { Inter, Inter_Tight } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Nav from "@/components/Nav";
@@ -24,13 +24,6 @@ const inter = Inter({
   weight: ["400", "500", "600"],
   subsets: ["latin"],
   variable: "--font-inter",
-  display: "swap",
-});
-
-const dmMono = DM_Mono({
-  weight: ["400", "500"],
-  subsets: ["latin"],
-  variable: "--font-dm-mono",
   display: "swap",
 });
 
@@ -88,7 +81,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${interTight.variable} ${inter.variable} ${dmMono.variable} h-full antialiased`}
+      className={`${interTight.variable} ${inter.variable} h-full antialiased`}
     >
       <head>
         <script

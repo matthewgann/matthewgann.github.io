@@ -17,7 +17,7 @@ the exceptions listed under "Copy changes".
 | Dark | `#141311` | Footer and the community block |
 | Display | Inter Tight 600 | Tracking -0.035em |
 | Body | Inter | |
-| Small labels | DM Mono | Uppercase, no borders |
+| Small labels | Inter 500 | Uppercase, tracked 0.08em, no borders |
 
 Structure: full-bleed hairline grid, two-column rows, sticky cards that stack with an 84px
 step while the covered card dims. Under 768px the stack becomes a plain list because the
@@ -32,11 +32,10 @@ petrol `#176B74`. One line to change.
 
 ## 2. Naming
 
-The writing section is called **On Purpose**. It lives in one constant, `WRITING_LABEL` in
+The writing section is called **Musings**. It lives in one constant, `WRITING_LABEL` in
 `lib/site.ts`, and flows to the nav, footer, home section, listing page, breadcrumbs,
 schema, feed title, and `llms.txt`. The URL stays `/research` so nothing already indexed
-breaks. Alternates that were considered: Office Hours, Field Notes, Working Notes,
-Thoughts.
+breaks. Earlier candidates: On Purpose, Office Hours, Field Notes.
 
 "Areas of Expertise" became a plain kicker, `What I do`, over the headline "Where strategy,
 story, and service meet." Alternates: "The work.", "How I help."
@@ -54,7 +53,7 @@ story, and service meet." Alternates: "The work.", "How I help."
 - Three most recent posts as rows, then a closing CTA using the contact page's own
   sentence.
 
-**On Purpose (/research)**
+**Musings (/research)**
 - Photo hero, a row with the section's own sentence, then every post as a stacked card.
   Posts without a photo render as a text-only card so nothing looks like a missing image.
   No categories or counters anywhere; the stack is the index.
@@ -119,8 +118,7 @@ story, and service meet." Alternates: "The work.", "How I help."
 
 ### Headings
 
-- One `h1` per page. Home: "Purpose-driven marketing and storytelling." Listing: "On
-  Purpose". Experience: "Experience". Contact: "Get in Touch". Posts: the title.
+- One `h1` per page. Home: "Purpose-driven marketing and storytelling." Listing: "Musings". Experience: "Experience". Contact: "Get in Touch". Posts: the title.
 - Small mono kickers are not headings. The real `h2` carries the sentence.
 - Post bodies keep their original `h2` structure.
 
@@ -151,7 +149,8 @@ Everything else is verbatim. These are the only edits to supplied text:
 2. Experience summary: the em dash in "storytelling — and I believe" became a comma, per the
    no-em-dash rule.
 3. "Areas of Expertise" heading replaced (see Naming).
-4. "Research & Thoughts" renamed "On Purpose" (see Naming).
+4. "Research & Thoughts" renamed "Musings" (see Naming). The listing dek lost its first word
+   so it does not repeat the title.
 5. Post sign-off line replaced by the author card, whose two sentences are lifted from the
    home page About copy.
 6. Author card and meta descriptions describe the role as "associate vice chancellor and
@@ -163,7 +162,7 @@ Current placeholders reuse the nine photos already in `public/`. To replace:
 
 | Slot | Current | Ideal |
 | --- | --- | --- |
-| Home hero, right half | hero-brooklyn.jpg (supplied 2026-10-29) | Done |
+| Home hero, right half | headshot.jpg (kept by request) | hero-brooklyn.jpg is in public/ if wanted elsewhere |
 | Practice cards (6) | band-vision, band-conference, band-ama, broncos-panel, campus-run, band-colorado | One landscape per card, 1600x1200, that reads as the topic |
 | Listing hero | band-car | Any wide candid, 2400x1200 |
 | Post cards (7 of 10 have none) | text-only card | One landscape per post, 1600x1000. A strong texture or place shot works. One Year In now uses maroon-bells.jpg |

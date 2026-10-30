@@ -142,22 +142,13 @@ export default function Home() {
 
         <div className="relative order-1 md:order-2 hairline-b md:border-b-0 md:hairline-l min-h-[62vw] md:min-h-0">
           <Image
-            src="/hero-brooklyn.jpg"
-            alt="Matthew Gann on the Brooklyn waterfront with the Manhattan skyline behind him"
+            src="/headshot.jpg"
+            alt="Matthew Gann, Ph.D."
             fill
             priority
             sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-cover"
-            style={{ objectPosition: "center 28%" }}
+            className="object-cover object-top"
           />
-          <div className="absolute inset-x-0 bottom-0 flex items-end p-(--gutter) pointer-events-none">
-            <span
-              className="mono hidden md:inline"
-              style={{ color: "rgba(255,255,255,0.9)", textShadow: "0 1px 8px rgba(0,0,0,0.45)" }}
-            >
-              Scroll to explore ↓
-            </span>
-          </div>
         </div>
       </section>
 
@@ -201,7 +192,7 @@ export default function Home() {
             <dl className="md:col-span-5 lg:col-span-4 lg:col-start-9 m-0 hairline-t">
               {glance.map(({ label, value }) => (
                 <div key={label} className="py-4 hairline-b grid grid-cols-[7.5rem_1fr] gap-4">
-                  <dt className="mono" style={{ color: "var(--accent)" }}>
+                  <dt className="kicker" style={{ color: "var(--accent)" }}>
                     {label}
                   </dt>
                   <dd className="m-0 t-small font-medium">{value}</dd>
@@ -215,7 +206,7 @@ export default function Home() {
       {/* ── Expertise, stacked ────────────────────────────────── */}
       <section id="work" aria-labelledby="work-heading">
         <div className="page-x pt-20 pb-12 md:pt-28 md:pb-16">
-          <span className="mono block mb-6" style={{ color: "var(--ink-faint)" }}>
+          <span className="kicker block mb-6" style={{ color: "var(--ink-faint)" }}>
             What I do
           </span>
           <h2 id="work-heading" className="t-headline max-w-[16ch]">
@@ -231,7 +222,7 @@ export default function Home() {
       <section id="writing" aria-labelledby="writing-heading">
         <div className="page-x pt-20 pb-10 md:pt-28 md:pb-14 flex flex-wrap items-end justify-between gap-6">
           <div>
-            <span className="mono block mb-6" style={{ color: "var(--ink-faint)" }}>
+            <span className="kicker block mb-6" style={{ color: "var(--ink-faint)" }}>
               {WRITING_LABEL}
             </span>
             <h2 id="writing-heading" className="t-headline">
@@ -250,7 +241,7 @@ export default function Home() {
                 href={post.path}
                 className="page-x py-8 md:py-10 grid md:grid-cols-12 gap-4 md:gap-6 no-underline group"
               >
-                <time dateTime={post.dateISO} className="md:col-span-2 mono" style={{ color: "var(--ink-faint)" }}>
+                <time dateTime={post.dateISO} className="md:col-span-2 kicker" style={{ color: "var(--ink-faint)" }}>
                   {post.date}
                 </time>
                 <span className="md:col-span-6">

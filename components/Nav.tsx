@@ -111,7 +111,7 @@ export default function Nav() {
             </ul>
           </nav>
           <div className="page-x mt-auto pb-8 flex flex-col gap-2">
-            <span className="mono" style={{ color: "var(--ink-faint)" }}>
+            <span className="kicker" style={{ color: "var(--ink-faint)" }}>
               Get in touch
             </span>
             <a href="mailto:matthew@matthewgann.com" className="no-underline font-medium">

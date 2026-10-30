@@ -50,7 +50,7 @@ export default function ContactPage() {
 
       <section className="grid md:grid-cols-3 hairline-b">
         <div className="page-x py-10 md:py-14 hairline-b md:border-b-0">
-          <span className="mono block mb-3" style={{ color: "var(--ink-faint)" }}>
+          <span className="kicker block mb-3" style={{ color: "var(--ink-faint)" }}>
             Email
           </span>
           <a href={`mailto:${EMAIL}`} className="t-card no-underline [overflow-wrap:anywhere] hover:text-accent transition-colors">
@@ -58,7 +58,7 @@ export default function ContactPage() {
           </a>
         </div>
         <div className="page-x py-10 md:py-14 hairline-b md:border-b-0 md:hairline-l">
-          <span className="mono block mb-3" style={{ color: "var(--ink-faint)" }}>
+          <span className="kicker block mb-3" style={{ color: "var(--ink-faint)" }}>
             LinkedIn
           </span>
           <a
@@ -71,7 +71,7 @@ export default function ContactPage() {
           </a>
         </div>
         <div className="page-x py-10 md:py-14 md:hairline-l">
-          <span className="mono block mb-3" style={{ color: "var(--ink-faint)" }}>
+          <span className="kicker block mb-3" style={{ color: "var(--ink-faint)" }}>
             Location
           </span>
           <p className="t-card m-0">

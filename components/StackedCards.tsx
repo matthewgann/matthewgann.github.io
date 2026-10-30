@@ -82,7 +82,7 @@ export default function StackedCards({ items, headingLevel = "h3" }: Props) {
         const copy = (
           <>
             {item.meta && (
-              <span className="mono" style={{ color: "var(--ink-faint)" }}>
+              <span className="kicker" style={{ color: "var(--ink-faint)" }}>
                 {item.meta}
               </span>
             )}

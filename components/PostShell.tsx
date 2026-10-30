@@ -112,14 +112,14 @@ export default function PostShell({ slug, children }: { slug: string; children: 
           { post: older, label: "Older" },
         ].map(({ post: p, label }, i) => (
           <div key={label} className={`page-x py-8 ${i === 1 ? "md:hairline-l hairline-t md:border-t-0" : ""}`}>
-            <span className="mono" style={{ color: "var(--ink-faint)" }}>
+            <span className="kicker" style={{ color: "var(--ink-faint)" }}>
               {label}
             </span>
             <Link
               href={p ? p.path : WRITING_PATH}
               className="block no-underline mt-2 hover:text-accent transition-colors"
             >
-              <span className="t-card block">{p ? p.title : `All of ${WRITING_LABEL}`}</span>
+              <span className="t-card block">{p ? p.title : `All ${WRITING_LABEL.toLowerCase()}`}</span>
             </Link>
           </div>
         ))}
