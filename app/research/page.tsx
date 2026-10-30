@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import posts from "@/lib/posts";
 import StackedCards from "@/components/StackedCards";
+import ImageBand from "@/components/ImageBand";
 import { BLOG_ID, PERSON_ID, SITE_URL, WEBSITE_ID, WRITING_LABEL, WRITING_PATH, jsonLd } from "@/lib/site";
 
 const DESCRIPTION =
@@ -82,42 +82,25 @@ export default function ResearchPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(blogSchema) }} />
 
-      {/* Hero */}
-      <section className="relative hairline-b" style={{ minHeight: "min(78svh, 720px)" }}>
-        <Image
-          src="/band-car.jpg"
-          alt="Matthew Gann at an automotive show"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-          style={{ objectPosition: "28% 38%" }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to top, rgba(20,19,17,0.72) 0%, rgba(20,19,17,0.15) 55%, rgba(20,19,17,0.05) 100%)",
-          }}
-        />
-        <div
-          className="relative page-x flex flex-col justify-end pb-8 md:pb-10"
-          style={{ minHeight: "min(78svh, 720px)" }}
-        >
-          <h1 className="t-display m-0" style={{ color: "#fff" }}>
-            {WRITING_LABEL}
-          </h1>
+      {/* Header, matching the Experience page */}
+      <section className="hairline-b">
+        <div className="page-x pt-14 pb-12 md:pt-20 md:pb-16 grid md:grid-cols-12 gap-8">
+          <div className="md:col-span-8 lg:col-span-7">
+            <h1 className="t-display">{WRITING_LABEL}</h1>
+            <p className="t-lead mt-8 mb-0 max-w-[58ch]">
+              On marketing strategy, leadership, higher education, and what it means to do
+              purpose-driven.
+            </p>
+          </div>
+          <div className="md:col-span-4 lg:col-span-5 flex flex-col gap-2 items-start md:items-end md:justify-end t-small">
+            <a href="/feed.xml" className="font-medium no-underline hover:text-accent transition-colors">
+              Subscribe by RSS ↗
+            </a>
+          </div>
         </div>
       </section>
 
-      <section className="hairline-b">
-        <div className="page-x py-8 md:py-10">
-          <p className="t-lead m-0 max-w-[44ch]">
-            On marketing strategy, leadership, higher education, and what it means to do
-            purpose-driven.
-          </p>
-        </div>
-      </section>
+      <ImageBand src="/band-car.jpg" alt="Matthew Gann at an automotive show" position="28% 38%" />
 
       <StackedCards items={items} headingLevel="h2" />
 
