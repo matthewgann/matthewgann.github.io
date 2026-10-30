@@ -148,10 +148,15 @@ Everything else is verbatim. These are the only edits to supplied text:
 1. Home `h1`: "Purpose-driven." became "Purpose-driven marketing and storytelling." The
    name and the role line were removed from the hero.
 2. Experience summary: the em dash in "storytelling — and I believe" became a comma, per the
-   no-em-dash rule.
+   no-em-dash rule. "building some of the first streaming platforms" became "working on some of
+   the first streaming platforms" at Matthew's request.
 3. "Areas of Expertise" heading replaced (see Naming).
-4. "Research & Thoughts" renamed "Research and Musings" (see Naming). The listing dek lost its first word
-   so it does not repeat the title.
+4. "Research & Thoughts" renamed "Research and Musings" (see Naming). The listing now opens with
+   a new first-person paragraph describing what the posts cover. Every claim in it traces to an
+   existing post or to the experience page: standing out (Data-Driven Differentiation), brand as
+   investment (One Year In), accountability without control (Responsible for the Sale), measuring
+   objectives (The Real ROO), developing people and candor (Employee Quit, Great Players), CMO
+   roles in higher education and healthcare and the research areas (Experience).
 5. Post sign-off is the signature image, followed by a small author card: photo, name, and
    a link to Experience. No bio, by request.
 6. Meta descriptions describe the role as "associate vice chancellor and chief marketing

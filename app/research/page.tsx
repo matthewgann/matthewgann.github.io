@@ -5,7 +5,7 @@ import ImageBand from "@/components/ImageBand";
 import { BLOG_ID, PERSON_ID, SITE_URL, WEBSITE_ID, WRITING_LABEL, WRITING_PATH, jsonLd } from "@/lib/site";
 
 const DESCRIPTION =
-  "Writing on marketing, leadership, higher education, and purpose-driven work by Matthew Gann, Ph.D., chief marketing officer at the University of Denver.";
+  "Essays on higher education marketing, brand strategy, and leadership by Matthew Gann, Ph.D., chief marketing officer at the University of Denver: marketing maturity, brand as investment, return on objectives, and developing people.";
 const URL = `${SITE_URL}${WRITING_PATH}`;
 
 export const metadata: Metadata = {
@@ -87,9 +87,18 @@ export default function ResearchPage() {
         <div className="page-x pt-14 pb-12 md:pt-20 md:pb-16 grid md:grid-cols-12 gap-8">
           <div className="md:col-span-8 lg:col-span-7">
             <h1 className="t-display">{WRITING_LABEL}</h1>
+            <p className="kicker mt-6 mb-0" style={{ color: "var(--ink-soft)" }}>
+              Marketing · Leadership · Higher Education
+            </p>
             <p className="t-lead mt-8 mb-0 max-w-[58ch]">
-              On marketing strategy, leadership, higher education, and what it means to do
-              purpose-driven.
+              I write here about the work of marketing inside higher education and about leading the
+              people who do it. Most of these posts come out of the day job: how universities decide
+              what they stand for, why brand is an investment rather than an expense, what it means to
+              be accountable for enrollment outcomes you don&apos;t control, and how to measure whether a
+              strategy did what it set out to do. Some are about leadership more broadly, including
+              developing people and telling them the truth. The ideas are my own, shaped by more than
+              two decades in marketing, including CMO roles in higher education and healthcare, and by
+              research in marketing operations and organizational intelligence.
             </p>
           </div>
           <div className="md:col-span-4 lg:col-span-5 flex flex-col gap-2 items-start md:items-end md:justify-end t-small">
