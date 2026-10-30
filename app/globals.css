@@ -341,12 +341,14 @@ a { color: inherit; }
 .prose-mg {
   color: var(--ink);
 }
-.prose-mg > p {
+.prose-mg > p,
+.prose-mg > div > p {
   font-size: 1.125rem;
   line-height: 1.65;
   margin: 0 0 1.35em;
 }
-.prose-mg > p:first-child {
+.prose-mg > p:first-child,
+.prose-mg > div > p:first-child {
   font-family: var(--font-inter-tight), system-ui, sans-serif;
   font-weight: 500;
   font-size: clamp(1.2rem, 1.6vw, 1.4rem);

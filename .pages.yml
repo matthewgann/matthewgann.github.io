@@ -1,0 +1,76 @@
+# Pages CMS configuration (https://pagescms.org).
+# Sign in at app.pagescms.org with GitHub, pick this repository, and this file
+# defines the editing forms. Every save is a commit to the branch you choose,
+# and a commit to main publishes the site.
+
+media:
+  - name: images
+    label: Images
+    input: public
+    output: /
+    extensions: [jpg, jpeg, png, webp, gif, svg]
+
+content:
+  - name: posts
+    label: Research and Musings
+    description: One file per post. The filename becomes the URL slug, so set it once and leave it.
+    type: collection
+    path: content/posts
+    format: yaml-frontmatter
+    filename:
+      template: "{primary}.md"
+      field: create
+    view:
+      primary: title
+      sort: [date, title]
+      order: desc
+      fields: [title, date, draft]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Publish date
+        description: Sets the month and year in the URL. Use the day you intend to publish.
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: excerpt
+        label: Excerpt
+        description: One or two sentences. Shown in the listing, the feed, and link previews.
+        type: text
+        required: true
+      - name: image
+        label: Lead photo
+        description: Optional. Landscape, about 1600 by 1000, under 1 MB.
+        type: image
+        options:
+          media: images
+          extensions: [jpg, jpeg, png, webp]
+      - name: imageAlt
+        label: Photo description
+        description: Required when a photo is set. What is in the picture, in one sentence.
+        type: string
+      - name: imagePosition
+        label: Photo focal point
+        description: CSS object-position, for example "center 30%". Leave as center unless the crop cuts something off.
+        type: string
+        default: center
+      - name: draft
+        label: Draft
+        description: On keeps the post out of the live site. Turn it off to publish.
+        type: boolean
+        default: true
+      - name: body
+        label: Post
+        type: rich-text
+        options:
+          format: markdown
+          media: images
+          switcher: true
+
+settings:
+  content:
+    merge: true

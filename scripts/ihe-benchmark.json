@@ -1,0 +1,147 @@
+{
+  "source": "Inside Higher Ed, Call to Action column",
+  "url": "https://www.insidehighered.com/opinion/columns/call-action",
+  "measured": "2026-08-09",
+  "n_posts": 15,
+  "note": "Derived statistics only. Article bodies were measured and deleted; they are copyrighted.",
+  "words": {
+    "mean": 845,
+    "median": 841,
+    "min": 634,
+    "max": 1196
+  },
+  "aggregate": {
+    "sent_mean": 18.0,
+    "sent_len_sd": 10.6,
+    "short_pct": 20,
+    "long_pct": 12,
+    "para_words": 49.7,
+    "the_open_pct": 9,
+    "contr_per_100w": 1.7,
+    "uncontracted_neg": 20,
+    "figures": 0.1,
+    "questions": 65,
+    "semis": 17,
+    "cleft": 6,
+    "false_contrast_2s": 5,
+    "rule_of_three": 6,
+    "institutions_that": 1,
+    "dashes": 61,
+    "self_interrupt": 14
+  },
+  "per_1000_words": {
+    "cleft": 0.47,
+    "false_contrast_2s": 0.39,
+    "rule_of_three": 0.47,
+    "institutions_that": 0.08,
+    "uncontracted_neg": 1.58
+  },
+  "questions_per_post": 4.3,
+  "posts": [
+    {
+      "slug": "collier-ai",
+      "words": 938,
+      "sent_mean": 19.1,
+      "contr": 1.0,
+      "questions": 1
+    },
+    {
+      "slug": "collier-magazine",
+      "words": 769,
+      "sent_mean": 22.6,
+      "contr": 1.7,
+      "questions": 2
+    },
+    {
+      "slug": "edwards-7questions",
+      "words": 876,
+      "sent_mean": 13.9,
+      "contr": 1.5,
+      "questions": 17
+    },
+    {
+      "slug": "huebner-whyyou",
+      "words": 634,
+      "sent_mean": 14.4,
+      "contr": 0.8,
+      "questions": 5
+    },
+    {
+      "slug": "keese-scarcity",
+      "words": 1046,
+      "sent_mean": 18.0,
+      "contr": 0.9,
+      "questions": 3
+    },
+    {
+      "slug": "lecourt-podcast",
+      "words": 1196,
+      "sent_mean": 20.3,
+      "contr": 1.6,
+      "questions": 2
+    },
+    {
+      "slug": "mcfadden-product",
+      "words": 852,
+      "sent_mean": 14.4,
+      "contr": 3.3,
+      "questions": 17
+    },
+    {
+      "slug": "parrot-harvard",
+      "words": 668,
+      "sent_mean": 22.3,
+      "contr": 1.9,
+      "questions": 0
+    },
+    {
+      "slug": "petty-hoodie",
+      "words": 696,
+      "sent_mean": 20.5,
+      "contr": 1.3,
+      "questions": 4
+    },
+    {
+      "slug": "purgason-aicant",
+      "words": 1012,
+      "sent_mean": 18.1,
+      "contr": 2.3,
+      "questions": 1
+    },
+    {
+      "slug": "rogers-swift",
+      "words": 667,
+      "sent_mean": 17.6,
+      "contr": 1.6,
+      "questions": 0
+    },
+    {
+      "slug": "simmons-parents",
+      "words": 723,
+      "sent_mean": 14.2,
+      "contr": 1.2,
+      "questions": 0
+    },
+    {
+      "slug": "steuer-media",
+      "words": 841,
+      "sent_mean": 22.1,
+      "contr": 1.8,
+      "questions": 0
+    },
+    {
+      "slug": "townsend-campaign",
+      "words": 992,
+      "sent_mean": 17.7,
+      "contr": 2.6,
+      "questions": 9
+    },
+    {
+      "slug": "zinkan-longtime",
+      "words": 772,
+      "sent_mean": 20.9,
+      "contr": 1.3,
+      "questions": 4
+    }
+  ]
+}

@@ -76,8 +76,12 @@ story, and service meet." Alternates: "The work.", "How I help."
   machine-readable date, optional lead photo, centered prose column, author card,
   and newer/older links. Post prose untouched; the "Matthew Gann, Ph.D." sign-off line was
   replaced by the author card.
-- Each post's `<head>` comes from `postMetadata(slug)` in `lib/posts.ts`, so title,
-  description, canonical, OG and Twitter tags cannot drift from the listing.
+- Posts are Markdown files in `content/posts`, one per post, with a frontmatter header
+  for title, date, excerpt, photo, and a draft flag. The filename is the URL slug. The
+  loader in `lib/posts.ts` reads the folder at build time and feeds the listing, feed,
+  schema, neighbors, and `<head>`. Drafts render locally and are excluded from production
+  builds. `npm run new-post -- "Title"` scaffolds a file. `.pages.yml` configures Pages
+  CMS for editing in a browser.
 
 ## 4. Structure audit: findings and what was done
 
@@ -184,8 +188,8 @@ Current placeholders reuse the nine photos already in `public/`. To replace:
 | Experience band | band-conference | Wide conference or campus shot, 2400x900 |
 | Contact band | stage-door.jpg (supplied 2026-10-29) | Done |
 
-Drop files in `public/` and set `image`, `imageAlt`, and `imagePosition` in `lib/posts.ts`
-or the `expertise` array in `app/page.tsx`.
+Drop files in `public/` and set `image`, `imageAlt`, and `imagePosition` in the post's
+frontmatter, or in the `expertise` array in `app/page.tsx` for the practice cards.
 
 ## 7. Running it
 

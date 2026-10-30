@@ -1,142 +1,103 @@
+import fs from "node:fs";
+import path from "node:path";
+import matter from "gray-matter";
+import { marked } from "marked";
 import type { Metadata } from "next";
 import { SITE_URL } from "./site";
 
+/**
+ * Posts live in content/posts as Markdown files with a frontmatter header.
+ * The filename (minus .md) is the slug and must not change once published,
+ * because it is part of the public URL: /research/YYYY/MM/slug.
+ *
+ * Frontmatter:
+ *   title:          required
+ *   date:           required, YYYY-MM-DD; sets the URL year and month
+ *   excerpt:        required; listing, share tags, feed, schema
+ *   image:          optional, path under public/ such as /campus-run.jpg
+ *   imageAlt:       required when image is set
+ *   imagePosition:  optional CSS object-position, default "center"
+ *   draft:          optional; true keeps the post out of production builds
+ */
 export type Post = {
   slug: string;
   path: string;
   title: string;
   date: string;
   dateISO: string;
-  category: string;
   excerpt: string;
-  /** Optional lead photo. Shown on the post page and in the stacked list. */
   image?: string;
   imageAlt?: string;
   imagePosition?: string;
+  draft: boolean;
+  /** Rendered HTML for the post body. */
+  html: string;
 };
 
-const posts: Post[] = [
-  {
-    slug: "an-amazing-employee-just-quit",
-    path: "/research/2026/10/an-amazing-employee-just-quit",
-    title: "An Amazing Employee Just Quit. I Couldn't Be Prouder.",
-    date: "October 2026",
-    dateISO: "2026-10-26",
-    category: "Leadership",
-    excerpt:
-      "A few thoughts on developing people, supporting their ambitions, and remembering that we work to live.",
-    image: "/campus-run.jpg",
-    imageAlt:
-      "Matthew Gann with a group of colleagues on the lawn at the University of Denver before a campus run",
-    imagePosition: "center 40%",
-  },
-  {
-    slug: "when-marketing-is-invited-too-late",
-    path: "/research/2026/10/when-marketing-is-invited-too-late",
-    title: "When Marketing Is Invited Too Late",
-    date: "October 2026",
-    dateISO: "2026-10-07",
-    category: "Higher Education",
-    excerpt:
-      "The best marketing strategy in the world can't always rescue a poorly conceived organizational strategy. And yet we keep asking it to try.",
-  },
-  {
-    slug: "great-players-want-the-truth",
-    path: "/research/2026/07/great-players-want-the-truth",
-    title: "Great Players Want the Truth",
-    date: "July 2026",
-    dateISO: "2026-07-12",
-    category: "Leadership",
-    excerpt:
-      "The coaches who built women's basketball didn't protect their best players from hard coaching. They gave them more of it. Most organizations do the opposite, and it's costing them.",
-  },
-  {
-    slug: "return-on-objectives",
-    path: "/research/2026/07/return-on-objectives",
-    title: "The Real ROO",
-    date: "July 2026",
-    dateISO: "2026-07-08",
-    category: "Higher Education",
-    excerpt:
-      "ROI tells you the money came back. ROO asks whether you did what you set out to do. In higher education, the gap between those two questions is where most strategy breaks down.",
-    image: "/broncos-panel.jpg",
-    imageAlt:
-      "Matthew Gann moderating a conversation with Hailey Sullivan and Sandy Young of the Denver Broncos at CASE 2026",
-    imagePosition: "center 30%",
-  },
-  {
-    slug: "one-year-in",
-    path: "/research/2026/06/one-year-in",
-    title: "One Year In",
-    date: "June 2026",
-    dateISO: "2026-06-15",
-    category: "Leadership",
-    excerpt:
-      "One year at the University of Denver. On making hard decisions on purpose, why brand marketing is an investment the sector keeps getting wrong, and what commencement makes undeniably clear.",
-    image: "/maroon-bells.jpg",
-    imageAlt: "Matthew Gann at Maroon Bells near Aspen, Colorado",
-    imagePosition: "center 30%",
-  },
-  {
-    slug: "future-of-higher-ed-websites",
-    path: "/research/2026/06/future-of-higher-ed-websites",
-    title: "The Higher Ed Website Is Dead. We Just Haven't Buried It Yet.",
-    date: "June 2026",
-    dateISO: "2026-06-10",
-    category: "Higher Education",
-    excerpt:
-      "Higher education websites are still built like org charts with a search bar. What comes next looks nothing like that.",
-  },
-  {
-    slug: "responsibility-without-authority",
-    path: "/research/2026/06/responsibility-without-authority",
-    title: "Responsible for the Sale, Not the Product",
-    date: "June 2026",
-    dateISO: "2026-06-10",
-    category: "Higher Education",
-    excerpt:
-      "Higher education marketers are held accountable for enrollment outcomes they don't control. That's a structural problem. In some states, it has gotten much worse.",
-  },
-  {
-    slug: "data-driven-differentiation",
-    path: "/research/2026/05/data-driven-differentiation",
-    title: "Data-Driven Differentiation in Higher Education",
-    date: "May 2026",
-    dateISO: "2026-05-01",
-    category: "Higher Education",
-    excerpt:
-      "Most institutions know they need to stand out. Few have a repeatable system for figuring out what they actually stand out for.",
-  },
-  {
-    slug: "purpose-driven-leadership",
-    path: "/research/2026/04/purpose-driven-leadership",
-    title: "What Purpose-Driven Leadership Actually Looks Like",
-    date: "April 2026",
-    dateISO: "2026-04-01",
-    category: "Leadership",
-    excerpt:
-      "Purpose isn't a mission statement on a wall. It's the filter through which every decision gets made, from hiring to campaign strategy.",
-  },
-  {
-    slug: "marketing-maturity-in-higher-ed",
-    path: "/research/2026/03/marketing-maturity-in-higher-ed",
-    title: "Marketing Maturity in Higher Education",
-    date: "March 2026",
-    dateISO: "2026-03-01",
-    category: "Higher Education",
-    excerpt:
-      "Most universities are still treating marketing as a production function. The ones winning the future are building it as a strategic capability.",
-  },
-];
+const POSTS_DIR = path.join(process.cwd(), "content", "posts");
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-export default posts;
+function toISODate(value: unknown): string {
+  if (value instanceof Date) return value.toISOString().slice(0, 10);
+  const s = String(value ?? "").trim();
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) throw new Error(`Post date must be YYYY-MM-DD, got "${s}"`);
+  return s;
+}
+
+function longDate(iso: string): string {
+  const [y, m] = iso.split("-").map(Number);
+  return `${MONTHS[m - 1]} ${y}`;
+}
 
 /** "2026-10-26" -> "Oct '26" */
 export function shortDate(iso: string): string {
   const [y, m] = iso.split("-").map(Number);
-  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  return `${months[m - 1]} ’${String(y).slice(-2)}`;
+  return `${MONTHS[m - 1].slice(0, 3)} ’${String(y).slice(-2)}`;
 }
+
+function clean(v: unknown): string | undefined {
+  const s = v == null ? "" : String(v).trim();
+  return s ? s : undefined;
+}
+
+function loadPosts(): Post[] {
+  if (!fs.existsSync(POSTS_DIR)) return [];
+  const files = fs.readdirSync(POSTS_DIR).filter((f) => f.endsWith(".md") && !f.startsWith("_"));
+  const all = files.map((file): Post => {
+    const slug = file.replace(/\.md$/, "");
+    const raw = fs.readFileSync(path.join(POSTS_DIR, file), "utf8");
+    const { data, content } = matter(raw);
+    for (const key of ["title", "date", "excerpt"]) {
+      if (!clean(data[key]) && !(key === "date" && data.date instanceof Date)) {
+        throw new Error(`content/posts/${file} is missing "${key}"`);
+      }
+    }
+    const image = clean(data.image);
+    const imageAlt = clean(data.imageAlt);
+    if (image && !imageAlt) throw new Error(`content/posts/${file} has an image but no imageAlt`);
+    const dateISO = toISODate(data.date);
+    const [y, m] = dateISO.split("-");
+    return {
+      slug,
+      path: `/research/${y}/${m}/${slug}`,
+      title: String(data.title).trim(),
+      date: longDate(dateISO),
+      dateISO,
+      excerpt: String(data.excerpt).trim(),
+      image,
+      imageAlt,
+      imagePosition: clean(data.imagePosition),
+      draft: Boolean(data.draft),
+      html: marked.parse(content.trim(), { gfm: true, breaks: false }) as string,
+    };
+  });
+  const visible = process.env.NODE_ENV === "production" ? all.filter((p) => !p.draft) : all;
+  return visible.sort((a, b) => (a.dateISO < b.dateISO ? 1 : a.dateISO > b.dateISO ? -1 : a.slug.localeCompare(b.slug)));
+}
+
+const posts: Post[] = loadPosts();
+
+export default posts;
 
 export function getPost(slug: string): Post {
   const post = posts.find((p) => p.slug === slug);
@@ -178,5 +139,6 @@ export function postMetadata(slug: string): Metadata {
       description: post.excerpt,
       images: [image],
     },
+    ...(post.draft ? { robots: { index: false, follow: false } } : {}),
   };
 }
