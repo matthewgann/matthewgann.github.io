@@ -82,7 +82,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <ImageBand src="/band-doorway.jpg" alt="Matthew Gann in a gothic archway" position="center 15%" />
+      <ImageBand
+        src="/stage-door.jpg"
+        alt="Matthew Gann standing under a Stage Door sign"
+        position="center top"
+        height="clamp(320px, 56vw, 720px)"
+      />
     </>
   );
 }

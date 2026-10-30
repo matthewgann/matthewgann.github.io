@@ -73,6 +73,9 @@ const posts: Post[] = [
     category: "Leadership",
     excerpt:
       "One year at the University of Denver. On making hard decisions on purpose, why brand marketing is an investment the sector keeps getting wrong, and what commencement makes undeniably clear.",
+    image: "/maroon-bells.jpg",
+    imageAlt: "Matthew Gann at Maroon Bells near Aspen, Colorado",
+    imagePosition: "center 30%",
   },
   {
     slug: "future-of-higher-ed-websites",

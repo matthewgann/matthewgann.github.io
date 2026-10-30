@@ -142,24 +142,20 @@ export default function Home() {
 
         <div className="relative order-1 md:order-2 hairline-b md:border-b-0 md:hairline-l min-h-[62vw] md:min-h-0">
           <Image
-            src="/headshot.jpg"
-            alt="Matthew Gann, Ph.D."
+            src="/hero-brooklyn.jpg"
+            alt="Matthew Gann on the Brooklyn waterfront with the Manhattan skyline behind him"
             fill
             priority
             sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-cover object-top"
+            className="object-cover"
+            style={{ objectPosition: "center 28%" }}
           />
-          <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-(--gutter) pointer-events-none">
-            <span className="mono hidden md:inline" style={{ color: "rgba(255,255,255,0.85)" }}>
-              Scroll to explore ↓
-            </span>
+          <div className="absolute inset-x-0 bottom-0 flex items-end p-(--gutter) pointer-events-none">
             <span
-              className="mono text-right ml-auto"
-              style={{ color: "rgba(255,255,255,0.85)", textShadow: "0 1px 8px rgba(0,0,0,0.5)" }}
+              className="mono hidden md:inline"
+              style={{ color: "rgba(255,255,255,0.9)", textShadow: "0 1px 8px rgba(0,0,0,0.45)" }}
             >
-              Denver, CO
-              <br />
-              39.6766° N 104.9619° W
+              Scroll to explore ↓
             </span>
           </div>
         </div>
