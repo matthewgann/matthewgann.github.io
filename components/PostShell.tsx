@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ArticleSchema from "@/components/ArticleSchema";
+import AiNote from "@/components/AiNote";
 import { getNeighbors, getPost, shortDate } from "@/lib/posts";
 import { SITE_URL, WRITING_LABEL, WRITING_PATH } from "@/lib/site";
 
@@ -130,6 +131,8 @@ export default function PostShell({ slug, children }: { slug: string; children: 
           </div>
         ))}
       </nav>
+
+      <AiNote />
     </article>
   );
 }
