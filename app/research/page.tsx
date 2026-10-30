@@ -91,8 +91,8 @@ export default function ResearchPage() {
               Marketing · Leadership · Higher Education
             </p>
             <p className="t-lead mt-8 mb-0 max-w-[58ch]">
-              I write here about the work of marketing inside higher education and about leading the
-              people who do it. Most of these posts come out of the day job: how universities decide
+              These posts are about the work of marketing inside higher education and about leading
+              the people who do it. Most of them come out of the day job: how universities decide
               what they stand for, why brand is an investment rather than an expense, and how to
               measure whether a strategy did what it set out to do. Some are about leadership more
               broadly, including developing people and telling them the truth.
