@@ -35,14 +35,14 @@ const experience = [
     location: "Denver, Colorado",
     title: "Associate Vice Chancellor, Chief Marketing Officer",
     highlight:
-      "I'm the CMO for a private R1 research university with 10 schools and colleges, 18 Division I sports programs, and 35 NCAA national championships.",
+      "I'm the CMO for a private R1 research university.",
   },
   {
     org: "Tennessee Board of Regents",
     location: "Nashville, Tennessee",
     title: "Associate Vice Chancellor for Marketing, Digital Strategy, and Public Relations",
     highlight:
-      "I was the systemwide CMO for Tennessee's largest higher education system. 37 colleges. About 165,000 students.",
+      "I was the systemwide CMO for Tennessee's largest higher education system.",
   },
   {
     org: "Tennessee Tech University",
