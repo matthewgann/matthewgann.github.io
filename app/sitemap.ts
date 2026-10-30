@@ -25,8 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: "https://matthewgann.com/resume",
-      lastModified: new Date("2026-06-10"),
+      url: "https://matthewgann.com/experience",
+      lastModified: new Date("2026-10-29"),
       changeFrequency: "monthly",
       priority: 0.8,
     },

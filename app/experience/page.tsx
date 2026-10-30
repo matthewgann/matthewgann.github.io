@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ImageBand from "@/components/ImageBand";
 
 export const metadata: Metadata = {
-  title: "Resume | Matthew Gann, Ph.D.",
+  title: "Experience | Matthew Gann, Ph.D.",
   description: "Career history, expertise, and credentials of Matthew Gann, Ph.D.",
 };
 
@@ -150,7 +150,7 @@ const community = [
   { org: "Open Nashville", role: "Previous President, Financial Officer, and Executive Board Member" },
 ];
 
-export default function ResumePage() {
+export default function ExperiencePage() {
   return (
     <>
       {/* Header + Summary */}
