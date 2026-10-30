@@ -1,49 +1,12 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import ArticleSchema from "@/components/ArticleSchema";
+import PostShell from "@/components/PostShell";
+import { postMetadata } from "@/lib/posts";
 
-export const metadata: Metadata = {
-  title: "One Year In | Matthew Gann, Ph.D.",
-  description:
-    "One year at the University of Denver. On making hard decisions on purpose, why brand marketing is an investment the sector keeps getting wrong, and what commencement makes undeniably clear.",
-  openGraph: {
-    title: "One Year In | Matthew Gann, Ph.D.",
-    description:
-      "One year at the University of Denver. On making hard decisions on purpose, why brand marketing is an investment the sector keeps getting wrong, and what commencement makes undeniably clear.",
-    url: "https://matthewgann.com/research/2026/06/one-year-in",
-    type: "article",
-  },
-};
+export const metadata = postMetadata("one-year-in");
 
 export default function Post() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-16">
-      <ArticleSchema
-        title="One Year In"
-        description="One year at the University of Denver. On making hard decisions on purpose, why brand marketing is an investment the sector keeps getting wrong, and what commencement makes undeniably clear."
-        datePublished="2026-06-15"
-        url="https://matthewgann.com/research/2026/06/one-year-in"
-      />
-      <Link
-        href="/research"
-        className="text-sm font-medium mb-10 inline-block transition-colors duration-150"
-        style={{ color: "var(--text-muted)", textDecoration: "none" }}
-      >
-        ← Research &amp; Thoughts
-      </Link>
-
-      <div className="flex flex-wrap items-center gap-3 mb-4 mt-6">
-        <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>
-          June 2026
-        </span>
-      </div>
-
-      <h1 className="text-4xl sm:text-5xl mb-8" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-        One Year In
-      </h1>
-
-      <div className="space-y-5" style={{ color: "var(--foreground)" }}>
-        <p className="text-lg leading-relaxed" style={{ color: "var(--text-muted)" }}>
+    <PostShell slug="one-year-in">
+        <p>
           The most useful thing I do is walk across campus. Almost every day. Not to a meeting. Just
           across it. Past students cutting between classes, past the research happening in buildings
           most people walk by without thinking about what&apos;s inside them. I do it to see the
@@ -51,7 +14,7 @@ export default function Post() {
           institution exists to produce. It keeps the rest of it honest.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           I started at DU on June 1 of last year. I came in with real respect for the talent already
           here and a clear sense that the university needed its marketing and brand function to operate
           at a higher level. The year was mostly about foundation: understanding where trust was strong
@@ -60,7 +23,7 @@ export default function Post() {
           That kind of organizational reading is slow work. You can&apos;t shortcut it.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The honest part of the year is the part that doesn&apos;t make a highlight reel. I have had
           to make hard organizational decisions, including eliminating positions. Those were real
           people. Good people, whose work I respected. The budget doesn&apos;t carry the weight of
@@ -68,7 +31,7 @@ export default function Post() {
           in the room with you.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           What the strategy does is make sure the weight means something. The cuts were budget-driven.
           The question I had to answer was how to absorb them without repeating a mistake institutions
           have made for decades. Marketing is not an expense to manage down. It is an investment to
@@ -86,7 +49,7 @@ export default function Post() {
           reactions.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           That&apos;s why one of the first things I did was build a five-year maturity model: a
           clear, shared picture of where this function needs to go and what it will take to get there.
           Not another planning document. A way to decide on purpose. When the budget forces a
@@ -96,7 +59,7 @@ export default function Post() {
           why you&apos;re making them.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           None of this sits easily beside the culture work, and I won&apos;t pretend it does.
           Organizational trust is built slowly and disrupted quickly, and restructuring is among the
           fastest ways to disrupt it. You can&apos;t talk about building trust and belonging while
@@ -108,7 +71,7 @@ export default function Post() {
           can&apos;t wait.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           What I keep coming back to is that this isn&apos;t only a DU story. Higher education is
           facing pressures that would test any industry: a contracting student population, a political
           environment in some states actively reshaping what universities are permitted to teach, a
@@ -118,7 +81,7 @@ export default function Post() {
           shifts.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The institutions that navigate this moment will be the ones willing to make hard decisions
           now, on purpose rather than in reaction. Marketing is not peripheral to that. Rebuilding
           trust in higher education starts with being able to articulate what it is actually for. To
@@ -130,7 +93,7 @@ export default function Post() {
           are fighting for.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           A few thousand people cross a stage in front of families who saved, sacrificed, and showed
           up. For many of them, this is the moment a family&apos;s trajectory changes. Not just the
           graduate&apos;s. Their parents&apos;, their siblings&apos;, the children they haven&apos;t
@@ -140,14 +103,14 @@ export default function Post() {
           we do sits upstream of that moment.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The work is nowhere near done. The financial environment is tighter, the questions are
           harder, and the margin for drift is smaller than it has been in a generation. The brand has
           to become clearer, more visible, and more trusted at the same time the operation behind it
           gets smaller.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           But that is exactly why the walk matters. The purpose doesn&apos;t get smaller under
           pressure. It gets sharper. I came here believing this work matters. A year of it, the
           hardest parts included, has only made me more certain. I have never hidden from hard work.
@@ -155,11 +118,6 @@ export default function Post() {
           shape where this institution is going. There is so much more to do, and I am here for all
           of it.
         </p>
-
-        <p className="text-sm font-medium mt-10 pt-8" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>
-          Matthew Gann, Ph.D.
-        </p>
-      </div>
-    </div>
+    </PostShell>
   );
 }

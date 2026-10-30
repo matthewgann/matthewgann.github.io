@@ -1,54 +1,17 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import ArticleSchema from "@/components/ArticleSchema";
+import PostShell from "@/components/PostShell";
+import { postMetadata } from "@/lib/posts";
 
-export const metadata: Metadata = {
-  title: "Data-Driven Differentiation in Higher Education | Matthew Gann, Ph.D.",
-  description:
-    "Most institutions know they need to stand out. Few have a repeatable system for figuring out what they actually stand out for.",
-  openGraph: {
-    title: "Data-Driven Differentiation in Higher Education | Matthew Gann, Ph.D.",
-    description:
-      "Most institutions know they need to stand out. Few have a repeatable system for figuring out what they actually stand out for.",
-    url: "https://matthewgann.com/research/2026/05/data-driven-differentiation",
-    type: "article",
-  },
-};
+export const metadata = postMetadata("data-driven-differentiation");
 
 export default function Post() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-16">
-      <ArticleSchema
-        title="Data-Driven Differentiation in Higher Education"
-        description="Most institutions know they need to stand out. Few have a repeatable system for figuring out what they actually stand out for."
-        datePublished="2026-05-01"
-        url="https://matthewgann.com/research/2026/05/data-driven-differentiation"
-      />
-      <Link
-        href="/research"
-        className="text-sm font-medium mb-10 inline-block transition-colors duration-150"
-        style={{ color: "var(--text-muted)", textDecoration: "none" }}
-      >
-        ← Research &amp; Thoughts
-      </Link>
-
-      <div className="flex flex-wrap items-center gap-3 mb-4 mt-6">
-        <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>
-          May 2026
-        </span>
-      </div>
-
-      <h1 className="text-4xl sm:text-5xl mb-8" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-        Data-Driven Differentiation in Higher Education
-      </h1>
-
-      <div className="space-y-5" style={{ color: "var(--foreground)" }}>
-        <p className="text-lg leading-relaxed" style={{ color: "var(--text-muted)" }}>
+    <PostShell slug="data-driven-differentiation">
+        <p>
           Most institutions know they need to stand out. Few have a repeatable system for figuring
           out what they actually stand out for.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The word &ldquo;differentiation&rdquo; gets used so often in higher education marketing that it has
           nearly stopped meaning anything. Every institution claims to be innovative,
           student-centered, and career-focused. Most of them mean it. None of that is
@@ -57,7 +20,7 @@ export default function Post() {
           reach.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           Most institutions have plenty of distinguishing characteristics. What they lack is a
           practice for discovering and proving them. They rely on
           tradition, on what leadership believes, or on what sounds good in a board presentation.
@@ -66,13 +29,13 @@ export default function Post() {
           result in a way that earns both student attention and institutional trust.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           I presented a framework for this at the American Marketing Association&apos;s Symposium on
           Higher Education. It&apos;s a simple loop: Listen &rarr; Analyze &rarr; Activate &rarr; Repeat. Simple
           doesn&apos;t mean easy, but it does mean actionable.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The Listen phase is about building a habit of signal collection, not one-time research.
           It requires ongoing attention. That means brand tracking surveys, social listening, yield trend
           analysis, CRM behavior, admit surveys, and outcomes data. At the University of Denver, we
@@ -82,7 +45,7 @@ export default function Post() {
           perception diverge and where your real advantages are hiding.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The Analyze phase uses a framework I call the Proof&ndash;Pride&ndash;Promise map. Proof is your
           measurable, demonstrable advantage: graduation outcomes, ROI, employment rates, geographic
           access, merit aid. Pride is the emotional layer: belonging, mentorship, identity, place,
@@ -93,7 +56,7 @@ export default function Post() {
           credible claim that holds up under scrutiny.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The Activate phase is where institutions most often either underinvest or overcorrect. The
           output isn&apos;t a tagline. It&apos;s a platform. At DU, we developed The Denver Difference as a
           flexible system rather than a rigid statement. It unifies storytelling across audiences
@@ -104,7 +67,7 @@ export default function Post() {
           meaningful impact, we can prove it.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The framework is iterative by design. Markets shift, student priorities evolve, and what
           was a differentiator last year may be table stakes next year. Doing this once and
           enshrining the result is a snapshot, not a strategy. The institutions that will sustain
@@ -113,11 +76,6 @@ export default function Post() {
           standard is provability, not uniqueness. Different means uniquely true and demonstrable
           for you, not that no one else does it.
         </p>
-
-        <p className="text-sm font-medium mt-10 pt-8" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>
-          Matthew Gann, Ph.D.
-        </p>
-      </div>
-    </div>
+    </PostShell>
   );
 }

@@ -1,62 +1,60 @@
+import { BLOG_ID, PERSON_ID, SITE_URL, WEBSITE_ID, WRITING_LABEL, WRITING_PATH, jsonLd } from "@/lib/site";
+
 type Props = {
   title: string;
   description: string;
   datePublished: string;
+  dateModified?: string;
   url: string;
+  image?: string;
+  section?: string;
 };
 
-export default function ArticleSchema({ title, description, datePublished, url }: Props) {
-  const schema = [
+export default function ArticleSchema({
+  title,
+  description,
+  datePublished,
+  dateModified,
+  url,
+  image,
+  section,
+}: Props) {
+  const graph = [
     {
-      "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": "BlogPosting",
+      "@id": `${url}#article`,
       headline: title,
       description,
       datePublished,
-      author: {
-        "@type": "Person",
-        name: "Matthew Gann",
-        honorificSuffix: "Ph.D.",
-        url: "https://matthewgann.com",
-      },
-      publisher: {
-        "@type": "Person",
-        name: "Matthew Gann",
-        url: "https://matthewgann.com",
-      },
+      dateModified: dateModified ?? datePublished,
+      inLanguage: "en-US",
+      author: { "@id": PERSON_ID },
+      publisher: { "@id": PERSON_ID },
+      isPartOf: { "@id": BLOG_ID },
       url,
-      mainEntityOfPage: url,
+      mainEntityOfPage: { "@type": "WebPage", "@id": url },
+      ...(image ? { image: [`${SITE_URL}${image}`] } : {}),
+      ...(section ? { articleSection: section } : {}),
     },
     {
-      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": url,
+      url,
+      name: title,
+      isPartOf: { "@id": WEBSITE_ID },
+      about: { "@id": PERSON_ID },
+    },
+    {
       "@type": "BreadcrumbList",
       itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://matthewgann.com",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Research & Thoughts",
-          item: "https://matthewgann.com/research",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: title,
-          item: url,
-        },
+        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: WRITING_LABEL, item: `${SITE_URL}${WRITING_PATH}` },
+        { "@type": "ListItem", position: 3, name: title, item: url },
       ],
     },
   ];
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(graph) }} />
   );
 }

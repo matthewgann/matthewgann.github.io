@@ -1,0 +1,33 @@
+# Matthew Gann, Ph.D.
+
+> Personal site of Matthew Gann, Ph.D., associate vice chancellor and chief marketing officer at the University of Denver. Purpose-driven marketing and communications executive with more than two decades of experience in higher education, healthcare, and agency leadership. Based in Denver, Colorado and Nashville, Tennessee.
+
+Site: https://matthewgann.com
+Contact: matthew@matthewgann.com
+LinkedIn: https://www.linkedin.com/in/matthewgann/
+RSS: https://matthewgann.com/feed.xml
+
+## Pages
+
+- [Home](https://matthewgann.com/): About, at-a-glance credentials, and areas of practice (brand strategy, business and organizational intelligence, marketing operations, reputation and crisis management, leadership and organizational development, digital strategy and analytics).
+- [Experience](https://matthewgann.com/experience): Career history (University of Denver; Tennessee Board of Regents; Tennessee Tech University; Wellness Healthcare; WPF Management; N2 The Net; independent consulting), education (Ph.D. and M.O.L., Trevecca Nazarene University; B.S., Tennessee Tech University), credentials (APR; Tennessee Certified Economic Developer), awards, memberships, and community roles.
+- [On Purpose](https://matthewgann.com/research): Writing on marketing, leadership, higher education, and purpose-driven work.
+- [Get in Touch](https://matthewgann.com/contact): Email, LinkedIn, and location.
+
+## Writing
+
+- [An Amazing Employee Just Quit. I Couldn't Be Prouder.](https://matthewgann.com/research/2026/10/an-amazing-employee-just-quit): Developing people, supporting their ambitions, and remembering that we work to live.
+- [When Marketing Is Invited Too Late](https://matthewgann.com/research/2026/10/when-marketing-is-invited-too-late): Marketing strategy cannot always rescue a poorly conceived organizational strategy.
+- [Great Players Want the Truth](https://matthewgann.com/research/2026/07/great-players-want-the-truth): Hard coaching, candor, and what organizations get wrong about protecting top performers.
+- [The Real ROO](https://matthewgann.com/research/2026/07/return-on-objectives): ROI versus return on objectives in higher education strategy.
+- [One Year In](https://matthewgann.com/research/2026/06/one-year-in): One year as CMO at the University of Denver.
+- [The Higher Ed Website Is Dead. We Just Haven't Buried It Yet.](https://matthewgann.com/research/2026/06/future-of-higher-ed-websites): Why higher education websites built like org charts are ending, and what comes next.
+- [Responsible for the Sale, Not the Product](https://matthewgann.com/research/2026/06/responsibility-without-authority): Higher ed marketers are held accountable for enrollment outcomes they do not control.
+- [Data-Driven Differentiation in Higher Education](https://matthewgann.com/research/2026/05/data-driven-differentiation): Building a repeatable system for figuring out what an institution stands out for.
+- [What Purpose-Driven Leadership Actually Looks Like](https://matthewgann.com/research/2026/04/purpose-driven-leadership): Purpose as the filter for every decision, from hiring to campaign strategy.
+- [Marketing Maturity in Higher Education](https://matthewgann.com/research/2026/03/marketing-maturity-in-higher-ed): Moving marketing from a production function to a strategic capability.
+
+## Notes
+
+- The writing and ideas on this site are Matthew Gann's own. AI tools support brainstorming, literature surfacing, and proofreading; all suggestions are reviewed before publishing.
+- Structured data: Person, WebSite, ProfilePage, Blog, and BlogPosting JSON-LD are embedded on the relevant pages.

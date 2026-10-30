@@ -1,64 +1,12 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
-import ArticleSchema from "@/components/ArticleSchema";
+import PostShell from "@/components/PostShell";
+import { postMetadata } from "@/lib/posts";
 
-export const metadata: Metadata = {
-  title: "The Real ROO | Matthew Gann, Ph.D.",
-  description:
-    "ROI tells you the money came back. ROO asks whether you did what you set out to do. In higher education, the gap between those two questions is where most strategy breaks down.",
-  openGraph: {
-    title: "The Real ROO | Matthew Gann, Ph.D.",
-    description:
-      "ROI tells you the money came back. ROO asks whether you did what you set out to do. In higher education, the gap between those two questions is where most strategy breaks down.",
-    url: "https://matthewgann.com/research/2026/07/return-on-objectives",
-    type: "article",
-  },
-};
+export const metadata = postMetadata("return-on-objectives");
 
 export default function Post() {
   return (
-    <>
-      <ArticleSchema
-        title="The Real ROO"
-        description="ROI tells you the money came back. ROO asks whether you did what you set out to do. In higher education, the gap between those two questions is where most strategy breaks down."
-        datePublished="2026-07-08"
-        url="https://matthewgann.com/research/2026/07/return-on-objectives"
-      />
-      <div className="w-full relative overflow-hidden" style={{ height: "420px" }}>
-        <Image
-          src="/broncos-panel.jpg"
-          alt="Matthew Gann moderating a conversation with Hailey Sullivan and Sandy Young of the Denver Broncos at CASE 2026"
-          fill
-          className="object-cover"
-          style={{ objectPosition: "center 30%" }}
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0" style={{ background: "rgba(28, 25, 23, 0.2)" }} />
-      </div>
-
-    <div className="max-w-2xl mx-auto px-6 py-16">
-      <Link
-        href="/research"
-        className="text-sm font-medium mb-10 inline-block transition-colors duration-150"
-        style={{ color: "var(--text-muted)", textDecoration: "none" }}
-      >
-        ← Research &amp; Thoughts
-      </Link>
-
-      <div className="flex flex-wrap items-center gap-3 mb-4 mt-6">
-        <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>
-          July 2026
-        </span>
-      </div>
-
-      <h1 className="text-4xl sm:text-5xl mb-8" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-        The Real ROO
-      </h1>
-
-      <div className="space-y-5" style={{ color: "var(--foreground)" }}>
-        <p className="text-lg leading-relaxed" style={{ color: "var(--text-muted)" }}>
+    <PostShell slug="return-on-objectives">
+        <p>
           A few weeks ago I moderated a conversation at the CASE Annual Conference for Marketing and
           Branding with two leaders from the Denver Broncos: Hailey Sullivan, their CMO, and Sandy
           Young, their VP of Partnership Marketing. I walked off the stage with a page full of
@@ -66,13 +14,13 @@ export default function Post() {
           my brain went straight to Bonnaroo, but stay with me.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           ROI tells you the money came back. ROO asks whether you did what you set out to do. In
           higher education marketing, the gap between those two questions is where most strategy
           breaks down.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           Efficient spend aimed at the wrong objective is still the wrong spend. ROI is a financial
           efficiency metric. It tells you the ratio of return to investment, which is useful. What it
           cannot tell you is whether the thing you invested in was worth doing. You can run a highly
@@ -81,14 +29,14 @@ export default function Post() {
           on the metric. The objective wasn&apos;t served.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           ROO reframes the question. Before the campaign, before the budget, before the media plan,
           it forces you to name what you are actually trying to accomplish. Not the metric you will
           report. The objective you will be held to. When those are the same thing, everything
           downstream gets cleaner.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           In higher education, this matters more than most sectors acknowledge. Higher ed marketing
           carries a stack of objectives that don&apos;t reduce to revenue or even to applications:
           brand awareness in target markets, reputation among high school counselors and employers,
@@ -97,7 +45,7 @@ export default function Post() {
           a traditional ROI calculation.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           And they are not self-sustaining. Pull the energy, effort, and budget and they
           don&apos;t hold their value. They erode. Counselor relationships go cold. Brand awareness
           fades in markets where you&apos;ve gone quiet. Community trust, once lost, takes years to
@@ -105,14 +53,14 @@ export default function Post() {
           accounting never captures.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           So institutions measure what&apos;s easy: cost per click, cost per lead, application
           volume, web traffic. They optimize against those numbers, which is how you end up with
           efficient spend on the wrong outcome. The metrics look fine. The objectives were never
           served.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           Brand is where this argument is sharpest. Brand is not a campaign. It is a 5, 10,
           sometimes 20-year investment in how an institution is perceived before a prospective
           student ever enters a funnel, before an employer recommends it to a new hire, before a
@@ -120,7 +68,7 @@ export default function Post() {
           the same budget cycle. It compounds over years.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           Demand ROI from brand spend and you will always cut it. The return isn&apos;t there yet.
           The awareness hasn&apos;t converted to applications this quarter. The perception shift is
           showing up in tracking data but not in the enrollment report. By ROI logic, brand looks
@@ -129,7 +77,7 @@ export default function Post() {
           higher rate.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           ROO is the only framework that makes brand investment defensible. Define the objectives:
           unaided awareness among target high school juniors increases by X points in 18 months.
           Brand preference over key competitors improves in three years. Counselor recommendation
@@ -138,7 +86,7 @@ export default function Post() {
           only rigorous way to evaluate long-cycle investment.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           This is also where planning gets real. Goals supported by clear objectives. Every objective
           cross-referenced to the goal it serves. Every tactic traceable to an objective. When your
           plan is wired that way, budget conversations stop being defensive and start being
@@ -147,25 +95,19 @@ export default function Post() {
           up rather than absorbing the loss and hoping no one asks.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The Denver Broncos don&apos;t measure the success of their brand work by whether they
           recouped ad spend. They measure whether they built what they were trying to build: fan
           affinity, community connection, partner value, a brand that makes the stadium worth the
           ticket price before anyone shows up. The objectives come first. The metrics serve them.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           ROI will always be part of the conversation. It should be. But ROI without ROO is a report
           on efficiency, not effectiveness. In a sector facing the pressures higher education is
           facing right now, efficiency in service of the wrong objective is not a strategy. Know what
           you are trying to do. Then measure that.
         </p>
-
-        <p className="text-sm font-medium mt-10 pt-8" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>
-          Matthew Gann, Ph.D.
-        </p>
-      </div>
-    </div>
-    </>
+    </PostShell>
   );
 }

@@ -1,3 +1,6 @@
+import type { Metadata } from "next";
+import { SITE_URL } from "./site";
+
 export type Post = {
   slug: string;
   path: string;
@@ -6,6 +9,10 @@ export type Post = {
   dateISO: string;
   category: string;
   excerpt: string;
+  /** Optional lead photo. Shown on the post page and in the stacked list. */
+  image?: string;
+  imageAlt?: string;
+  imagePosition?: string;
 };
 
 const posts: Post[] = [
@@ -18,6 +25,10 @@ const posts: Post[] = [
     category: "Leadership",
     excerpt:
       "A few thoughts on developing people, supporting their ambitions, and remembering that we work to live.",
+    image: "/campus-run.jpg",
+    imageAlt:
+      "Matthew Gann with a group of colleagues on the lawn at the University of Denver before a campus run",
+    imagePosition: "center 40%",
   },
   {
     slug: "when-marketing-is-invited-too-late",
@@ -48,6 +59,10 @@ const posts: Post[] = [
     category: "Higher Education",
     excerpt:
       "ROI tells you the money came back. ROO asks whether you did what you set out to do. In higher education, the gap between those two questions is where most strategy breaks down.",
+    image: "/broncos-panel.jpg",
+    imageAlt:
+      "Matthew Gann moderating a conversation with Hailey Sullivan and Sandy Young of the Denver Broncos at CASE 2026",
+    imagePosition: "center 30%",
   },
   {
     slug: "one-year-in",
@@ -112,3 +127,42 @@ const posts: Post[] = [
 ];
 
 export default posts;
+
+export function getPost(slug: string): Post {
+  const post = posts.find((p) => p.slug === slug);
+  if (!post) throw new Error(`Unknown post slug: ${slug}`);
+  return post;
+}
+
+/** Previous (newer) and next (older) posts for in-article navigation. */
+export function getNeighbors(slug: string): { newer?: Post; older?: Post } {
+  const i = posts.findIndex((p) => p.slug === slug);
+  return { newer: i > 0 ? posts[i - 1] : undefined, older: i >= 0 ? posts[i + 1] : undefined };
+}
+
+/** One source of truth for a post's <head>: title, description, canonical, OG, Twitter. */
+export function postMetadata(slug: string): Metadata {
+  const post = getPost(slug);
+  const url = `${SITE_URL}${post.path}`;
+  const image = post.image ? `${SITE_URL}${post.image}` : undefined;
+  return {
+    title: post.title,
+    description: post.excerpt,
+    alternates: { canonical: url },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url,
+      type: "article",
+      publishedTime: post.dateISO,
+      authors: [SITE_URL],
+      ...(image ? { images: [{ url: image, alt: post.imageAlt ?? post.title }] } : {}),
+    },
+    twitter: {
+      card: image ? "summary_large_image" : "summary",
+      title: post.title,
+      description: post.excerpt,
+      ...(image ? { images: [image] } : {}),
+    },
+  };
+}

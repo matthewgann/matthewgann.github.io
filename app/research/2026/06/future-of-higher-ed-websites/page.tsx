@@ -1,54 +1,17 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import ArticleSchema from "@/components/ArticleSchema";
+import PostShell from "@/components/PostShell";
+import { postMetadata } from "@/lib/posts";
 
-export const metadata: Metadata = {
-  title: "The Higher Ed Website Is Dead. We Just Haven't Buried It Yet. | Matthew Gann, Ph.D.",
-  description:
-    "Higher education websites are still built like org charts with a search bar. What comes next looks nothing like that.",
-  openGraph: {
-    title: "The Higher Ed Website Is Dead. We Just Haven't Buried It Yet. | Matthew Gann, Ph.D.",
-    description:
-      "Higher education websites are still built like org charts with a search bar. What comes next looks nothing like that.",
-    url: "https://matthewgann.com/research/2026/06/future-of-higher-ed-websites",
-    type: "article",
-  },
-};
+export const metadata = postMetadata("future-of-higher-ed-websites");
 
 export default function Post() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-16">
-      <ArticleSchema
-        title="The Higher Ed Website Is Dead. We Just Haven't Buried It Yet."
-        description="Higher education websites are still built like org charts with a search bar. What comes next looks nothing like that."
-        datePublished="2026-06-10"
-        url="https://matthewgann.com/research/2026/06/future-of-higher-ed-websites"
-      />
-      <Link
-        href="/research"
-        className="text-sm font-medium mb-10 inline-block transition-colors duration-150"
-        style={{ color: "var(--text-muted)", textDecoration: "none" }}
-      >
-        ← Research &amp; Thoughts
-      </Link>
-
-      <div className="flex flex-wrap items-center gap-3 mb-4 mt-6">
-        <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>
-          June 2026
-        </span>
-      </div>
-
-      <h1 className="text-4xl sm:text-5xl mb-8" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-        The Higher Ed Website Is Dead. We Just Haven&apos;t Buried It Yet.
-      </h1>
-
-      <div className="space-y-5" style={{ color: "var(--foreground)" }}>
-        <p className="text-lg leading-relaxed" style={{ color: "var(--text-muted)" }}>
+    <PostShell slug="future-of-higher-ed-websites">
+        <p>
           Higher education websites are still built like org charts with a search bar. What comes
           next looks nothing like that.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The higher education website as we know it was built by colleges and departments that
           wanted to own their piece of the pie. Every school, every
           office, every program needed a home, a voice, and a place to put their content. The
@@ -61,7 +24,7 @@ export default function Post() {
           liability dressed up as a digital presence.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           What replaces it is a personalized, context-aware experience that knows something about
           you before you arrive and delivers relevance on first contact. The data infrastructure
           to make it real already exists at most institutions. CRM systems hold behavioral signals, campaign history, and
@@ -70,7 +33,7 @@ export default function Post() {
           there. What most institutions have not done is connect them to the front door.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           Imagine arriving at a university website not as an anonymous visitor, but as someone the
           institution already knows a little. You searched &ldquo;nursing programs Denver.&rdquo; You clicked
           an Instagram ad about clinical rotations. You have been to the financial aid page twice.
@@ -80,7 +43,7 @@ export default function Post() {
           done right is just basic respect for a person&apos;s time.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The second shift is even bigger. Navigation exists as a workaround for a problem that AI
           makes obsolete. Forty subpages under Financial Aid exist because no one could anticipate
           every question, so institutions documented every answer and hoped users would find them.
@@ -92,7 +55,7 @@ export default function Post() {
           already own it.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           Higher education marketing never gets to rest. That is one of the things I genuinely
           love about it. The channel that worked three years ago is table stakes today. The website
           that won awards in 2019 is an anchor in 2026. The schools still proud of what they
@@ -102,18 +65,13 @@ export default function Post() {
           to have that conversation or you do not show up at all.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The institutions that get there first will not just convert better. They will build trust
           faster, answer objections earlier, and show prospective students something most schools
           never manage: that they actually understand what students are going through when they are
           trying to choose a college. Will is the actual constraint. The technology is ready.
           The question is whether the institution is.
         </p>
-
-        <p className="text-sm font-medium mt-10 pt-8" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>
-          Matthew Gann, Ph.D.
-        </p>
-      </div>
-    </div>
+    </PostShell>
   );
 }

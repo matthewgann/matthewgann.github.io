@@ -1,87 +1,83 @@
 import type { Metadata } from "next";
-import { Calistoga, Inter } from "next/font/google";
+import { Inter, Inter_Tight, DM_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import {
+  DEFAULT_DESCRIPTION,
+  SITE_NAME,
+  SITE_URL,
+  jsonLd,
+  personSchema,
+  websiteSchema,
+} from "@/lib/site";
 
-const calistoga = Calistoga({
-  weight: ["400"],
+const interTight = Inter_Tight({
+  weight: ["500", "600"],
   subsets: ["latin"],
-  variable: "--font-calistoga",
+  variable: "--font-inter-tight",
   display: "swap",
 });
 
 const inter = Inter({
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
 });
 
+const dmMono = DM_Mono({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  variable: "--font-dm-mono",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Matthew Gann, Ph.D.",
-  description:
-    "Purpose-driven marketing and communications executive. CMO at the University of Denver.",
-  metadataBase: new URL("https://matthewgann.com"),
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} | Chief Marketing Officer, University of Denver`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: DEFAULT_DESCRIPTION,
+  applicationName: SITE_NAME,
+  authors: [{ name: "Matthew Gann", url: SITE_URL }],
+  creator: "Matthew Gann",
+  publisher: "Matthew Gann",
+  alternates: {
+    canonical: SITE_URL,
+    types: { "application/rss+xml": `${SITE_URL}/feed.xml` },
+  },
   openGraph: {
-    title: "Matthew Gann, Ph.D.",
-    description:
-      "Purpose-driven marketing and communications executive. CMO at the University of Denver.",
-    url: "https://matthewgann.com",
-    siteName: "Matthew Gann, Ph.D.",
+    type: "profile",
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} | Chief Marketing Officer, University of Denver`,
+    description: DEFAULT_DESCRIPTION,
+    url: SITE_URL,
+    locale: "en_US",
+    firstName: "Matthew",
+    lastName: "Gann",
     images: [
       {
-        url: "/headshot.jpg",
-        width: 800,
-        height: 1200,
-        alt: "Matthew Gann, Ph.D. — Purpose-Driven Marketing Executive",
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Matthew Gann, Ph.D. Purpose-driven marketing and storytelling.",
       },
     ],
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Matthew Gann, Ph.D.",
-    description:
-      "Purpose-driven marketing and communications executive. CMO at the University of Denver.",
-    images: ["/headshot.jpg"],
+    title: `${SITE_NAME} | Chief Marketing Officer, University of Denver`,
+    description: DEFAULT_DESCRIPTION,
+    images: ["/og-image.png"],
   },
-  alternates: {
-    canonical: "https://matthewgann.com",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
-};
-
-const personSchema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Matthew Gann",
-  honorificSuffix: "Ph.D.",
-  honorificPrefix: "Dr.",
-  jobTitle: "Associate Vice Chancellor & Chief Marketing Officer",
-  worksFor: {
-    "@type": "Organization",
-    name: "University of Denver",
-    url: "https://www.du.edu",
-  },
-  url: "https://matthewgann.com",
-  image: "https://matthewgann.com/headshot.jpg",
-  description:
-    "Purpose-driven marketing and communications executive with more than two decades of experience in higher education, healthcare, and agency leadership.",
-  sameAs: [
-    "https://www.linkedin.com/in/matthewgann/",
-    "https://www.du.edu/about/directory/matthew-gann",
-    "https://www.enrollify.org/people/dr-matthew-gann",
-    "https://concept3d.com/higher-ed-demand-gen-podcast/episode-113-getting-marketing-a-seat-at-the-executive-table-with-dr-matthew-gann/",
-  ],
-  knowsAbout: [
-    "Brand Strategy",
-    "Higher Education Marketing",
-    "Marketing Operations",
-    "Organizational Intelligence",
-    "Reputation Management",
-    "Digital Strategy",
-    "Leadership Development",
-  ],
 };
 
 export default function RootLayout({
@@ -92,18 +88,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${calistoga.variable} ${inter.variable} h-full antialiased`}
+      className={`${interTight.variable} ${inter.variable} ${dmMono.variable} h-full antialiased`}
     >
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+          dangerouslySetInnerHTML={{ __html: jsonLd([personSchema, websiteSchema]) }}
         />
       </head>
-      <body
-        className="min-h-full flex flex-col"
-        style={{ background: "var(--background)", color: "var(--foreground)" }}
-      >
+      <body className="min-h-full flex flex-col">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-4YEV8PL99X"
           strategy="afterInteractive"
@@ -116,8 +109,13 @@ export default function RootLayout({
             gtag('config', 'G-4YEV8PL99X');
           `}
         </Script>
+        <a href="#main" className="sr-only sr-only-focusable">
+          Skip to content
+        </a>
         <Nav />
-        <main className="flex-1">{children}</main>
+        <main id="main" className="flex-1">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

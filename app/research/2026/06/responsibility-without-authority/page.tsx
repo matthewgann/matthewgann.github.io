@@ -1,49 +1,12 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import ArticleSchema from "@/components/ArticleSchema";
+import PostShell from "@/components/PostShell";
+import { postMetadata } from "@/lib/posts";
 
-export const metadata: Metadata = {
-  title: "Responsible for the Sale, Not the Product | Matthew Gann, Ph.D.",
-  description:
-    "Higher education marketers are held accountable for enrollment outcomes they don't control. That's a structural problem. In some states, it has gotten much worse.",
-  openGraph: {
-    title: "Responsible for the Sale, Not the Product | Matthew Gann, Ph.D.",
-    description:
-      "Higher education marketers are held accountable for enrollment outcomes they don't control. That's a structural problem. In some states, it has gotten much worse.",
-    url: "https://matthewgann.com/research/2026/06/responsibility-without-authority",
-    type: "article",
-  },
-};
+export const metadata = postMetadata("responsibility-without-authority");
 
 export default function Post() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-16">
-      <ArticleSchema
-        title="Responsible for the Sale, Not the Product"
-        description="Higher education marketers are held accountable for enrollment outcomes they don't control. That's a structural problem. In some states, it has gotten much worse."
-        datePublished="2026-06-10"
-        url="https://matthewgann.com/research/2026/06/responsibility-without-authority"
-      />
-      <Link
-        href="/research"
-        className="text-sm font-medium mb-10 inline-block transition-colors duration-150"
-        style={{ color: "var(--text-muted)", textDecoration: "none" }}
-      >
-        ← Research &amp; Thoughts
-      </Link>
-
-      <div className="flex flex-wrap items-center gap-3 mb-4 mt-6">
-        <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>
-          June 2026
-        </span>
-      </div>
-
-      <h1 className="text-4xl sm:text-5xl mb-8" style={{ fontFamily: "var(--font-calistoga), serif", color: "var(--foreground)" }}>
-        Responsible for the Sale, Not the Product
-      </h1>
-
-      <div className="space-y-5" style={{ color: "var(--foreground)" }}>
-        <p className="text-lg leading-relaxed" style={{ color: "var(--text-muted)" }}>
+    <PostShell slug="responsibility-without-authority">
+        <p>
           My partner, a therapist, mentioned the other day that a client, a mid-level marketer,
           described their situation as &ldquo;lots of responsibility with little authority.&rdquo; Marketers
           across every industry are held accountable for outcomes they don&apos;t directly control.
@@ -51,7 +14,7 @@ export default function Post() {
           it&apos;s at a breaking point.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           There is a structural tension at the heart of higher education marketing that rarely gets
           named directly. Brand marketing supports the work of admissions and admissions marketing.
           It supports enrollment, including yield, and it owns brand awareness, reputation, and
@@ -61,7 +24,7 @@ export default function Post() {
           audience.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           Faculty should shape curriculum. Deans should steward their schools. The problem is
           that the chain from &ldquo;what should we
           offer&rdquo; to &ldquo;who wants it and why&rdquo; almost never runs in both directions. Marketing gets
@@ -69,7 +32,7 @@ export default function Post() {
           shared governance, and slotted into the catalog. Now fill it.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The consequences are predictable. Programs named with disciplinary precision that no
           prospective student would ever search for. Degrees built to satisfy internal stakeholders
           rather than employer or student demand. Institutional positioning that reflects
@@ -77,7 +40,7 @@ export default function Post() {
           sequencing. The market question was asked too late, if it was asked at all.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           There is a related failure hiding inside the same structural problem. Higher education
           institutions spent decades not needing to invest in brand marketing. Reputation traveled
           by word of mouth, through rankings, through proximity, through the sheer stability of
@@ -88,7 +51,7 @@ export default function Post() {
           delivered on what is functionally an enrollment marketing budget.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           Enrollment marketing is direct response: funnel-driven, audience-targeted, and
           optimized for conversion. Brand marketing builds
           the conditions under which enrollment marketing works. It shapes how an institution is
@@ -99,7 +62,7 @@ export default function Post() {
           enrollment targets are met, they are spending against a floor that does not exist yet.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           And then there&apos;s Florida. And Texas. Whatever structural friction higher education
           marketers face when their own institutions treat programs as internally-governed
           decisions, it at least operates in a world where market signals can, in principle,
@@ -114,7 +77,7 @@ export default function Post() {
           responsible for the number.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           But the larger story isn&apos;t about those outliers. It&apos;s about what&apos;s changing everywhere
           else. The most important shift in higher education marketing isn&apos;t a tactic or a
           channel. It&apos;s a repositioning of the function itself. The institutions making meaningful
@@ -125,14 +88,14 @@ export default function Post() {
           market viability gets assessed, not when the brochure needs a headline.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           My own doctoral research uncovered this. When I examined what presidents actually
           want from their marketing function, the answer was strategic counsel on market position. They want someone who can translate student demand, competitive
           landscape, and brand health into decisions about where to invest and where to pull back.
           They want a thought partner, not someone to make it pretty.
         </p>
 
-        <p className="leading-relaxed">
+        <p>
           The institutions that close the gap between marketing responsibility and marketing
           authority won&apos;t do it by lobbying for a seat at the table. They&apos;ll do it by earning one:
           showing up with data, framing market questions in terms leadership cares about, and
@@ -140,11 +103,6 @@ export default function Post() {
           That&apos;s the job now. Not the campaign. The conversation before the campaign becomes
           necessary.
         </p>
-
-        <p className="text-sm font-medium mt-10 pt-8" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>
-          Matthew Gann, Ph.D.
-        </p>
-      </div>
-    </div>
+    </PostShell>
   );
 }
