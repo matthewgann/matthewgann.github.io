@@ -64,7 +64,7 @@ export const personSchema = {
     {
       "@type": "EducationalOccupationalCredential",
       credentialCategory: "degree",
-      name: "Doctor of Philosophy, Leadership / Organizational Intelligence",
+      name: "Ph.D., Leadership (Organizational Intelligence)",
       recognizedBy: { "@type": "CollegeOrUniversity", name: "Trevecca Nazarene University" },
     },
     {

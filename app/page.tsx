@@ -78,7 +78,7 @@ const glance = [
   {
     label: "Education",
     value:
-      "Ph.D., Leadership & Organizational Intelligence · B.S., Business Administration / Management Information Systems",
+      "Ph.D., Leadership (Organizational Intelligence) · Master of Organizational Leadership · B.S., Business Administration / Management Information Systems",
   },
   { label: "Credentials", value: "Accredited in Public Relations (APR) · Tennessee Certified Economic Developer" },
   { label: "Research", value: "Marketing Operations · Organizational Intelligence · Leadership Effectiveness" },

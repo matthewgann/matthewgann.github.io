@@ -84,7 +84,7 @@ const experience = [
 const education = [
   {
     institution: "Trevecca Nazarene University",
-    credentials: ["Doctor of Philosophy, Leadership / Organizational Intelligence", "Master of Organizational Leadership"],
+    credentials: ["Ph.D., Leadership (Organizational Intelligence)", "Master of Organizational Leadership"],
   },
   {
     institution: "Tennessee Tech University",
