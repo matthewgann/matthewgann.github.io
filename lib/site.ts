@@ -107,6 +107,7 @@ export const personSchema = {
   knowsAbout: [
     "Brand Strategy",
     "Higher Education Marketing",
+    "Nonprofit Marketing",
     "Marketing Operations",
     "Organizational Intelligence",
     "Reputation and Crisis Management",

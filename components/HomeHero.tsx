@@ -75,8 +75,8 @@ export default function HomeHero() {
             </span>
           </h1>
           <p className="hero-after t-lead mt-10 max-w-[46ch]">
-            Building intelligent marketing operations that help higher education institutions
-            connect strategy, story, and service to students and their communities.
+            Building intelligent marketing operations that help higher education institutions and
+            nonprofits connect strategy, story, and service to the people they serve.
           </p>
           <div className="hero-after flex flex-wrap items-center gap-3 mt-12">
             <Link href={WRITING_PATH} className="btn btn-accent">

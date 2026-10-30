@@ -17,7 +17,7 @@ const expertise = [
     id: "brand-strategy",
     title: "Brand Strategy",
     body:
-      "Developing integrated brand platforms and comprehensive marketing strategies that give institutions a clear identity, a consistent voice, and the positioning to compete for students, talent, and reputation.",
+      "Developing integrated brand platforms and comprehensive marketing strategies that give institutions and nonprofits a clear identity, a consistent voice, and the positioning to compete for students, supporters, talent, and reputation.",
     image: "/band-vision.jpg",
     imageAlt: "Matthew Gann at a CMO Lab event",
     imagePosition: "75% 30%",
@@ -54,7 +54,7 @@ const expertise = [
     id: "leadership",
     title: "Leadership & Organizational Development",
     body:
-      "Building and leading high-performing teams, fostering cross-functional partnerships, and driving organizational change in complex, matrixed higher education institutions.",
+      "Building and leading high-performing teams, fostering cross-functional partnerships, and driving organizational change in complex, matrixed organizations, from universities to nonprofits.",
     image: "/campus-run.jpg",
     imageAlt:
       "Matthew Gann with a group of colleagues on the lawn at the University of Denver before a campus run",
