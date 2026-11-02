@@ -10,6 +10,8 @@ draft: false
 imageAlt: Colorado mountains to climb in the background.
 image: /all-the-mountains.jpg
 ---
+There's a kind of leadership challenge that doesn't get talked about enough. It's what happens when you step into an organization and realize there are more opportunities to improve, grow, and innovate than you and your new team could possibly tackle at once.
+
 I've come to think of this as being *opportunity rich*.
 
 It's an exciting position to be in. You step into a new role at a new place and you see potential everywhere. It's happened to almost every change in my career. There are processes that could be improved, technologies that could be introduced, relationships that could be strengthened, and ideas that have been waiting for someone to give them a little attention or even a chance.
