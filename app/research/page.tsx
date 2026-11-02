@@ -84,19 +84,26 @@ export default function ResearchPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(blogSchema) }} />
 
-      {/* Header, matching the Experience page */}
-      <section className="hairline-b">
-        <div className="page-x pt-14 pb-12 md:pt-20 md:pb-16 grid md:grid-cols-12 gap-8">
-          <div className="md:col-span-8 lg:col-span-7">
-            <h1 className="t-display">{WRITING_LABEL}</h1>
-            <p className="t-lead mt-8 mb-0 max-w-[58ch]">
-              These posts are about the work of marketing inside purpose-driven organizations and
-              about leading the people who do it. Most of them come out of the day job: how
-              organizations decide what they stand for, why brand is an investment rather than an expense, and how to
-              measure whether a strategy did what it set out to do. Some are about leadership more
-              broadly, including developing people and telling them the truth.
-            </p>
-          </div>
+      {/* Header: dark band, title and intro side by side */}
+      <section style={{ background: "var(--dark)", color: "var(--on-dark)" }}>
+        <div className="page-x pt-16 pb-14 md:pt-24 md:pb-20 grid md:grid-cols-12 gap-x-8 gap-y-8 items-end">
+          <h1 className="md:col-span-6 t-display m-0" style={{ color: "var(--on-dark)" }}>
+            <span className="scrawl" style={{ color: "var(--on-dark)" }}>
+              Research
+              <svg viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden>
+                <path d="M4 14 C 60 4, 120 20, 190 10 S 320 6, 396 15" />
+              </svg>
+            </span>
+            <br />
+            and Musings
+          </h1>
+          <p className="md:col-span-6 t-lead m-0" style={{ color: "rgba(244,242,238,0.78)" }}>
+            These posts are about the work of marketing inside purpose-driven organizations and
+            about leading the people who do it. Most of them come out of the day job: how
+            organizations decide what they stand for, why brand is an investment rather than an
+            expense, and how to measure whether a strategy did what it set out to do. Some are about
+            leadership more broadly, including developing people and telling them the truth.
+          </p>
         </div>
       </section>
 

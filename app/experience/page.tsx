@@ -169,24 +169,30 @@ export default function ExperiencePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(schema) }} />
 
-      {/* Header with summary */}
-      <section className="hairline-b">
-        <div className="page-x pt-14 pb-12 md:pt-20 md:pb-16 grid md:grid-cols-12 gap-8">
-          <div className="md:col-span-8 lg:col-span-7">
-            <h1 className="t-display">Experience and Background</h1>
-            <p className="t-lead mt-8 mb-0 max-w-[58ch]">
-              I&apos;ve spent more than two decades building brands, leading teams, and figuring out how
-              to make marketing actually work inside complex organizations. I started in digital in the
-              early 2000s, moved through executive marketing roles in healthcare and agency work, led
-              systemwide marketing for Tennessee&apos;s largest higher education system, and now serve as
-              chief marketing officer of a private R1 research university. I work at the intersection of
-              strategy, data, and storytelling, and I believe the best marketing is both honest and
-              effective.
-            </p>
-          </div>
+      {/* Header: dark band, title and intro side by side */}
+      <section style={{ background: "var(--dark)", color: "var(--on-dark)" }}>
+        <div className="page-x pt-16 pb-14 md:pt-24 md:pb-20 grid md:grid-cols-12 gap-x-8 gap-y-8 items-end">
+          <h1 className="md:col-span-6 t-display m-0" style={{ color: "var(--on-dark)" }}>
+            <span className="scrawl" style={{ color: "var(--on-dark)" }}>
+              Experience
+              <svg viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden>
+                <path d="M4 14 C 60 4, 120 20, 190 10 S 320 6, 396 15" />
+              </svg>
+            </span>
+            <br />
+            and Background
+          </h1>
+          <p className="md:col-span-6 t-lead m-0" style={{ color: "rgba(244,242,238,0.78)" }}>
+            I&apos;ve spent more than two decades building brands, leading teams, and figuring out how
+            to make marketing actually work inside complex organizations. I started in digital in the
+            early 2000s, moved through executive marketing roles in healthcare and agency work, led
+            systemwide marketing for Tennessee&apos;s largest higher education system, and now serve as
+            chief marketing officer of a private R1 research university. I work at the intersection of
+            strategy, data, and storytelling, and I believe the best marketing is both honest and
+            effective.
+          </p>
         </div>
       </section>
-
       <ImageBand src="/band-conference.jpg" alt="Matthew Gann at a professional conference" position="center 15%" priority />
 
       {/* Roles */}
