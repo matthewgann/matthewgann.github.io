@@ -82,7 +82,6 @@ const expertise = [
 ];
 
 const glance = [
-  { label: "Current Role", value: "Associate Vice Chancellor & CMO, University of Denver" },
   { label: "Based In", value: "Denver, CO & Nashville, TN" },
   { label: "Experience", value: "Two decades spanning higher education, healthcare, agency, and consulting" },
   {
@@ -185,7 +184,7 @@ export default function Home() {
               {glance.map(({ label, value }, i) => (
                 <div
                   key={label}
-                  className={`glance-cell reveal-item${i === 0 || i === glance.length - 1 ? " span-2" : ""}`}
+                  className="glance-cell reveal-item"
                   style={{ ["--i" as string]: i + 1 }}
                 >
                   <dt className="kicker mb-4" style={{ color: "var(--accent-soft)" }}>
