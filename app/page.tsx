@@ -206,8 +206,9 @@ export default function Home() {
             What I do.
           </h2>
           <p className="md:col-span-6 md:col-start-7 t-lead m-0 max-w-[40ch]">
-            Where strategy, story, and service meet. Seven areas of practice, each one built to
-            outlast any single campaign or budget cycle.
+            Where strategy, story, and service meet. This is the work I bring to organizations as a
+            consultant and speaker, shaped by two decades of leading marketing in higher education,
+            healthcare, and agency settings.
           </p>
         </div>
         <div className="page-x pb-14 md:pb-20">
