@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import ImageBand from "@/components/ImageBand";
 import ContactCta from "@/components/ContactCta";
 import CareerRail from "@/components/CareerRail";
-import { PERSON_ID, SITE_URL, WEBSITE_ID, jsonLd } from "@/lib/site";
+import Reveal from "@/components/Reveal";
+import { PERSON_ID, SITE_URL, WEBSITE_ID, absUrl, jsonLd } from "@/lib/site";
 
-const URL = `${SITE_URL}/experience`;
+const URL = absUrl("/experience");
 const DESCRIPTION =
-  "Career history, education, credentials, awards, and community roles of Matthew Gann, Ph.D., chief marketing officer at the University of Denver and former systemwide CMO for the Tennessee Board of Regents.";
+  "Career history, education, credentials, awards, and community roles of Matthew Gann, Ph.D., chief marketing officer at the University of Denver.";
 
 export const metadata: Metadata = {
   title: "Experience and Background",
@@ -125,6 +126,16 @@ const community = [
   { org: "PRSA – Counselors to Higher Education", role: "National Executive Committee Member" },
   { org: "CASE", role: "Faculty Member, National Conference on Marketing and Brand" },
   { org: "International Leadership Association (ILA) Global Conference", role: "Presenter" },
+  {
+    org: "Higher Ed Pulse Podcast",
+    role: "Guest",
+    href: "https://www.enrollify.org/episodes/pulse-check-learning-from-leaders-part-2",
+  },
+  {
+    org: "Higher Ed Demand Gen Podcast",
+    role: "Guest",
+    href: "https://creators.spotify.com/pod/profile/highered-demand-gen/episodes/Ep--113-Getting-Marketing-a-Seat-At-The-Executive-Table--Higher-Ed-Demand-Gen---Dr--Matthew-Gann-e2rfoog",
+  },
   { org: "Public Relations Society of America", role: "APR Panelist" },
   { org: "National Association of Student Personnel Administrators", role: "National Conference Program Reviewer" },
   { org: "TN ACHIEVES, UT ACHIEVES", role: "Mentor, Ambassador" },
@@ -153,13 +164,14 @@ const schema = [
   },
 ];
 
-function Row({ title, children }: { title: string; children: React.ReactNode }) {
+/** One tile in the credentials mosaic. `span` is its width in twelfths on md and up. */
+function Tile({ title, span, i, children }: { title: string; span: number; i: number; children: React.ReactNode }) {
   return (
-    <div className="hairline-b">
-      <div className="page-x py-10 md:py-12 grid md:grid-cols-12 gap-4 md:gap-6">
-        <h3 className="md:col-span-3 t-card m-0">{title}</h3>
-        <div className="md:col-span-8 lg:col-span-7">{children}</div>
-      </div>
+    <div className="mosaic-cell reveal-item" style={{ ["--span" as string]: span, ["--i" as string]: i }}>
+      <h3 className="kicker m-0 mb-6" style={{ color: "var(--accent-soft)" }}>
+        {title}
+      </h3>
+      {children}
     </div>
   );
 }
@@ -201,83 +213,106 @@ export default function ExperiencePage() {
         <CareerRail roles={experience} />
       </section>
 
-      {/* Credentials, affiliations, service: one continuous ledger */}
-      <section aria-labelledby="ledger-heading">
-        <div className="page-x pt-20 pb-8 md:pt-28 md:pb-12">
-          <h2 id="ledger-heading" className="t-headline">
-            Credentials, affiliations, and service.
-          </h2>
-        </div>
+      {/* Credentials, affiliations, service: a mosaic of tiles on the dark ground */}
+      <section aria-labelledby="ledger-heading" style={{ background: "var(--dark)", color: "var(--on-dark)" }}>
+        <Reveal>
+          <div className="page-x pt-20 pb-12 md:pt-28 md:pb-16">
+            <h2 id="ledger-heading" className="t-headline max-w-[16ch]" style={{ color: "var(--on-dark)" }}>
+              Credentials, affiliations, and{" "}
+              <span className="scrawl scrawl-wait scrawl-on-dark">
+                service.
+                <svg viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden>
+                  <path d="M4 14 C 60 4, 120 20, 190 10 S 320 6, 396 15" />
+                </svg>
+              </span>
+            </h2>
+          </div>
 
-        <div className="hairline-t">
-          <Row title="Skills & Expertise">
-            <ul className="list-none m-0 p-0 grid sm:grid-cols-2 gap-x-10 gap-y-2">
-              {skills.map((skill) => (
-                <li key={skill} className="t-body font-medium">
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </Row>
+          <div className="page-x pb-20 md:pb-28">
+            <div className="mosaic">
+            <Tile title="Education & Credentials" span={7} i={0}>
+              <dl className="m-0 grid sm:grid-cols-2 gap-x-8 gap-y-7">
+                {education.map((edu) => (
+                  <div key={edu.institution}>
+                    <dt className="glance-value">{edu.institution}</dt>
+                    {edu.credentials.map((c) => (
+                      <dd key={c} className="m-0 mt-2 t-small" style={{ color: "var(--on-dark-soft)" }}>
+                        {c}
+                      </dd>
+                    ))}
+                  </div>
+                ))}
+              </dl>
+            </Tile>
 
-          <Row title="Education & Credentials">
-            <dl className="m-0 grid sm:grid-cols-2 gap-x-10 gap-y-6">
-              {education.map((edu) => (
-                <div key={edu.institution}>
-                  <dt className="t-body font-semibold">{edu.institution}</dt>
-                  {edu.credentials.map((c) => (
-                    <dd key={c} className="m-0 t-small" style={{ color: "var(--ink-soft)" }}>
-                      {c}
-                    </dd>
-                  ))}
-                </div>
-              ))}
-            </dl>
-          </Row>
+            <Tile title="Research Areas" span={5} i={1}>
+              <ul className="list-none m-0 p-0 flex flex-col gap-4">
+                {researchAreas.map((area) => (
+                  <li key={area} className="glance-value">
+                    {area}
+                  </li>
+                ))}
+              </ul>
+            </Tile>
 
-          <Row title="Research Areas">
-            <ul className="list-none m-0 p-0 flex flex-col gap-2">
-              {researchAreas.map((area) => (
-                <li key={area} className="t-body font-medium">
-                  {area}
-                </li>
-              ))}
-            </ul>
-          </Row>
+            <Tile title="Awards" span={5} i={2}>
+              <ul className="list-none m-0 p-0 flex flex-col gap-4">
+                {awards.map((award) => (
+                  <li key={award} className="glance-value">
+                    {award}
+                  </li>
+                ))}
+              </ul>
+            </Tile>
 
-          <Row title="Awards">
-            <ul className="list-none m-0 p-0 flex flex-col gap-2">
-              {awards.map((award) => (
-                <li key={award} className="t-body font-medium">
-                  {award}
-                </li>
-              ))}
-            </ul>
-          </Row>
+            <Tile title="Skills & Expertise" span={7} i={3}>
+              <ul className="glance-list list-none m-0 p-0 grid sm:grid-cols-2 gap-x-8">
+                {skills.map((skill) => (
+                  <li key={skill} className="t-body font-medium">
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </Tile>
 
-          <Row title="Memberships">
-            <ul className="list-none m-0 p-0 grid sm:grid-cols-2 gap-x-10 gap-y-2">
-              {memberships.map((m) => (
-                <li key={m} className="t-body font-medium">
-                  {m}
-                </li>
-              ))}
-            </ul>
-          </Row>
+            <Tile title="Community, Service & Speaking" span={7} i={4}>
+              <ul className="list-none m-0 p-0 grid sm:grid-cols-2 gap-x-8 gap-y-5">
+                {community.map((item) => (
+                  <li key={item.org}>
+                    <p className="t-body font-semibold m-0">
+                      {item.href ? (
+                        <a
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="no-underline transition-colors hover:text-[var(--accent-soft)]"
+                        >
+                          {item.org} ↗
+                        </a>
+                      ) : (
+                        item.org
+                      )}
+                    </p>
+                    <p className="t-small m-0 mt-1" style={{ color: "var(--on-dark-soft)" }}>
+                      {item.role}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </Tile>
 
-          <Row title="Community, Service & Speaking">
-            <ul className="list-none m-0 p-0 grid sm:grid-cols-2 gap-x-10 gap-y-6">
-              {community.map((item) => (
-                <li key={item.org}>
-                  <p className="t-body font-semibold m-0">{item.org}</p>
-                  <p className="t-small m-0" style={{ color: "var(--ink-soft)" }}>
-                    {item.role}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </Row>
-        </div>
+            <Tile title="Memberships" span={5} i={5}>
+              <ul className="glance-list list-none m-0 p-0">
+                {memberships.map((m) => (
+                  <li key={m} className="t-body font-medium">
+                    {m}
+                  </li>
+                ))}
+              </ul>
+            </Tile>
+            </div>
+          </div>
+        </Reveal>
       </section>
       <ContactCta />
     </>

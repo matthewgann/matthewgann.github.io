@@ -4,7 +4,7 @@ import ArticleSchema from "@/components/ArticleSchema";
 import AiNote from "@/components/AiNote";
 import ContactCta from "@/components/ContactCta";
 import { getNeighbors, getPost, shortDate } from "@/lib/posts";
-import { SITE_URL, WRITING_LABEL, WRITING_PATH } from "@/lib/site";
+import { absUrl, WRITING_LABEL, WRITING_PATH } from "@/lib/site";
 
 function Arrow() {
   return (
@@ -23,7 +23,7 @@ function Arrow() {
 export default function PostShell({ slug, children }: { slug: string; children: React.ReactNode }) {
   const post = getPost(slug);
   const { newer, older } = getNeighbors(slug);
-  const url = `${SITE_URL}${post.path}`;
+  const url = absUrl(post.path);
 
   return (
     <article>
@@ -100,8 +100,8 @@ export default function PostShell({ slug, children }: { slug: string; children: 
               </p>
               <p className="t-small m-0" style={{ color: "var(--ink-soft)" }}>
                 I help higher education and nonprofit organizations connect strategy, story, and
-                service to the people they serve. Here, I write about marketing, leadership, and
-                purpose-driven work.
+                service to the communities they serve. Here, I write about marketing, leadership,
+                and purpose-driven work.
               </p>
               <p className="t-small mt-3 mb-0">
                 <Link href="/experience" className="arrow-link" style={{ fontSize: "0.875rem" }}>
@@ -121,7 +121,7 @@ export default function PostShell({ slug, children }: { slug: string; children: 
           { post: older, label: "Older" },
         ].map(({ post: p, label }, i) => (
           <div key={label} className={`page-x py-8 ${i === 1 ? "md:hairline-l hairline-t md:border-t-0" : ""}`}>
-            <span className="kicker" style={{ color: "var(--ink-faint)" }}>
+            <span className="kicker" style={{ color: "var(--ink-soft)" }}>
               {label}
             </span>
             <Link

@@ -40,5 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# generated responsive images (scripts/build-images.mjs)
+/public/img/
+/lib/image-manifest.json
+
 # local editor tooling
 /.claude/

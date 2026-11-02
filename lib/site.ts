@@ -7,6 +7,12 @@ export const PERSON_ID = `${SITE_URL}/#person`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const BLOG_ID = `${SITE_URL}/research#blog`;
 
+/** Absolute, canonical URL for a site path. Pages end in a slash (trailingSlash: true); the root is the bare origin. */
+export function absUrl(path: string) {
+  if (path === "/" || path === "") return SITE_URL;
+  return `${SITE_URL}${path.replace(/\/$/, "")}/`;
+}
+
 export const EMAIL = "matthew@matthewgann.com";
 export const LINKEDIN = "https://www.linkedin.com/in/matthewgann/";
 
@@ -29,7 +35,7 @@ export const personSchema = {
   familyName: "Gann",
   honorificPrefix: "Dr.",
   honorificSuffix: "Ph.D.",
-  jobTitle: "Associate Vice Chancellor and Chief Marketing Officer",
+  jobTitle: "Associate Vice Chancellor, Chief Marketing Officer",
   worksFor: {
     "@type": "CollegeOrUniversity",
     name: "University of Denver",
@@ -49,7 +55,7 @@ export const personSchema = {
     { "@type": "PostalAddress", addressLocality: "Nashville", addressRegion: "TN", addressCountry: "US" },
   ],
   description:
-    "Purpose-driven marketing executive with more than two decades of experience in higher education, healthcare, and agency leadership, helping higher education and nonprofit organizations connect strategy, story, and service to the people they serve.",
+    "Purpose-driven marketing executive with more than two decades of experience in higher education, healthcare, and agency leadership, helping higher education and nonprofit organizations connect strategy, story, and service to the communities they serve.",
   sameAs: [
     LINKEDIN,
     "https://www.du.edu/about/directory/matthew-gann",

@@ -1,5 +1,5 @@
 import posts from "@/lib/posts";
-import { DEFAULT_DESCRIPTION, EMAIL, SITE_NAME, SITE_URL, WRITING_LABEL, WRITING_PATH } from "@/lib/site";
+import { DEFAULT_DESCRIPTION, EMAIL, SITE_NAME, SITE_URL, WRITING_LABEL, WRITING_PATH, absUrl } from "@/lib/site";
 
 export const dynamic = "force-static";
 
@@ -14,7 +14,7 @@ function escape(s: string) {
 export function GET() {
   const items = posts
     .map((p) => {
-      const url = `${SITE_URL}${p.path}`;
+      const url = absUrl(p.path);
       return `    <item>
       <title>${escape(p.title)}</title>
       <link>${url}</link>
@@ -30,7 +30,7 @@ export function GET() {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>${escape(SITE_NAME)} | ${escape(WRITING_LABEL)}</title>
-    <link>${SITE_URL}${WRITING_PATH}</link>
+    <link>${absUrl(WRITING_PATH)}</link>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />
     <description>${escape(DEFAULT_DESCRIPTION)}</description>
     <language>en-us</language>

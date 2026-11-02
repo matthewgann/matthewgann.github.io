@@ -3,7 +3,7 @@ import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import type { Metadata } from "next";
-import { SITE_URL } from "./site";
+import { SITE_NAME, SITE_URL, absUrl } from "./site";
 
 /**
  * Posts live in content/posts as Markdown files with a frontmatter header.
@@ -114,11 +114,12 @@ export function getNeighbors(slug: string): { newer?: Post; older?: Post } {
 /** One source of truth for a post's <head>: title, description, canonical, OG, Twitter. */
 export function postMetadata(slug: string): Metadata {
   const post = getPost(slug);
-  const url = `${SITE_URL}${post.path}`;
+  const url = absUrl(post.path);
   const image = post.image ? `${SITE_URL}${post.image}` : `${SITE_URL}/og-image.png`;
   const imageAlt = post.image ? post.imageAlt ?? post.title : "Matthew Gann, Ph.D.";
   return {
-    title: post.title,
+    // long titles stand alone so they are not truncated by the site suffix
+    title: `${post.title} | ${SITE_NAME}`.length > 70 ? { absolute: post.title } : post.title,
     description: post.excerpt,
     alternates: { canonical: url },
     openGraph: {

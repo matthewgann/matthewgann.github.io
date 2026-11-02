@@ -1,4 +1,4 @@
-import { BLOG_ID, PERSON_ID, SITE_URL, WEBSITE_ID, WRITING_LABEL, WRITING_PATH, jsonLd } from "@/lib/site";
+import { BLOG_ID, PERSON_ID, SITE_URL, WEBSITE_ID, WRITING_LABEL, WRITING_PATH, absUrl, jsonLd } from "@/lib/site";
 
 type Props = {
   title: string;
@@ -48,7 +48,7 @@ export default function ArticleSchema({
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-        { "@type": "ListItem", position: 2, name: WRITING_LABEL, item: `${SITE_URL}${WRITING_PATH}` },
+        { "@type": "ListItem", position: 2, name: WRITING_LABEL, item: absUrl(WRITING_PATH) },
         { "@type": "ListItem", position: 3, name: title, item: url },
       ],
     },

@@ -4,11 +4,11 @@ import StackedCards from "@/components/StackedCards";
 import ImageBand from "@/components/ImageBand";
 import ContactCta from "@/components/ContactCta";
 import AiNote from "@/components/AiNote";
-import { BLOG_ID, PERSON_ID, SITE_URL, WEBSITE_ID, WRITING_LABEL, WRITING_PATH, jsonLd } from "@/lib/site";
+import { BLOG_ID, PERSON_ID, SITE_URL, WEBSITE_ID, WRITING_LABEL, WRITING_PATH, absUrl, jsonLd } from "@/lib/site";
 
 const DESCRIPTION =
-  "Essays on marketing, brand strategy, and leadership in purpose-driven organizations by Matthew Gann, Ph.D., chief marketing officer at the University of Denver: marketing maturity, brand as investment, return on objectives, and developing people.";
-const URL = `${SITE_URL}${WRITING_PATH}`;
+  "Essays by Matthew Gann, Ph.D., on marketing, brand strategy, and leadership in higher education and purpose-driven organizations.";
+const URL = absUrl(WRITING_PATH);
 
 export const metadata: Metadata = {
   title: WRITING_LABEL,
@@ -42,9 +42,9 @@ const blogSchema = [
     isPartOf: { "@id": WEBSITE_ID },
     blogPost: posts.map((p) => ({
       "@type": "BlogPosting",
-      "@id": `${SITE_URL}${p.path}#article`,
+      "@id": `${absUrl(p.path)}#article`,
       headline: p.title,
-      url: `${SITE_URL}${p.path}`,
+      url: absUrl(p.path),
       datePublished: p.dateISO,
       description: p.excerpt,
       author: { "@id": PERSON_ID },
