@@ -639,6 +639,20 @@ a { color: inherit; }
   }
   .glance-cell.span-2 { grid-column: span 2; }
 }
+.glance-list li {
+  position: relative;
+  padding-left: 1.1em;
+  margin-bottom: 0.55em;
+}
+.glance-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.58em;
+  width: 0.5em;
+  height: 2px;
+  background: var(--accent-soft);
+}
 .glance-value {
   font-family: var(--font-inter-tight), system-ui, sans-serif;
   font-weight: 600;

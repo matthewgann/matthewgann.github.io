@@ -81,18 +81,21 @@ const expertise = [
   },
 ];
 
-const glance = [
+const glance: { label: string; value: string | string[] }[] = [
   { label: "Experience", value: "Two decades spanning higher education, healthcare, agency, and consulting" },
   {
     label: "Education",
-    value:
-      "Ph.D., Leadership (Organizational Intelligence) · Master of Organizational Leadership · B.S., Business Administration / Management Information Systems",
+    value: [
+      "Ph.D., Leadership (Organizational Intelligence)",
+      "Master of Organizational Leadership",
+      "B.S., Business Administration / Management Information Systems",
+    ],
   },
-  { label: "Credentials", value: "Accredited in Public Relations (APR) · Tennessee Certified Economic Developer" },
-  { label: "Research", value: "Marketing Operations · Organizational Intelligence · Leadership Effectiveness" },
+  { label: "Credentials", value: ["Accredited in Public Relations (APR)", "Tennessee Certified Economic Developer"] },
+  { label: "Research", value: ["Marketing Operations", "Organizational Intelligence", "Leadership Effectiveness"] },
   {
     label: "Recognition",
-    value: "Otis Floyd Jr. Award for Excellence in Higher Education Administration · Charles Holmes Award",
+    value: ["Otis Floyd Jr. Award for Excellence in Higher Education Administration", "Charles Holmes Award"],
   },
   { label: "Based In", value: "Denver, CO & Nashville, TN" },
 ];
@@ -190,7 +193,19 @@ export default function Home() {
                   <dt className="kicker mb-4" style={{ color: "var(--accent-soft)" }}>
                     {label}
                   </dt>
-                  <dd className="m-0 glance-value">{value}</dd>
+                  {Array.isArray(value) ? (
+                    <dd className="m-0">
+                      <ul className="glance-list list-none m-0 p-0">
+                        {value.map((v) => (
+                          <li key={v} className="glance-value">
+                            {v}
+                          </li>
+                        ))}
+                      </ul>
+                    </dd>
+                  ) : (
+                    <dd className="m-0 glance-value">{value}</dd>
+                  )}
                 </div>
               ))}
             </dl>
