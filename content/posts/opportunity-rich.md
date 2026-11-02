@@ -14,6 +14,8 @@ There's a kind of leadership challenge that doesn't get talked about enough. It'
 
 I've come to think of this as being *opportunity rich*.
 
+Like the picture (which is in the Rocky Mountain National Park), you ask yourself "which mountain do I climb first?"
+
 It's an exciting position to be in. You step into a new role at a new place and you see potential everywhere. It's happened to almost every change in my career. There are processes that could be improved, technologies that could be introduced, relationships that could be strengthened, and ideas that have been waiting for someone to give them a little attention or even a chance.
 
 And if you're anything like me, your mind immediately starts connecting the dots and wanting to tackle everything! You can see how one improvement might enable another, how a relatively small investment could solve a longstanding problem, or how something the organization has been doing for years could be approached differently.
