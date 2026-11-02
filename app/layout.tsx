@@ -1,9 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Inter_Tight } from "next/font/google";
+import { Abel, Inter, Inter_Tight } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import PageTransition from "@/components/PageTransition";
+import SmoothScroll from "@/components/SmoothScroll";
 import {
   DEFAULT_DESCRIPTION,
   SITE_NAME,
@@ -17,6 +19,14 @@ const interTight = Inter_Tight({
   weight: ["500", "600"],
   subsets: ["latin"],
   variable: "--font-inter-tight",
+  display: "swap",
+});
+
+/* The wordmark face from the resume and logo lockup. Single weight. */
+const abel = Abel({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-abel",
   display: "swap",
 });
 
@@ -88,7 +98,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${interTight.variable} ${inter.variable} h-full antialiased`}
+      data-scroll-behavior="smooth"
+      className={`${interTight.variable} ${inter.variable} ${abel.variable} h-full antialiased`}
     >
       <head>
         <script
@@ -117,8 +128,9 @@ export default function RootLayout({
         </a>
         <Nav />
         <main id="main" className="flex-1">
-          {children}
+          <PageTransition>{children}</PageTransition>
         </main>
+        <SmoothScroll />
         <Footer />
       </body>
     </html>

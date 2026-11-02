@@ -143,7 +143,7 @@ export default function Home() {
                 My career has taken me from early-stage digital work in the early 2000s through
                 executive marketing roles in healthcare and agency work, to leading systemwide
                 marketing for Tennessee&apos;s largest higher education system, and now serving as
-                associate vice chancellor and chief marketing officer of a private R1 research
+                Associate Vice Chancellor, Chief Marketing Officer of a private R1 research
                 university in the Rocky Mountain West.
                 Along the way, I&apos;ve also consulted for organizations across the legal,
                 healthcare, nonprofit, and retirement sectors.
@@ -220,9 +220,9 @@ export default function Home() {
             What I do.
           </h2>
           <p className="md:col-span-6 md:col-start-7 t-lead m-0 max-w-[40ch]">
-            Where strategy, story, and service meet. This is the work I bring to organizations as a
-            consultant and speaker, shaped by two decades of leading marketing in higher education,
-            healthcare, and agency settings.
+            These are the areas where I work with organizations as a consultant and speaker. Each
+            one draws on two decades of leading marketing in higher education, healthcare, and agency
+            settings, and each one sits where strategy, story, and service meet.
           </p>
         </div>
         <div className="page-x pb-14 md:pb-20">
@@ -243,7 +243,7 @@ export default function Home() {
       <section id="writing" aria-labelledby="writing-heading">
         <div className="page-x pt-20 pb-10 md:pt-28 md:pb-14 flex flex-wrap items-end justify-between gap-6">
           <div>
-            <span className="kicker block mb-6" style={{ color: "var(--ink-faint)" }}>
+            <span className="kicker block mb-6" style={{ color: "var(--ink-soft)" }}>
               {WRITING_LABEL}
             </span>
             <h2 id="writing-heading" className="t-headline">

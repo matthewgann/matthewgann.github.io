@@ -12,7 +12,8 @@ const links = [
 ];
 
 export default function Nav() {
-  const pathname = usePathname();
+  // trailingSlash is on, so normalize before comparing with hrefs
+  const pathname = (usePathname() ?? "/").replace(/\/+$/, "") || "/";
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -39,7 +40,7 @@ export default function Nav() {
             priority
             className="opacity-90 hover:opacity-100 transition-opacity"
           />
-          <span className="hidden md:inline font-semibold text-[0.9375rem] tracking-[-0.01em]">
+          <span className="wordmark hidden md:inline text-[1.1875rem]">
             Matthew Gann, Ph.D.
           </span>
         </Link>
@@ -111,7 +112,7 @@ export default function Nav() {
             </ul>
           </nav>
           <div className="page-x mt-auto pb-8 flex flex-col gap-2">
-            <span className="kicker" style={{ color: "var(--ink-faint)" }}>
+            <span className="kicker" style={{ color: "var(--ink-soft)" }}>
               Get in touch
             </span>
             <a href="mailto:matthew@matthewgann.com" className="no-underline font-medium">

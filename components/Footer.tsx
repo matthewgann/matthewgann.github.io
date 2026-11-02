@@ -88,7 +88,7 @@ export default function Footer() {
             height={22}
             style={{ filter: "invert(1)", opacity: 0.9 }}
           />
-          <span className="kicker" style={{ color: "var(--on-dark-soft)" }}>
+          <span className="wordmark text-[0.9375rem]" style={{ color: "var(--on-dark)", opacity: 0.9 }}>
             Matthew Gann, Ph.D.
           </span>
         </div>
