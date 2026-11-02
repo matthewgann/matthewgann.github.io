@@ -82,7 +82,6 @@ const expertise = [
 ];
 
 const glance = [
-  { label: "Based In", value: "Denver, CO & Nashville, TN" },
   { label: "Experience", value: "Two decades spanning higher education, healthcare, agency, and consulting" },
   {
     label: "Education",
@@ -95,6 +94,7 @@ const glance = [
     label: "Recognition",
     value: "Otis Floyd Jr. Award for Excellence in Higher Education Administration · Charles Holmes Award",
   },
+  { label: "Based In", value: "Denver, CO & Nashville, TN" },
 ];
 
 const profilePage = {
