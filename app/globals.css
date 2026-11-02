@@ -11,6 +11,7 @@
   --line-strong: rgba(20, 19, 17, 0.32);
   --accent: #1F6F63;        /* deep teal */
   --accent-ink: #F1F7F5;
+  --accent-soft: #7FB8AD;  /* teal for small text on the dark ground */
   --dark: #141311;
   --on-dark: #F4F2EE;
   --on-dark-soft: rgba(244, 242, 238, 0.56);
@@ -609,3 +610,68 @@ a { color: inherit; }
 }
 .career-rail-item a:hover { color: var(--accent); }
 .career-row { transition: opacity 0.3s ease; }
+
+/* ── Scroll reveal ──────────────────────────────────────────── */
+.reveal .reveal-item {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--i, 0) * 90ms);
+}
+.reveal.is-in .reveal-item {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal .reveal-item { opacity: 1; transform: none; transition: none; }
+}
+
+/* ── At a glance band ───────────────────────────────────────── */
+.glance-cell {
+  border-top: 1px solid var(--on-dark-line);
+  padding: 1.75rem 0 2rem;
+}
+@media (min-width: 768px) {
+  .glance-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: var(--gutter);
+  }
+  .glance-cell.span-2 { grid-column: span 2; }
+}
+.glance-value {
+  font-family: var(--font-inter-tight), system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  font-size: clamp(1.25rem, 1.9vw, 1.7rem);
+  color: var(--on-dark);
+  text-wrap: balance;
+}
+
+/* ── What I do: area map ────────────────────────────────────── */
+.area-map {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+.area-map a {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 1.1rem 1.25rem 1.2rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-inter-tight), system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.area-map a:hover {
+  background: var(--accent);
+  color: var(--accent-ink);
+}

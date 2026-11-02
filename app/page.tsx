@@ -6,6 +6,7 @@ import HomeHero from "@/components/HomeHero";
 import StackedCards from "@/components/StackedCards";
 import ImageBand from "@/components/ImageBand";
 import ContactCta from "@/components/ContactCta";
+import Reveal from "@/components/Reveal";
 import { PERSON_ID, SITE_URL, WEBSITE_ID, WRITING_LABEL, WRITING_PATH, jsonLd } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -59,6 +60,15 @@ const expertise = [
     imageAlt:
       "Matthew Gann with a group of colleagues on the lawn at the University of Denver before a campus run",
     imagePosition: "center 40%",
+  },
+  {
+    id: "content-social",
+    title: "Content & Social Strategy",
+    body:
+      "Shaping what an organization says and where it says it: editorial direction, social channels, and the storytelling that connects people to the mission.",
+    image: "/band-car.jpg",
+    imageAlt: "Matthew Gann at an automotive show",
+    imagePosition: "28% 38%",
   },
   {
     id: "digital-analytics",
@@ -164,32 +174,50 @@ export default function Home() {
         </div>
 
         {/* At a glance */}
-        <div className="hairline-t">
-          <div className="page-x py-10 md:py-12 grid md:grid-cols-12 gap-4 md:gap-6">
-            <h3 className="md:col-span-3 t-card m-0">At a glance</h3>
-            <ul className="md:col-span-8 lg:col-span-7 list-none m-0 p-0 hairline-t">
-              {glance.map(({ label, value }) => (
-                <li key={label} className="py-4 hairline-b grid grid-cols-[9rem_1fr] gap-4 items-baseline">
-                  <span className="kicker" style={{ color: "var(--accent)" }}>
+        <Reveal className="hairline-t" >
+          <div style={{ background: "var(--dark)", color: "var(--on-dark)" }}>
+            <div className="page-x pt-14 pb-6 md:pt-20 md:pb-10">
+              <h3 className="t-headline reveal-item" style={{ color: "var(--on-dark)", ["--i" as string]: 0 }}>
+                At a glance.
+              </h3>
+            </div>
+            <dl className="page-x glance-grid m-0 pb-10 md:pb-16">
+              {glance.map(({ label, value }, i) => (
+                <div
+                  key={label}
+                  className={`glance-cell reveal-item${i === 0 || i === glance.length - 1 ? " span-2" : ""}`}
+                  style={{ ["--i" as string]: i + 1 }}
+                >
+                  <dt className="kicker mb-4" style={{ color: "var(--accent-soft)" }}>
                     {label}
-                  </span>
-                  <span className="t-body font-medium">{value}</span>
-                </li>
+                  </dt>
+                  <dd className="m-0 glance-value">{value}</dd>
+                </div>
               ))}
-            </ul>
+            </dl>
           </div>
-        </div>
+        </Reveal>
       </section>
 
       {/* ── Expertise, stacked ────────────────────────────────── */}
       <section id="work" aria-labelledby="work-heading">
-        <div className="page-x pt-20 pb-12 md:pt-28 md:pb-16">
-          <span className="kicker block mb-6" style={{ color: "var(--ink-faint)" }}>
-            What I do
-          </span>
-          <h2 id="work-heading" className="t-headline max-w-[16ch]">
-            Where strategy, story, and service meet.
+        <div className="page-x pt-20 pb-10 md:pt-28 md:pb-14 grid md:grid-cols-12 gap-8 items-end">
+          <h2 id="work-heading" className="md:col-span-5 t-display m-0">
+            What I do.
           </h2>
+          <p className="md:col-span-6 md:col-start-7 t-lead m-0 max-w-[40ch]">
+            Where strategy, story, and service meet. Seven areas of practice, each one built to
+            outlast any single campaign or budget cycle.
+          </p>
+        </div>
+        <div className="page-x pb-14 md:pb-20">
+          <nav className="area-map" aria-label="Areas of practice">
+            {expertise.map((item) => (
+              <a key={item.id} href={`#${item.id}`}>
+                {item.title}
+              </a>
+            ))}
+          </nav>
         </div>
         <StackedCards items={expertise} headingLevel="h3" />
       </section>
