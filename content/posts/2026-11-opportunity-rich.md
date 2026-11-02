@@ -1,12 +1,12 @@
 ---
 title: When You're Opportunity Rich, Where Do You Start?
-date: 2026-11-02
+date: 2026-11-01
 excerpt: There's a particular kind of leadership challenge that doesn't get
   talked about enough. It's what happens when you step into an organization and
   realize there are more opportunities to improve, grow, and innovate than you
   could possibly tackle at once.
 imagePosition: center
-draft: true
+draft: false
 imageAlt: Colorado mountains to climb in the background.
 image: /all-the-mountains.jpg
 ---
