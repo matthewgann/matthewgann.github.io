@@ -215,24 +215,13 @@ export default function Home() {
 
       {/* ── Expertise, stacked ────────────────────────────────── */}
       <section id="work" aria-labelledby="work-heading">
-        <div className="page-x pt-20 pb-10 md:pt-28 md:pb-14 grid md:grid-cols-12 gap-8 items-end">
+        <div className="page-x pt-20 pb-16 md:pt-28 md:pb-24 grid md:grid-cols-12 gap-8 items-end">
           <h2 id="work-heading" className="md:col-span-5 t-display m-0">
             What I do.
           </h2>
           <p className="md:col-span-6 md:col-start-7 t-lead m-0 max-w-[40ch]">
-            These are the areas where I work with organizations as a consultant and speaker. Each
-            one draws on two decades of leading marketing in higher education, healthcare, and agency
-            settings, and each one sits where strategy, story, and service meet.
+            These are the areas where I work with organizations as a consultant and speaker.
           </p>
-        </div>
-        <div className="page-x pb-14 md:pb-20">
-          <nav className="area-map" aria-label="Areas of practice">
-            {expertise.map((item) => (
-              <a key={item.id} href={`#${item.id}`}>
-                {item.title}
-              </a>
-            ))}
-          </nav>
         </div>
         <StackedCards items={expertise} headingLevel="h3" />
       </section>

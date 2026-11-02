@@ -800,30 +800,3 @@ a { color: inherit; }
   color: var(--on-dark);
   text-wrap: balance;
 }
-
-/* ── What I do: area map ────────────────────────────────────── */
-.area-map {
-  display: flex;
-  flex-wrap: wrap;
-  border-top: 1px solid var(--line);
-  border-left: 1px solid var(--line);
-}
-.area-map a {
-  flex: 1 1 auto;
-  min-width: 0;
-  padding: 1.1rem 1.25rem 1.2rem;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  font-family: var(--font-inter-tight), system-ui, sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.025em;
-  line-height: 1.05;
-  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
-  color: var(--ink);
-  text-decoration: none;
-  transition: background 0.25s ease, color 0.25s ease;
-}
-.area-map a:hover {
-  background: var(--accent);
-  color: var(--accent-ink);
-}
