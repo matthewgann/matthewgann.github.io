@@ -28,15 +28,14 @@ const experience = [
   {
     id: "consultant",
     org: "Consultant",
-    location: "Nashville, Tennessee & Denver, Colorado",
     title: "",
     highlight:
-      "I've kept an active consulting practice going my entire career, working with organizations across healthcare, legal, business services, retirement planning, real estate, medical aesthetics, and a lot more in between.",
+      "I've kept an active consulting practice going my entire career, working with organizations across healthcare, legal, business services, retirement planning, real estate, medical aesthetics, and a lot more in between. I also work with Libelle Education Consulting, a team of higher education practitioners who partner with K-12, postsecondary, and corporate organizations, from strategic ideation to the public-facing deliverables that advance their goals.",
+    link: { label: "Libelle Education Consulting", href: "https://www.libelleeducationconsulting.com/" },
   },
   {
     id: "university-of-denver",
     org: "University of Denver",
-    location: "Denver, Colorado",
     title: "Associate Vice Chancellor, Chief Marketing Officer",
     highlight:
       "I'm the CMO for a private R1 research university.",
@@ -44,7 +43,6 @@ const experience = [
   {
     id: "tennessee-board-of-regents",
     org: "Tennessee Board of Regents",
-    location: "Nashville, Tennessee",
     title: "Associate Vice Chancellor for Marketing, Digital Strategy, and Public Relations",
     highlight:
       "I was the systemwide CMO for Tennessee's largest higher education system.",
@@ -52,21 +50,18 @@ const experience = [
   {
     id: "tennessee-tech-university",
     org: "Tennessee Tech University",
-    location: "Cookeville, Tennessee",
     title: "Director of Web and Digital Media",
     highlight: "I led digital strategy and all public-facing web properties for a 10,000-student university.",
   },
   {
     id: "wellness-healthcare",
     org: "Wellness Healthcare",
-    location: "Cookeville, Tennessee",
     title: "Vice President of Marketing and Promotions",
     highlight: "I was the CMO for one of the South's largest durable medical equipment suppliers.",
   },
   {
     id: "n2-the-net",
     org: "N2 The Net",
-    location: "Cookeville, Tennessee",
     title: "Director of Design and Development",
     highlight:
       "I designed and built websites for college athletics, real estate, radio and broadcasting, and healthcare clients.",
@@ -74,7 +69,6 @@ const experience = [
   {
     id: "wpf-management",
     org: "WPF Management",
-    location: "Gallatin, Tennessee",
     title: "Director of Internet Operations",
     highlight:
       "I was the lead web developer, digital designer, and PR strategist for a premier extreme sports company.",

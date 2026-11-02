@@ -5,9 +5,10 @@ import { useEffect, useRef, useState } from "react";
 export type Role = {
   id: string;
   org: string;
-  location: string;
   title: string;
   highlight: string;
+  /** Optional outbound link shown under the highlight. */
+  link?: { label: string; href: string };
   /** Optional, e.g. "2024 to present". Shown large when present. */
   years?: string;
 };
@@ -90,9 +91,24 @@ export default function CareerRail({ roles }: { roles: Role[] }) {
               </p>
             )}
             <p className="t-body mt-5 mb-0 max-w-[52ch]">{r.highlight}</p>
-            <p className="kicker mt-5 mb-0" style={{ color: "var(--ink-faint)" }}>
-              {r.location}
-            </p>
+            {r.link && (
+              <p className="mt-5 mb-0">
+                <a
+                  href={r.link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="arrow-link"
+                  style={{ fontSize: "0.9375rem" }}
+                >
+                  <span className="dot" aria-hidden>
+                    <svg width="9" height="9" viewBox="0 0 10 10" fill="none">
+                      <path d="M1 5h8M5 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  {r.link.label} ↗
+                </a>
+              </p>
+            )}
           </li>
         ))}
       </ol>
