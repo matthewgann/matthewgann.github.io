@@ -187,7 +187,8 @@ export default function ExperiencePage() {
             to make marketing actually work inside complex organizations. I started in digital in the
             early 2000s, moved through executive marketing roles in healthcare and agency work, led
             systemwide marketing for Tennessee&apos;s largest higher education system, and now serve as
-            chief marketing officer of a private R1 research university. I work at the intersection of
+            chief marketing officer of a private R1 research university in the Rocky Mountain West. I
+            work at the intersection of
             strategy, data, and storytelling, and I believe the best marketing is both honest and
             effective.
           </p>

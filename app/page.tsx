@@ -144,7 +144,7 @@ export default function Home() {
                 executive marketing roles in healthcare and agency work, to leading systemwide
                 marketing for Tennessee&apos;s largest higher education system, and now serving as
                 associate vice chancellor and chief marketing officer of a private R1 research
-                university.
+                university in the Rocky Mountain West.
                 Along the way, I&apos;ve also consulted for organizations across the legal,
                 healthcare, nonprofit, and retirement sectors.
               </p>
