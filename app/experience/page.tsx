@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ImageBand from "@/components/ImageBand";
 import ContactCta from "@/components/ContactCta";
 import CareerRail from "@/components/CareerRail";
-import { EMAIL, LINKEDIN, PERSON_ID, SITE_URL, WEBSITE_ID, jsonLd } from "@/lib/site";
+import { PERSON_ID, SITE_URL, WEBSITE_ID, jsonLd } from "@/lib/site";
 
 const URL = `${SITE_URL}/experience`;
 const DESCRIPTION =
@@ -174,9 +174,6 @@ export default function ExperiencePage() {
         <div className="page-x pt-14 pb-12 md:pt-20 md:pb-16 grid md:grid-cols-12 gap-8">
           <div className="md:col-span-8 lg:col-span-7">
             <h1 className="t-display">Experience and Background</h1>
-            <p className="kicker mt-6 mb-0" style={{ color: "var(--ink-soft)" }}>
-              Chief Marketing Officer · Organizational Consultant · Marketing Function Builder
-            </p>
             <p className="t-lead mt-8 mb-0 max-w-[58ch]">
               I&apos;ve spent more than two decades building brands, leading teams, and figuring out how
               to make marketing actually work inside complex organizations. I started in digital in the
@@ -186,14 +183,6 @@ export default function ExperiencePage() {
               strategy, data, and storytelling, and I believe the best marketing is both honest and
               effective.
             </p>
-          </div>
-          <div className="md:col-span-4 lg:col-span-5 flex flex-col gap-2 items-start md:items-end md:justify-end t-small">
-            <a href={`mailto:${EMAIL}`} className="font-medium no-underline hover:text-accent transition-colors">
-              {EMAIL}
-            </a>
-            <a href={LINKEDIN} target="_blank" rel="noopener noreferrer me" className="font-medium no-underline hover:text-accent transition-colors">
-              linkedin.com/in/matthewgann ↗
-            </a>
           </div>
         </div>
       </section>

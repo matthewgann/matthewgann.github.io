@@ -89,9 +89,6 @@ export default function ResearchPage() {
         <div className="page-x pt-14 pb-12 md:pt-20 md:pb-16 grid md:grid-cols-12 gap-8">
           <div className="md:col-span-8 lg:col-span-7">
             <h1 className="t-display">{WRITING_LABEL}</h1>
-            <p className="kicker mt-6 mb-0" style={{ color: "var(--ink-soft)" }}>
-              Marketing · Leadership · Purpose-driven work
-            </p>
             <p className="t-lead mt-8 mb-0 max-w-[58ch]">
               These posts are about the work of marketing inside purpose-driven organizations and
               about leading the people who do it. Most of them come out of the day job: how
@@ -99,11 +96,6 @@ export default function ResearchPage() {
               measure whether a strategy did what it set out to do. Some are about leadership more
               broadly, including developing people and telling them the truth.
             </p>
-          </div>
-          <div className="md:col-span-4 lg:col-span-5 flex flex-col gap-2 items-start md:items-end md:justify-end t-small">
-            <a href="/feed.xml" className="font-medium no-underline hover:text-accent transition-colors">
-              Subscribe by RSS ↗
-            </a>
           </div>
         </div>
       </section>
